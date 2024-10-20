@@ -14,4 +14,8 @@ permalink: /tutorials/
   {% endfor %}
 </ul>
 
-
+<style>
+  footer {
+    display: none;
+  }
+</style>

@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/css/amiscreant.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_projects/Automation.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/Automation.markdown" afterDir="false" />
@@ -17,6 +16,7 @@
       <change beforePath="$PROJECT_DIR$/_projects/Tor.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/Tor.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_tutorials/bash.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_tutorials/bash.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_tutorials/python.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_tutorials/python.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/index.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/projects.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tutorials.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials.markdown" afterDir="false" />
     </list>
@@ -89,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729371915882</updated>
-      <workItem from="1729371918130" duration="25668000" />
+      <workItem from="1729371918130" duration="30312000" />
     </task>
     <servers />
   </component>

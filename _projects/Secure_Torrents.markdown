@@ -30,3 +30,8 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 </div>
+<style>
+  footer {
+    display: none;
+  }
+</style>

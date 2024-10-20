@@ -66,5 +66,3 @@ layout: home
 
   typeCommand();
 });
-
-</script>

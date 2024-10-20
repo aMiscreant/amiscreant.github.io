@@ -14,3 +14,8 @@ permalink: /projects/
   {% endfor %}
 </ul>
 
+<style>
+  footer {
+    display: none;
+  }
+</style>

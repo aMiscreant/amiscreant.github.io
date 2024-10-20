@@ -4,22 +4,81 @@ layout: default
 ---
 
 <style type="text/css" media="screen">
+  /* General container styling */
   .container {
     margin: 10px auto;
     max-width: 600px;
     text-align: center;
+    color: white;
   }
+
+  /* Styling for the main 404 header */
   h1 {
     margin: 30px 0;
     font-size: 4em;
     line-height: 1;
     letter-spacing: -1px;
+    font-family: 'Courier New', Courier, monospace;
+    animation: glitchEffect 1.3s infinite;
+  }
+
+  /* Styling for the subheading text */
+  p {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-family: 'Courier New', Courier, monospace;
+    animation: glitchEffect 1.3s infinite;
+  }
+
+  /* Animated background */
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('404-image.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: backgroundMove 20s infinite linear;
+  }
+
+  /* Background animation effect */
+  @keyframes backgroundMove {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+
+  /* Glitch animation effect for text */
+  @keyframes glitchEffect {
+    0% {
+      text-shadow: 2px 2px 0px #ff00ff, -2px -2px 0px #00ffff;
+    }
+    50% {
+      text-shadow: -2px -2px 0px #ff00ff, 2px 2px 0px #00ffff;
+    }
+    100% {
+      text-shadow: 2px 2px 0px #ff00ff, -2px -2px 0px #00ffff;
+    }
+  }
+</style>
+
+<style>
+  footer {
+    display: none;
+  }
+  header {
+    display: none;
   }
 </style>
 
 <div class="container">
-  <h1>404</h1>
-
+  <h1>404 ERROR</h1>
   <p><strong>Page not found</strong></p>
   <p>The requested page was not found.</p>
 </div>
