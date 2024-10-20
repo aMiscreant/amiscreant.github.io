@@ -10,7 +10,7 @@
 # variable you would like, and they will be accessible in the templates.
 
 title: PyScriptsHub
-email: amiscreant@protonmail.com
+email: aMiscreant@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   "Welcome to PyScriptsHub, your hub for innovative Python 
   projects and tools! Whether you're into automating tasks, 
@@ -21,8 +21,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   designed for both beginners and advanced coders."
 baseurl: "" # Leave blank unless you are using a subdirectory
 url: "https://amiscreant.github.io" # Your GitHub Pages URL
-twitter_username: amiscreant
-github_username: amiscreant
+twitter_username: aMiscreant
+github_username: aMiscreant
 
 # Build settings
 theme: minima

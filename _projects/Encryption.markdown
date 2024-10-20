@@ -2,7 +2,7 @@
 layout: page
 title: Encryption
 date: 2024-10-19
-description: A brief description of Project One.
+description: Assortment of encryption scripts.
 permalink: /projects/encryption/
 ---
 

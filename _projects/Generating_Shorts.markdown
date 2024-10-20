@@ -2,7 +2,7 @@
 layout: page
 title: Generating Shorts
 date: 2024-10-19
-description: A brief description of Project One.
+description: Shorts, Reels, Clips.
 permalink: /projects/generating_shorts/
 ---
 

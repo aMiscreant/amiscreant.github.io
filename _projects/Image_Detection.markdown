@@ -2,7 +2,7 @@
 layout: page
 title: Image Detection
 date: 2024-10-19
-description: A brief description of Project One.
+description: OpenCV Image detection.
 permalink: /projects/image_detection/
 ---
 

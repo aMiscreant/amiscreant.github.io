@@ -2,7 +2,7 @@
 layout: page
 title: Tor Projects
 date: 2024-10-19
-description: A brief description of Project One.
+description: Stem, Hidden Services, Security.
 permalink: /projects/Tor/
 ---
 

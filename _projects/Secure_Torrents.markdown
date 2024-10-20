@@ -2,7 +2,7 @@
 layout: page
 title: Secure Torrent Downloader
 date: 2024-10-19
-description: A brief description of Project One.
+description: Secure Torrent Downloader.
 permalink: /projects/secure_torrents/
 ---
 

@@ -4,12 +4,6 @@ title: Projects
 permalink: /projects/
 ---
 
----
-layout: page
-title: Projects
-permalink: /projects/
----
-
 <h2>My Projects</h2>
 
 <ul>

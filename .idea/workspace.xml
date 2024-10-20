@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/amiscreant.github.io.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_layouts/project.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_projects/Automation.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_projects/Encryption.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_projects/Tor.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/Automation.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/Automation.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/Encrypted_Chat.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/Encrypted_Chat.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/Encryption.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/Encryption.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/Generating_Shorts.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/Generating_Shorts.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/Image_Detection.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/Image_Detection.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/Secure_Torrents.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/Secure_Torrents.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/Tor.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/Tor.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/projects.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +59,7 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "(root)",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -87,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729371915882</updated>
-      <workItem from="1729371918130" duration="3396000" />
+      <workItem from="1729371918130" duration="10562000" />
     </task>
     <servers />
   </component>

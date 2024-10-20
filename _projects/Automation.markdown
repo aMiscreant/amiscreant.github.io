@@ -2,7 +2,7 @@
 layout: page
 title: Automation
 date: 2024-10-19
-description: A brief description of Project One.
+description: Variety of time saver scripts.
 permalink: /projects/automation/
 ---
 

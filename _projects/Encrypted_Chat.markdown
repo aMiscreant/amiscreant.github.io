@@ -2,7 +2,7 @@
 layout: page
 title: Encrypted Chat
 date: 2024-10-19
-description: A brief description of Project One.
+description: Privacast Encrypted Chat & Posts.
 permalink: /projects/encrypted_chat/
 ---
 
