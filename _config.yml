@@ -58,5 +58,6 @@ navigation:
 
 collections:
   projects:
+    output: true
   tutorials:
     output: true
