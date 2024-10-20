@@ -1,0 +1,123 @@
+/* General Styles */
+.highlight pre {
+    background-color: #2e2e2e; /* Slightly lighter background for better contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Increased padding for more space */
+    margin: 0; /* Remove default margin */
+    overflow: auto; /* Allow scrolling for long lines */
+}
+
+/* Highlighted Lines */
+.highlight .hll {
+    background-color: #444; /* Highlight color for active lines */
+}
+
+/* Comments */
+.highlight .c,
+.highlight .cm,
+.highlight .c1,
+.highlight .cs {
+    color: #7f9f7f; /* Softer green for comments */
+    font-style: italic;
+    background-color: #1f1f1f; /* Darker background for comments */
+}
+
+/* Error */
+.highlight .err {
+    color: #ff5555; /* Bright red for errors */
+}
+
+/* Keywords */
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kr,
+.highlight .kt {
+    color: #ffaf00; /* Yellow for keywords */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+/* Literals */
+.highlight .l,
+.highlight .n,
+.highlight .o,
+.highlight .x,
+.highlight .p {
+    color: #ffffff; /* Standard text color */
+}
+
+/* Punctuation and Operators */
+.highlight .p,
+.highlight .o {
+    color: #dcdccc; /* Lighter color for punctuation */
+}
+
+/* Generics */
+.highlight .g,
+.highlight .go,
+.highlight .gs {
+    color: #ffffff; /* Keep generic color white */
+}
+
+/* Function Names */
+.highlight .nf {
+    color: #68a0b0; /* Light blue for function names */
+    font-weight: bold;
+}
+
+/* String Literals */
+.highlight .s,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s1,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .sr {
+    color: #b5bd68; /* Soft green for strings */
+}
+
+/* Variable Names */
+.highlight .na,
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
+    color: #ffaf00; /* Yellow for variable names */
+}
+
+/* Numeric Literals */
+.highlight .m,
+.highlight .mi,
+.highlight .mf,
+.highlight .mh,
+.highlight .mo {
+    color: #b5bd68; /* Light green for numbers */
+}
+
+/* Background for Special Elements */
+.highlight .go {
+    color: #444; /* Darker background for generic output */
+    background-color: #222; /* Darker output background */
+}
+
+/* Custom Scrollbar */
+.highlight pre::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.highlight pre::-webkit-scrollbar-thumb {
+    background: #444; /* Color of the scrollbar */
+    border-radius: 4px; /* Rounded scrollbar */
+}
+
+.highlight pre::-webkit-scrollbar-track {
+    background: #2e2e2e; /* Background of the scrollbar track */
+}
+
+/* Hover Effects */
+.highlight pre:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+}
