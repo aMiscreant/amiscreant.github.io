@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Automation
+title: TorrentGuard
 date: 2024-10-19
-description: Variety of time saver scripts.
-permalink: /projects/automation/
+description: Privacy-Focused Secure Torrenting.
+permalink: /projects/TorrentGuard/
 ---
 
 ## Overview

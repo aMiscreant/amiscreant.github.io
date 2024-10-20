@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Generating Shorts
+title: TimeSaverX
 date: 2024-10-19
-description: Shorts, Reels, Clips.
-permalink: /projects/generating_shorts/
+description: Efficient Scripts for Daily Automation.
+permalink: /projects/TimeSaverX/
 ---
 
 ## Overview

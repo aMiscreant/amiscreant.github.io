@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Secure Torrent Downloader
+title: Privacast
 date: 2024-10-19
-description: Secure Torrent Downloader.
-permalink: /projects/secure_torrents/
+description: Privacast Encrypted Chat & Posts.
+permalink: /projects/Privacast/
 ---
 
 ## Overview

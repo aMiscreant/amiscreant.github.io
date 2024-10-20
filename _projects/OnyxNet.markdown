@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Encryption
+title: OnyxNet
 date: 2024-10-19
-description: Assortment of encryption scripts.
-permalink: /projects/encryption/
+description: Tor Hidden Services & Security Tools.
+permalink: /projects/OnyxNet/
 ---
 
 ## Overview

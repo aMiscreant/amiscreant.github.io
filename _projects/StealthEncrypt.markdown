@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Encrypted Chat
+title: StealthEncrypt
 date: 2024-10-19
-description: Privacast Encrypted Chat & Posts.
-permalink: /projects/encrypted_chat/
+description: Advanced Data Protection Scripts & Tools.
+permalink: /projects/StealthEncrypt/
 ---
 
 ## Overview

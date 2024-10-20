@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Tor Projects
+title: VisionScanCV
 date: 2024-10-19
-description: Stem, Hidden Services, Security.
-permalink: /projects/Tor/
+description: OpenCV-Based Image Detection Tools.
+permalink: /projects/VisionScanCV/
 ---
 
 ## Overview

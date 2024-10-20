@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Image Detection
+title: Clipurr
 date: 2024-10-19
-description: OpenCV Image detection.
-permalink: /projects/image_detection/
+description: AI-Powered Shorts, Reels & Clips Creator.
+permalink: /projects/Clipurr/
 ---
 
 ## Overview
