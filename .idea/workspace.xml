@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/_layouts/tutorials.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_tutorials/bash.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_tutorials/python.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tutorials.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2024-10-19-welcome-to-jekyll.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/contact.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/index.markdown" afterDir="false" />
-    </list>
+    <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729371915882</updated>
-      <workItem from="1729371918130" duration="18159000" />
+      <workItem from="1729371918130" duration="18473000" />
     </task>
     <servers />
   </component>

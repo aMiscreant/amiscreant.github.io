@@ -4,7 +4,7 @@
     font-family: 'Courier New', Courier, monospace;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     width: 600px;
     margin: 20px auto;
     border: 1px solid #4b4b4b;
@@ -17,7 +17,7 @@
 
 .input-line {
     display: flex;
-    align-items: center; /* Keep everything on the same line */
+    align-items: center;
 }
 
 .prompt {
@@ -30,15 +30,21 @@
 }
 
 @keyframes blink {
-    50% { opacity: 0; }
+    50% {
+        opacity: 0;
+    }
 }
 
-#typed-input, #terminal-output p {
+#typed-input {
     display: inline-block;
-    white-space: pre-wrap; /* Keep white spaces, useful for typed command output */
+    white-space: nowrap; /* Keep white spaces */
 }
 
-/* Specific colorization for different parts of the prompt */
+#terminal-output p {
+    margin: 0; /* Prevent extra spacing between lines */
+    display: flex; /* Use flex for aligning elements */
+}
+
 .brackets {
     color: #c5c8c6; /* Same color for brackets as terminal text */
 }

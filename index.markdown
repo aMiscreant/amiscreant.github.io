@@ -10,7 +10,7 @@ layout: home
   <div class="output" id="terminal-output">
     <!-- Command outputs will appear here -->
   </div>
-  <div class="input-line" id="input-line">
+  <div class="input-line">
     <span class="prompt">
       <span class="brackets">[</span>
       <span class="user">amiscreant</span>
@@ -21,8 +21,6 @@ layout: home
     <span id="typed-input"></span><span class="cursor">|</span>
   </div>
 </div>
-
-
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -35,7 +33,7 @@ layout: home
 
   let index = 0;
   let charIndex = 0;
-  const typingSpeed = 100;  // Adjust speed as necessary
+  const typingSpeed = 100;  
   const delayBetweenCommands = 800;
   const terminalOutput = document.getElementById('terminal-output');
   const typedInput = document.getElementById('typed-input');
@@ -56,7 +54,7 @@ layout: home
         <span class="host">blackbox</span>
         <span class="brackets">]</span>$ ${command}`;
       terminalOutput.appendChild(outputLine);
-      typedInput.innerHTML = '';
+      typedInput.innerHTML = ''; 
       charIndex = 0;
       index++;
       if (index < commands.length) {
@@ -67,6 +65,5 @@ layout: home
 
   typeCommand();
 });
-
 
 </script>
