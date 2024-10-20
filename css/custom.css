@@ -46,17 +46,17 @@
 }
 
 .brackets {
-    color: #c5c8c6; /* Same color for brackets as terminal text */
+    color: #cdcd23; /* Same color for brackets as terminal text */
 }
 
 .user {
-    color: #ff79c6; /* Pink for 'amiscreant' */
+    color: #974242; /* Pink for 'amiscreant' */
 }
 
 .at {
-    color: #8be9fd; /* Cyan for the '@' */
+    color: #76a3a8; /* Cyan for the '@' */
 }
 
 .host {
-    color: #50fa7b; /* Green for 'blackbox' */
+    color: #68a572; /* Green for 'blackbox' */
 }

@@ -25,10 +25,11 @@ layout: home
 <script>
   document.addEventListener("DOMContentLoaded", function() {
   const commands = [
-    'python3 my_script.py',
-    'Connecting to server...',
+    'source myenv/bin/activate',
+    'python miscreant.py ...',
+    'Loading Config...',
     'Running analysis...',
-    'Task completed successfully.'
+    'Receiving data...',
   ];
 
   let index = 0;
