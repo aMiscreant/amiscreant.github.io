@@ -1,0 +1,56 @@
+.terminal {
+    background-color: #1d1f21;
+    color: #c5c8c6;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    width: 600px;
+    margin: 20px auto;
+    border: 1px solid #4b4b4b;
+}
+
+.output {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.input-line {
+    display: flex;
+    align-items: center; /* Keep everything on the same line */
+}
+
+.prompt {
+    white-space: nowrap;
+}
+
+.cursor {
+    animation: blink 0.7s steps(1) infinite;
+    color: #00FF00;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+#typed-input, #terminal-output p {
+    display: inline-block;
+    white-space: pre-wrap; /* Keep white spaces, useful for typed command output */
+}
+
+/* Specific colorization for different parts of the prompt */
+.brackets {
+    color: #c5c8c6; /* Same color for brackets as terminal text */
+}
+
+.user {
+    color: #ff79c6; /* Pink for 'amiscreant' */
+}
+
+.at {
+    color: #8be9fd; /* Cyan for the '@' */
+}
+
+.host {
+    color: #50fa7b; /* Green for 'blackbox' */
+}

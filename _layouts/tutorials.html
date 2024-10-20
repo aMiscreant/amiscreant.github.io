@@ -1,0 +1,14 @@
+<!-- _layouts/tutorials.html -->
+---
+layout: default
+---
+
+<article>
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.description }}</p>
+  <p><strong>Date:</strong> {{ page.date | date: "%B %d, %Y" }}</p>
+
+  <div class="tutorials-content">
+    {{ content }}
+  </div>
+</article>
