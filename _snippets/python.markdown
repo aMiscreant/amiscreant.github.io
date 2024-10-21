@@ -1,7 +1,9 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
+title: Audio
+date: 2024-10-19
+description: Variety of python scripts.
+permalink: /snippets/python/
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -16,16 +18,30 @@ permalink: /projects/
 <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin">
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 
-<h2>My Projects</h2>
+## Overview
+Here’s an overview of snippet One. Explain what it does, its features, etc.
 
-<ul>
-  {% for project in site.projects %}
-    <li>
-      <a href="{{ project.url }}">{{ project.title }}</a>: <b>{{ project.description }}</b>
-    </li>
-  {% endfor %}
-</ul>
+## Technologies Used
+- 
+- 
+- 
 
+## Installation
+Instructions for setting up the snippet locally.
+
+## Usage
+How to use the snippet after installation.
+
+<link rel="stylesheet" href="{{ 'css/amiscreant.css' | relative_url }}">
+<div class="highlight-zenburn">
+{% highlight ruby linenos %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+</div>
 <style>
   footer {
     display: none;

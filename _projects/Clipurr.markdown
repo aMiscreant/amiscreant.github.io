@@ -5,6 +5,8 @@ date: 2024-10-19
 description: AI-Powered Shorts, Reels & Clips Creator.
 permalink: /projects/Clipurr/
 ---
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
 
 ## Overview
 Here’s an overview of Project One. Explain what it does, its features, etc.

@@ -5,16 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/security_checks.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_optimization.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_jekyll_with_validation.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/image_optimizer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/tasks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/validate_content.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/amiscreant.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/amiscreant.github.io.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/snippets.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/tutorials.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/Clipurr.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/Clipurr.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/OnyxNet.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/OnyxNet.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/Privacast.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/Privacast.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/StealthEncrypt.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/StealthEncrypt.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/TimeSaverX.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/TimeSaverX.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/TorrentGuard.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/TorrentGuard.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/VisionScanCV.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/VisionScanCV.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_tutorials/bash.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_tutorials/python.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_snippets/python.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/about.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/contact.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/index.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/projects.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorials.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/snippets.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +104,7 @@
       <updated>1729371915882</updated>
       <workItem from="1729371918130" duration="30474000" />
       <workItem from="1729440337777" duration="6362000" />
-      <workItem from="1729466277108" duration="4261000" />
+      <workItem from="1729466277108" duration="10846000" />
     </task>
     <servers />
   </component>
