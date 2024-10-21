@@ -1,0 +1,36 @@
+name: Security Checks
+
+on:
+  push:
+    branches:
+      - / (root)
+
+jobs:
+  security:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Specify your desired Python version
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install Pillow bandit flake8 cryptography
+
+      # - name: Optimize images
+      #  run: python scripts/optimize_images.py  # Run your image optimization script
+
+      - name: Validate content
+        run: python scripts/validate_content.py  # Run your content validation script
+
+      - name: Run Bandit
+        run: bandit -r scripts/  # Check for vulnerabilities in your scripts
+
+      - name: Run Flake8
+        run: flake8 scripts/  # Check your code style

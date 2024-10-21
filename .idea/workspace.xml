@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/_projects/TorrentGuard.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/security_checks.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image_optimization.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run_jekyll_with_validation.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/image_optimizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/tasks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/validate_content.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/amiscreant.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/amiscreant.github.io.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/Automation.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/TimeSaverX.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/Encrypted_Chat.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/Privacast.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/Encryption.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/OnyxNet.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/Generating_Shorts.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/Clipurr.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/Image_Detection.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/VisionScanCV.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/Secure_Torrents.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/Tor.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/StealthEncrypt.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/projects.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -66,9 +66,16 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Brandon\PycharmProjects\amiscreant.github.io" />
+      <recent name="C:\Users\Brandon\PycharmProjects\amiscreant.github.io\.github\workflows" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -86,7 +93,8 @@
       <option name="presentableId" value="Default" />
       <updated>1729371915882</updated>
       <workItem from="1729371918130" duration="30474000" />
-      <workItem from="1729440337777" duration="3377000" />
+      <workItem from="1729440337777" duration="6362000" />
+      <workItem from="1729466277108" duration="4261000" />
     </task>
     <servers />
   </component>

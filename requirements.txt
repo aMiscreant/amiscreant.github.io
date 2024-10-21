@@ -1,0 +1,7 @@
+markdown~=3.7
+Pillow~=10.4.0
+bandit~=1.7.10
+flake8~=7.1.1
+cryptography~=43.0.3
+beautifulsoup4~=4.12.3
+invoke~=2.2.0
