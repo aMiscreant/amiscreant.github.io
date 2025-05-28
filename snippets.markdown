@@ -16,7 +16,7 @@ permalink: /snippets/
 <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin">
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 
-
+<link rel="icon" href="/favicon.png" type="image/png">
 
 <h2>Snippets</h2>
 

@@ -18,6 +18,7 @@ layout: home
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 
 <link rel="stylesheet" href="{{ 'css/custom.css' | relative_url }}">
+<link rel="shortcut icon" type="image/png" href="favicon.png">
 
 <div class="terminal">
   <div class="output" id="terminal-output">

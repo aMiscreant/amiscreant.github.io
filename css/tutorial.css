@@ -1,0 +1,73 @@
+/* Clean terminal block with no borders or white boxes */
+.terminal-block {
+    background-color: #111;
+    color: #ccc;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    padding: 1rem;
+    margin: 2rem 0;
+    border: none;
+    border-radius: 0;
+    overflow-x: auto;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    box-shadow: none;
+}
+
+/* Eliminate default <pre> and <code> styling */
+.terminal-block pre,
+.terminal-block code {
+    all: unset;
+    display: block;
+    white-space: pre;
+}
+
+/* Prompt color */
+.terminal-block .prompt {
+    color: #00ff99;
+    font-weight: bold;
+}
+
+/* Blinking cursor */
+.blinking-cursor::after {
+    content: "_";
+    animation: blink 1s steps(1, start) infinite;
+    color: #33ff88;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    50.01%, 100% { opacity: 0; }
+}
+
+.prompt-user {
+    color: #ff5555; /* red-ish for root */
+    font-weight: bold;
+}
+
+.prompt-host {
+    color: #33ccff; /* cyan for NullOrigin */
+    font-weight: bold;
+}
+
+body {
+    background: linear-gradient(120deg, #0d0d0d, #1a1a1a);
+    background-attachment: fixed;
+    color: #ccc;
+}
+
+/* Top-left logo (very faint background texture) */
+body::before {
+    content: "";
+    position: fixed;
+    top: -1rem;
+    left: 2rem;
+    width: 100px;
+    height: 100px;
+    background: url('/NullOrigin.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0.20;
+    z-index: -1;
+    pointer-events: none;
+}
+

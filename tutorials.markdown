@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
+title: Tutorials
+permalink: /tutorials/
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -18,12 +18,12 @@ permalink: /projects/
 
 <link rel="icon" href="/favicon.png" type="image/png">
 
-<h2>My Projects</h2>
+<h2>Tutorials</h2>
 
 <ul>
-  {% for project in site.projects %}
+  {% for tutorial in site.tutorials %}
     <li>
-      <a href="{{ project.url }}">{{ project.title }}</a>: <b>{{ project.description }}</b>
+      <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
     </li>
   {% endfor %}
 </ul>

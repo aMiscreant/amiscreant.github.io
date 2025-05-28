@@ -16,6 +16,8 @@ permalink: /contact/
 <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin">
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 
+<link rel="icon" href="/favicon.png" type="image/png">
+
 I’d love to hear from you! Whether you have questions about my projects, want to collaborate, or simply want to chat about Python programming, feel free to reach out.
 
 ### Email

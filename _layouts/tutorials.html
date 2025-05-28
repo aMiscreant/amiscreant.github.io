@@ -1,7 +1,6 @@
+<!-- _layouts/tutorials.html -->
 ---
-layout: page
-title: Projects
-permalink: /projects/
+layout: default
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -16,20 +15,13 @@ permalink: /projects/
 <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin">
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 
-<link rel="icon" href="/favicon.png" type="image/png">
 
-<h2>My Projects</h2>
+<article>
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.description }}</p>
+  <p><strong>Date:</strong> {{ page.date | date: "%B %d, %Y" }}</p>
 
-<ul>
-  {% for project in site.projects %}
-    <li>
-      <a href="{{ project.url }}">{{ project.title }}</a>: <b>{{ project.description }}</b>
-    </li>
-  {% endfor %}
-</ul>
-
-<style>
-  footer {
-    display: none;
-  }
-</style>
+  <div class="tutorial-content">
+    {{ content }}
+  </div>
+</article>

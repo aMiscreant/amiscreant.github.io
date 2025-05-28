@@ -9,7 +9,7 @@
 # These are used to personalize your new site. You can create any custom
 # variable you would like, and they will be accessible in the templates.
 
-title: PyScriptsHub
+title: NullOrigin
 email: aMiscreant@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   "Welcome to PyScriptsHub, your hub for innovative Python 
@@ -60,4 +60,6 @@ collections:
   projects:
     output: true
   snippets:
+    output: true
+  tutorials:
     output: true
