@@ -223,27 +223,6 @@ Allows SSH connections only on LAN interface at port 666, while rejecting any SS
 Restricts SSH access to internal network and non-standard port for better security.
 
 # _______________________________________________________________________________________________________________________________________________________________
-## Drop Invalid Packets Firewall Rule
-<div class="terminal-block">
-  <pre><code>
-<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci add firewall rule
-<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set firewall.@rule[-1].name='Drop Invalid Packets'
-<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set firewall.@rule[-1].src='*'
-<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set firewall.@rule[-1].proto='all'
-<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set firewall.@rule[-1].extra='-m conntrack --ctstate INVALID'
-<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set firewall.@rule[-1].target='DROP'
-<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci commit firewall
-<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> /etc/init.d/firewall restart<span class="blinking-cursor"></span>
-</code></pre>
-</div>
-
-# Description
-Drops all invalid network packets detected by connection tracking.
-
-# Effect 
-Prevents malformed or suspicious packets from passing through.
-
-# _______________________________________________________________________________________________________________________________________________________________
 ## Enable SYN Flood Protection
 <div class="terminal-block">
   <pre><code>
@@ -328,6 +307,91 @@ Limits the maximum HTTP requests per connection and maximum simultaneous connect
 
 # Effect 
 Helps mitigate DoS by limiting server resource usage.
+
+# _______________________________________________________________________________________________________________________________________________________________
+## Drop Invalid Packets Firewall Rule [WARNING] 
+<div class="terminal-block">
+  <pre><code>
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci add firewall rule
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set firewall.@rule[-1].name='Drop Invalid Packets'
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set firewall.@rule[-1].src='*'
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set firewall.@rule[-1].proto='all'
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set firewall.@rule[-1].extra='-m conntrack --ctstate INVALID'
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set firewall.@rule[-1].target='DROP'
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci commit firewall
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> /etc/init.d/firewall restart<span class="blinking-cursor"></span>
+</code></pre>
+</div>
+
+# Description
+Drops all invalid network packets detected by connection tracking.
+
+# Effect 
+Prevents malformed or suspicious packets from passing through.
+
+# NOTE: You may lock yourself out even with white listing practices
+
+# _______________________________________________________________________________________________________________________________________________________________
+## Drop Invalid Packets from WAN Only
+<div class="terminal-block">
+  <pre><code>
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci add firewall rule
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set firewall.@rule[-1].name='Drop Invalid from WAN Only'
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set firewall.@rule[-1].src='wan'
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set firewall.@rule[-1].proto='all'
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set firewall.@rule[-1].extra='-m conntrack --ctstate INVALID'
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set firewall.@rule[-1].target='DROP'
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci commit firewall
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> /etc/init.d/firewall restart<span class="blinking-cursor"></span>
+</code></pre>
+</div>
+
+# Description
+This rule targets only invalid connection states on the WAN interface, dropping suspicious packets without affecting internal (LAN) services like LuCI.
+
+# Effect 
+Prevents malformed or spoofed packets from entering via WAN without impacting local services, unlike global rules which may cause issues on LAN.
+
+# _______________________________________________________________________________________________________________________________________________________________
+## Encrypted DNS via DNSCrypt-Proxy (Recommended)
+<div class="terminal-block">
+  <pre><code>
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> opkg update
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> opkg install dnscrypt-proxy2
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> 
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set dhcp.@dnsmasq[0].noresolv='1'
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set dhcp.@dnsmasq[0].server='127.0.0.1#5053'
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci commit dhcp
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> /etc/init.d/dnsmasq restart
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> /etc/init.d/dnscrypt-proxy restart
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> /etc/init.d/dnscrypt-proxy enable
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> # Verification
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> dig +short openwrt.org @127.0.0.1 -p 5053<span class="blinking-cursor"></span>
+</code></pre>
+</div>
+
+# Description
+Installs and configures DNSCrypt-Proxy v2, allowing DNS queries to be sent over encrypted channels. Offers provider customization, IP filtering, and anonymization.
+
+# Effect 
+Prevents DNS leaks and improves privacy by replacing system DNS resolution with secure queries to trusted upstream servers over encrypted channels.
+
+# _______________________________________________________________________________________________________________________________________________________________
+## Encrypted DNS via DoH (HTTPS DNS Proxy)
+<div class="terminal-block">
+  <pre><code> 
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> opkg update
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> opkg install https-dns-proxy luci-app-https-dns-proxy</span>
+</code></pre>
+</div>
+
+# Description
+Installs https-dns-proxy and its LuCI frontend, enabling DNS-over-HTTPS (DoH) with Cloudflare or Quad9 as resolvers.
+
+# Effect 
+Automatically encrypts DNS queries using HTTPS, protecting against DNS spoofing and surveillance without requiring manual config of upstream resolvers.
+
+# _______________________________________________________________________________________________________________________________________________________________
 
 <style>
   footer {
