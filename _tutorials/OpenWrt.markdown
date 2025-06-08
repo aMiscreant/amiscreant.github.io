@@ -4,6 +4,7 @@ title: 🔐 Hardening OpenWrt
 date: 2025-5-28
 description: OpenWrt Hardening Tips
 permalink: /tutorials/OpenWrt/
+category: openwrt
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">

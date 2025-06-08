@@ -17,6 +17,7 @@ permalink: /contact/
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 
 <link rel="icon" href="/favicon.png" type="image/png">
+<link rel="stylesheet" href="{{ 'css/main_pages.css' | relative_url }}">
 
 I’d love to hear from you! Whether you have questions about my projects, want to collaborate, or simply want to chat about Python programming, feel free to reach out.
 

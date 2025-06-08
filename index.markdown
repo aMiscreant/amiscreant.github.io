@@ -19,6 +19,7 @@ layout: home
 
 <link rel="stylesheet" href="{{ 'css/custom.css' | relative_url }}">
 <link rel="shortcut icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="{{ 'css/main_pages.css' | relative_url }}">
 
 <div class="terminal">
   <div class="output" id="terminal-output">

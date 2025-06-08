@@ -1,7 +1,10 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
+title: ESP32c3 Super Mini
+date: 2025-5-29
+description: ESP32c3 Tutorials
+permalink: /tutorials/ESP32c3/
+category: esp32c3
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -15,22 +18,3 @@ permalink: /projects/
 <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
 <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin">
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
-
-<link rel="icon" href="/favicon.png" type="image/png">
-<link rel="stylesheet" href="{{ 'css/main_pages.css' | relative_url }}">
-
-<h2>My Projects</h2>
-
-<ul>
-  {% for project in site.projects %}
-    <li>
-      <a href="{{ project.url }}">{{ project.title }}</a>: <b>{{ project.description }}</b>
-    </li>
-  {% endfor %}
-</ul>
-
-<style>
-  footer {
-    display: none;
-  }
-</style>

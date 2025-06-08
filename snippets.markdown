@@ -17,6 +17,7 @@ permalink: /snippets/
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 
 <link rel="icon" href="/favicon.png" type="image/png">
+<link rel="stylesheet" href="{{ 'css/main_pages.css' | relative_url }}">
 
 <h2>Snippets</h2>
 

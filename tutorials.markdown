@@ -17,14 +17,38 @@ permalink: /tutorials/
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 
 <link rel="icon" href="/favicon.png" type="image/png">
+<link rel="stylesheet" href="{{ 'css/main_pages.css' | relative_url }}">
 
-<h2>Tutorials</h2>
-
+<h2>OpenWrt</h2>
 <ul>
   {% for tutorial in site.tutorials %}
-    <li>
-      <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
-    </li>
+    {% if tutorial.category == "openwrt" %}
+      <li>
+        <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<h3>ESP32c3 Super Mini</h3>
+<ul>
+  {% for tutorial in site.tutorials %}
+    {% if tutorial.category == "esp32c3" %}
+      <li>
+        <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<h3>Linux system hardening</h3>
+<ul>
+  {% for tutorial in site.tutorials %}
+    {% if tutorial.category == "linux" %}
+      <li>
+        <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
+      </li>
+    {% endif %}
   {% endfor %}
 </ul>
 

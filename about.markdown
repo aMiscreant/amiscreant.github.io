@@ -17,6 +17,7 @@ permalink: /about/
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 
 <link rel="icon" href="/favicon.png" type="image/png">
+<link rel="stylesheet" href="{{ 'css/main_pages.css' | relative_url }}">
 
 Welcome to **PyScriptsHub**, a platform dedicated to exploring the vast and exciting world of Python programming. I'm Brandon, a passionate developer and tech enthusiast who thrives on innovation and creativity. My journey into programming began as a curiosity about automating everyday tasks and has since evolved into a commitment to developing impactful applications and tools.
 
