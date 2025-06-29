@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Audio
+title: Images
 date: 2024-10-19
-description: Variety of python scripts.
-permalink: /snippets/python/
+description: Variety of python images scripts.
+permalink: /snippets/python/images
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">

@@ -1,7 +1,9 @@
 ---
 layout: page
-title: Python Snippets
-permalink: /snippets/
+title: Encryption
+date: 2024-10-19
+description: Variety of python encryption scripts.
+permalink: /snippets/python/encryption
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -16,17 +18,30 @@ permalink: /snippets/
 <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin">
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 
-<link rel="icon" href="/favicon.png" type="image/png">
-<link rel="stylesheet" href="{{ 'css/main_pages.css' | relative_url }}">
+## Overview
+Here’s an overview of snippet One. Explain what it does, its features, etc.
 
-<ul>
-  {% for snippet in site.snippets %}
-    <li>
-      <a href="{{ snippet.url }}">{{ snippet.title }}</a>: <b>{{ snippet.description }}</b>
-    </li>
-  {% endfor %}
-</ul>
+## Technologies Used
+- 
+- 
+- 
 
+## Installation
+Instructions for setting up the snippet locally.
+
+## Usage
+How to use the snippet after installation.
+
+<link rel="stylesheet" href="{{ 'css/amiscreant.css' | relative_url }}">
+<div class="highlight-zenburn">
+{% highlight ruby linenos %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+</div>
 <style>
   footer {
     display: none;
