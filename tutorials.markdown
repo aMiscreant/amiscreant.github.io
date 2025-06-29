@@ -30,7 +30,7 @@ permalink: /tutorials/
   {% endfor %}
 </ul>
 
-<h3>ESP32c3 Super Mini</h3>
+<h2>ESP32c3 Super Mini</h2>
 <ul>
   {% for tutorial in site.tutorials %}
     {% if tutorial.category == "esp32c3" %}
@@ -41,10 +41,21 @@ permalink: /tutorials/
   {% endfor %}
 </ul>
 
-<h3>Linux system hardening</h3>
+<h2>Linux system hardening</h2>
 <ul>
   {% for tutorial in site.tutorials %}
     {% if tutorial.category == "linux" %}
+      <li>
+        <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<h2>Proxmark3 Iceman</h2>
+<ul>
+  {% for tutorial in site.tutorials %}
+    {% if tutorial.category == "proxmark" %}
       <li>
         <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
       </li>
