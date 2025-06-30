@@ -70,3 +70,16 @@ permalink: /tutorials/
     {% endif %}
   {% endfor %}
 </ul>
+
+---
+
+<h2>OrangePi Zero 3:</h2>
+<ul>
+  {% for tutorial in site.tutorials %}
+    {% if tutorial.category == "opi3zero" %}
+      <li>
+        <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
