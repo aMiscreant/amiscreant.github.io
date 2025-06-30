@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="esp32c3">
-      <change afterPath="$PROJECT_DIR$/_tutorials/ESP32c3/bluetooth.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_tutorials/ESP32c3/wifi.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_tutorials/ESP32c3/wifi/wifi_sniffer.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/copy-to-clipboard.js" afterDir="false" />
+    <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="clean up">
+      <change afterPath="$PROJECT_DIR$/notes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_tutorials/esp32c3.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_tutorials/ESP32c3/wifi/stealth_dropper.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/tutorial.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/tutorial.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/about.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/index.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/validate_content.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/validate_content.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -73,6 +72,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/_layouts" />
       <recent name="C:\Users\Brandon\PycharmProjects\amiscreant.github.io" />
@@ -165,7 +165,39 @@
       <option name="project" value="LOCAL" />
       <updated>1751169193507</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="esp32c3">
+      <option name="closed" value="true" />
+      <created>1751246453437</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1751246453437</updated>
+    </task>
+    <task id="LOCAL-00010" summary="esp32c3">
+      <option name="closed" value="true" />
+      <created>1751246476287</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1751246476287</updated>
+    </task>
+    <task id="LOCAL-00011" summary="clean up">
+      <option name="closed" value="true" />
+      <created>1751262344551</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1751262344551</updated>
+    </task>
+    <task id="LOCAL-00012" summary="clean up">
+      <option name="closed" value="true" />
+      <created>1751263453597</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1751263453597</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +207,7 @@
     <MESSAGE value="Updates" />
     <MESSAGE value="PM3" />
     <MESSAGE value="esp32c3" />
-    <option name="LAST_COMMIT_MESSAGE" value="esp32c3" />
+    <MESSAGE value="clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up" />
   </component>
 </project>

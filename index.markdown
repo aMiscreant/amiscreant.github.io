@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
         '',
         'CONNECTING...',
         '',
-        'Connected to: amiscreantghj4hjka1.onion',
+        'Connected to: amiscreantxgdfjesweo.onion',
         '',
         'miscreant@tormail.onion> help',
         '   Commands:',

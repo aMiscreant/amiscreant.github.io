@@ -2,6 +2,7 @@ from invoke import task
 
 @task
 def validate(c):
+    print("Validating content...")
     c.run("python scripts/validate_content.py")
 
 @task
