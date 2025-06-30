@@ -19,6 +19,10 @@ permalink: /snippets/
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 
+---
+
+### Categories:
+
 <ul>
   {% for snippet in site.snippets %}
     <li>

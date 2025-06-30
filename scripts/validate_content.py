@@ -29,7 +29,7 @@ def check_sensitive_info(content):
         (r'(?i)\b(?:AKIA|ASIA|AIza)[A-Z0-9]{16}\b', 'AWS API Key'),
         (r'(?i)\bghp_[A-Za-z0-9]{36}\b', 'GitHub Token'),
         (r'(?i)\bAIza[0-9A-Za-z]{35}\b', 'Google API Key'),
-        (r'\b[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\b', 'UUID'),
+        (r'\b[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\b', 'UID'),
         (r'(?i)(-----BEGIN [A-Z ]+ PRIVATE KEY-----.*?-----END [A-Z ]+ PRIVATE KEY-----)', 'Private Key'),
         (r'(?i)\beyJ[a-zA-Z0-9_-]+\.([a-zA-Z0-9_-]+)\.([a-zA-Z0-9_-]+)\b', 'JWT Token'),
         (r'\b1[1-9A-HJ-NP-Za-km-z]{25,34}\b', 'Bitcoin Address'),

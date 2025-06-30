@@ -19,7 +19,9 @@ permalink: /tutorials/
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 
-<h2>OpenWrt</h2>
+---
+
+<h2>OpenWrt:</h2>
 <ul>
   {% for tutorial in site.tutorials %}
     {% if tutorial.category == "openwrt" %}
@@ -30,7 +32,9 @@ permalink: /tutorials/
   {% endfor %}
 </ul>
 
-<h2>ESP32c3 Super Mini</h2>
+---
+
+<h2>ESP32c3 Super Mini:</h2>
 <ul>
   {% for tutorial in site.tutorials %}
     {% if tutorial.category == "esp32c3" %}
@@ -41,7 +45,9 @@ permalink: /tutorials/
   {% endfor %}
 </ul>
 
-<h2>Linux system hardening</h2>
+---
+
+<h2>Linux system hardening:</h2>
 <ul>
   {% for tutorial in site.tutorials %}
     {% if tutorial.category == "linux" %}
@@ -52,7 +58,9 @@ permalink: /tutorials/
   {% endfor %}
 </ul>
 
-<h2>Proxmark3 Iceman</h2>
+---
+
+<h2>Proxmark3 Iceman:</h2>
 <ul>
   {% for tutorial in site.tutorials %}
     {% if tutorial.category == "proxmark" %}

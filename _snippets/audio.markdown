@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Audio
+title: Audio Tools
 date: 2024-10-19
-description: Variety of python audio scripts.
+description: A diverse collection of Python scripts designed to manipulate, process, and analyze audio data. From sound effects to voice processing, these scripts are perfect for any audio-related project.
 permalink: /snippets/python/audio
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">

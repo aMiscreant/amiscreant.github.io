@@ -19,6 +19,8 @@ permalink: /projects/
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 
+---
+
 <h2>My Projects</h2>
 
 <ul>

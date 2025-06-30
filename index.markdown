@@ -20,6 +20,8 @@ layout: home
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 
+---
+
 <div class="terminal">
   <div class="output" id="terminal-output">
     <!-- Command outputs will appear here -->
