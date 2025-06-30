@@ -26,6 +26,7 @@ copy_to_clipboard: true
 
 # Wi-Fi Sniffer on ESP32c3 - Code Documentation Overview:
 
+
 [Full Source Code Available Here](https://github.com/aMiscreant/ESP32c3-WiFi-Scipts/blob/main/sniffer.c)
 
 ### This program demonstrates a Wi-Fi sniffer running on an ESP32, capable of detecting Wi-Fi networks (beacon frames) and data frames in promiscuous mode. The program cycles through Wi-Fi channels, processes packets, and extracts SSID and MAC address details, filtering out duplicates. The sniffer provides real-time Wi-Fi network activity and maintains a list of previously seen MAC addresses to avoid redundant reporting. Key Features:
