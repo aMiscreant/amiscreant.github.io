@@ -1,11 +1,12 @@
 ---
 layout: page
-title: 🌐 ESP32c3 Super Mini Bluetooth Tutorials
+title: 🔐 User Hardening Scripts
 date: 2025-5-29
-description: ESP32c3 Bluetooth Tutorials
-permalink: /tutorials/ESP32c3/wifi
-category: esp32c3
-subcategory: bluetooth
+description: Secure your system by implementing strict user management policies, including sudoer privileges and account lockdowns. These scripts make user hardening efficient and automated.
+permalink: /tutorials/Linux/HardeningScripts/scripts
+category: linux
+subcategory: HardeningScripts
+copy_to_clipboard: true
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -21,16 +22,5 @@ subcategory: bluetooth
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
+<script src="{{ 'assets/js/copy-to-clipboard.js' | relative_url }}"></script>
 
-## Overview
-
-## 
-
-# _______________________________________________________________________________________________________________________________________________________________
-
-
-<style>
-  footer {
-    display: none;
-  }
-</style>

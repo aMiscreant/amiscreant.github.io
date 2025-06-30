@@ -1,11 +1,12 @@
 ---
 layout: page
-title: 🌐 ESP32c3 Super Mini Bluetooth Tutorials
+title: ⚠️ Log Cleanup
 date: 2025-5-29
-description: ESP32c3 Bluetooth Tutorials
-permalink: /tutorials/ESP32c3/wifi
-category: esp32c3
-subcategory: bluetooth
+description: Ensure your system logs and activities are not tampered with by implementing logger dropper scripts that help you track and remove traces of suspicious actions.
+permalink: /tutorials/Linux/CleanLogs/scripts
+category: linux
+subcategory: CleanLogs
+copy_to_clipboard: true
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -21,16 +22,5 @@ subcategory: bluetooth
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
+<script src="{{ 'assets/js/copy-to-clipboard.js' | relative_url }}"></script>
 
-## Overview
-
-## 
-
-# _______________________________________________________________________________________________________________________________________________________________
-
-
-<style>
-  footer {
-    display: none;
-  }
-</style>

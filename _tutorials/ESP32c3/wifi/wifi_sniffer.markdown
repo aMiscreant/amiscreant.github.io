@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ESP32c3 WiFi Sniffer
+title: 🌐 ESP32c3 WiFi Sniffer
 date: 2025-5-29
 description: ESP32c3 WiFi Tutorials
 permalink: /tutorials/ESP32c3/wifi/wifi_sniffer

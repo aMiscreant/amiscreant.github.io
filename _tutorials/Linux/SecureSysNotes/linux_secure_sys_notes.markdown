@@ -1,11 +1,12 @@
 ---
 layout: page
-title: 🌐 ESP32c3 Super Mini Bluetooth Tutorials
+title: 🧳 Secure System Notes & Configurations
 date: 2025-5-29
-description: ESP32c3 Bluetooth Tutorials
-permalink: /tutorials/ESP32c3/wifi
-category: esp32c3
-subcategory: bluetooth
+description: Centralized security notes and configurations to keep your system security approach documented and organized.
+permalink: /tutorials/Linux/SecureSysNotes/scripts
+category: linux
+subcategory: SecureSysNotes
+copy_to_clipboard: true
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -21,16 +22,4 @@ subcategory: bluetooth
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
-
-## Overview
-
-## 
-
-# _______________________________________________________________________________________________________________________________________________________________
-
-
-<style>
-  footer {
-    display: none;
-  }
-</style>
+<script src="{{ 'assets/js/copy-to-clipboard.js' | relative_url }}"></script>

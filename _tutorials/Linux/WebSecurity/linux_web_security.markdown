@@ -1,11 +1,12 @@
 ---
 layout: page
-title: 🌐 ESP32c3 Super Mini Bluetooth Tutorials
+title: 🔒 Web Security & Deployment
 date: 2025-5-29
-description: ESP32c3 Bluetooth Tutorials
-permalink: /tutorials/ESP32c3/wifi
-category: esp32c3
-subcategory: bluetooth
+description: Secure your web servers, applications, and user access with automation scripts focused on hardening deployment and configuring secure environments.
+permalink: /tutorials/Linux/WebSecurity/scripts
+category: linux
+subcategory: WebSecurity
+copy_to_clipboard: true
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -21,16 +22,4 @@ subcategory: bluetooth
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
-
-## Overview
-
-## 
-
-# _______________________________________________________________________________________________________________________________________________________________
-
-
-<style>
-  footer {
-    display: none;
-  }
-</style>
+<script src="{{ 'assets/js/copy-to-clipboard.js' | relative_url }}"></script>
