@@ -27,7 +27,7 @@ OpenWrt System Configuration and Firewall Hardening Commands Explained
 
 # _______________________________________________________________________________________________________________________________________________________________
 ## Configure uHTTPd to Listen on a Specific IP
-<link rel="stylesheet" href="{{ 'css/tutorial.css' | relative_url }}">
+
 <div class="terminal-block">
   <pre><code>
 <span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> uci set uhttpd.main.listen_http='192.168.66.6:80'

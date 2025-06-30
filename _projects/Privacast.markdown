@@ -2,7 +2,7 @@
 layout: page
 title: Privacast
 date: 2024-10-19
-description: Privacast Encrypted Chat & Posts.
+description: Privacast Encrypted Chat.
 permalink: /projects/Privacast/
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">

@@ -12,13 +12,13 @@
 title: NullOrigin
 email: aMiscreant@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  "Welcome to PyScriptsHub, your hub for innovative Python 
-  projects and tools! Whether you're into automating tasks, 
-  developing games, building secure applications, 
-  or experimenting with new technologies, 
-  we have a range of resources to help you dive deeper into the world of Python. 
-  Explore our collection of scripts, tutorials, and open-source projects, 
-  designed for both beginners and advanced coders."
+  "Welcome to NullOrigin, the digital playground for curious miscreants and 
+  aspiring hackers! Whether you're building covert tools, exploring the depths 
+  of Python, or diving into cutting-edge technologies, you'll find a trove of 
+  scripts, tutorials, and open-source projects to fuel your journey. 
+  From secure communication systems to custom exploits, 
+  our resources cater to both beginners and seasoned coders looking to push boundaries. 
+  Join us in exploring the limitless possibilities of Python, hacking, and beyond."
 baseurl: "" # Leave blank unless you are using a subdirectory
 url: "https://amiscreant.github.io" # Your GitHub Pages URL
 

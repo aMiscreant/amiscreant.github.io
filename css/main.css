@@ -230,3 +230,75 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+.terminal {
+    background-color: #1d1f21;
+    color: #c5c8c6;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    width: 875px;
+    margin: 20px auto;
+    border: 1px solid #4b4b4b;
+}
+
+.output {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.input-line {
+    display: flex;
+    align-items: left;
+}
+
+.prompt {
+    white-space: nowrap;
+}
+
+.cursor {
+    animation: blink 0.7s steps(1) infinite;
+    color: #00FF00;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#typed-input {
+    display: inline-block;
+    white-space: nowrap; /* Keep text from wrapping */
+    margin: 0; /* Remove any default margin/padding */
+    padding: 0; /* Ensure there's no padding inside the typed input */
+}
+
+
+#terminal-output p {
+    margin: 0; /* Prevent extra spacing between lines */
+    display: align; /* Use flex for aligning elements */
+    padding: 0; /* Ensure there's no padding inside the typed input */
+}
+
+.brackets {
+    color: #cdcd23; /* Same color for brackets as terminal text */
+}
+
+.user {
+    color: #974242; /* Pink for 'amiscreant' */
+}
+
+.at {
+    color: #76a3a8; /* Cyan for the '@' */
+}
+
+.host {
+    color: #68a572; /* Green for 'blackbox' */
+}
+
+/* Custom Scrollbar */
+.highlight pre::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}

@@ -25,8 +25,6 @@ This detailed tutorial walks you through using the Proxmark with IceMan firmware
 ## Proxmark IceMan Firmware Tutorial
 Dump and Clone MIFARE Classic and Magic Gen2 Cards
 
-<link rel="stylesheet" href="{{ 'css/tutorial.css' | relative_url }}">
-
 # 🚀 Tutorial #1 — Dumping Data from CARD A
 
 Let’s first read the data from CARD A (UID).

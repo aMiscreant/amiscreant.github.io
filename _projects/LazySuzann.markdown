@@ -1,9 +1,9 @@
 ---
 layout: page
-title: TimeSaverX
+title: LazySuzann
 date: 2024-10-19
-description: Efficient Scripts for Daily Automation.
-permalink: /projects/TimeSaverX/
+description: is a modular and highly customizable pentesting suite designed for both seasoned professionals and hobbyists
+permalink: /projects/LazySuzann/
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">

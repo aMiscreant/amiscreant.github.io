@@ -1,9 +1,9 @@
 ---
 layout: page
-title: OnyxNet
+title: TorMail
 date: 2024-10-19
-description: Tor Hidden Services & Security Tools.
-permalink: /projects/OnyxNet/
+description: TorMail 🧅 is an experimental, ephemeral Tor hidden-service mail system built with Flask, GNUPG, and Stem. It’s designed for private, temporary communication. 
+permalink: /projects/TorMail/
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">

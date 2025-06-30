@@ -17,9 +17,8 @@ layout: home
 <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin">
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 
-<link rel="stylesheet" href="{{ 'css/custom.css' | relative_url }}">
-<link rel="shortcut icon" type="image/png" href="favicon.png">
-<link rel="stylesheet" href="{{ 'css/main_pages.css' | relative_url }}">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 
 <div class="terminal">
   <div class="output" id="terminal-output">
@@ -30,54 +29,76 @@ layout: home
       <span class="brackets">[</span>
       <span class="user">amiscreant</span>
       <span class="at">@</span>
-      <span class="host">blackbox</span>
-      <span class="brackets">]</span>$&nbsp;
+      <span class="host">[blackbox]─[~/NullOrigin]</span>
+      <span class="brackets">]</span>
+      <span class="cursor">|</span> <!-- Blinking cursor -->
     </span>
-    <span id="typed-input"></span><span class="cursor">|</span>
+    <span id="typed-input"></span>
   </div>
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-  const commands = [
-    'source myenv/bin/activate',
-    'python miscreant.py ...',
-    'Loading Config...',
-    'Running analysis...',
-    'Receiving data...',
-  ];
+document.addEventListener("DOMContentLoaded", function() {
+    const commands = [
+        'source .venv/bin/activate',
+        'python null_origin.py -c --token=a54GhhE%Hw3MN',
+        'Receiving authentication...',
+        '',
+        'CONNECTING...',
+        '',
+        'Connected to: amiscreantghj4hjka1.onion',
+        '',
+        'miscreant@tormail.onion> help',
+        '   Commands:',
+        '   gather - System wide credentials',
+        '   upload - Upload logs to server',
+        '   pivot - Pivot Connections',
+        '   spread - Auto PWN',
+        '',
+    ];
 
-  let index = 0;
-  let charIndex = 0;
-  const typingSpeed = 100;  
-  const delayBetweenCommands = 800;
-  const terminalOutput = document.getElementById('terminal-output');
-  const typedInput = document.getElementById('typed-input');
+    let index = 0;
+    let charIndex = 0;
+    const typingSpeed = 85;
+    const delayBetweenCommands = 800;
+    const terminalOutput = document.getElementById('terminal-output');
+    const typedInput = document.getElementById('typed-input');
 
-  function typeCommand() {
-    const command = commands[index];
-    
-    if (charIndex < command.length) {
-      typedInput.innerHTML += command[charIndex];
-      charIndex++;
-      setTimeout(typeCommand, typingSpeed);
-    } else {
-      const outputLine = document.createElement('p');
-      outputLine.innerHTML = `
-        <span class="brackets">[</span>
-        <span class="user">amiscreant</span>
-        <span class="at">@</span>
-        <span class="host">blackbox</span>
-        <span class="brackets">]</span>$ ${command}`;
-      terminalOutput.appendChild(outputLine);
-      typedInput.innerHTML = ''; 
-      charIndex = 0;
-      index++;
-      if (index < commands.length) {
-        setTimeout(typeCommand, delayBetweenCommands);
-      }
+    function typeCommand() {
+        const command = commands[index];
+
+        if (charIndex < command.length) {
+            typedInput.innerHTML += command[charIndex];
+            charIndex++;
+            setTimeout(typeCommand, typingSpeed);
+        } else {
+            const outputLine = document.createElement('p');
+            outputLine.innerHTML = `
+                <span class="brackets">[</span>
+                <span class="user">amiscreant</span>
+                <span class="at">@</span>
+                <span class="host">[blackbox]─[~/NullOrigin]</span>
+                <span class="brackets">]</span>$ ${command}`;
+            terminalOutput.appendChild(outputLine);
+            typedInput.innerHTML = '';
+            charIndex = 0;
+            index++;
+
+            if (index < commands.length) {
+                setTimeout(typeCommand, delayBetweenCommands);
+            } else {
+                const finalPrompt = document.createElement('p');
+                finalPrompt.innerHTML = `
+                    <span class="brackets">[</span>
+                    <span class="user">amiscreant</span>
+                    <span class="at">@</span>
+                    <span class="host">[blackbox]─[~/NullOrigin]</span>
+                    <span class="brackets">]</span>$`;
+                terminalOutput.appendChild(finalPrompt);
+            }
+        }
     }
-  }
 
-  typeCommand();
+    typeCommand();
 });
+</script>

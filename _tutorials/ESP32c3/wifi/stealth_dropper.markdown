@@ -30,8 +30,6 @@ In the world of wireless security and covert communication, stealth is king. Tod
 
 # _______________________________________________________________________________________________________________________________________________________________
 
-<link rel="stylesheet" href="{{ 'css/tutorial.css' | relative_url }}">
-
 ## Why Does This Matter?
 
 Here’s why this technique is useful:

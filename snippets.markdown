@@ -17,7 +17,7 @@ permalink: /snippets/
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 
 <link rel="icon" href="/favicon.png" type="image/png">
-<link rel="stylesheet" href="{{ 'css/main_pages.css' | relative_url }}">
+<link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 
 <ul>
   {% for snippet in site.snippets %}
@@ -27,8 +27,3 @@ permalink: /snippets/
   {% endfor %}
 </ul>
 
-<style>
-  footer {
-    display: none;
-  }
-</style>
