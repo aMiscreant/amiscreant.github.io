@@ -286,16 +286,24 @@ Indicates how fast the entire attack completed.
 
 When you run:
 
-root💀NullOrigin:~# hf mf csetuid -u E48D1605
+<div class="terminal-block">
+  <pre><code>
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> hf mf csetuid -u E48D1605
+  </code></pre>
+</div>
 
 
 Here’s what happens:
 
-- root💀NullOrigin:# [+] old block 0... E362411FDF0804006263646566676869
-- root💀NullOrigin:# [+] new block 0... E48D16057A0804006263646566676869
-- root💀NullOrigin:# [+] Old UID... E3 62 41 1F
-- root💀NullOrigin:# [+] New UID... E4 8D 16 05 ( verified )
-
+<div class="terminal-block">
+  <pre><code>
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] old block 0... E362411FDF0804006263646566676869
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span>[+] new block 0... E48D16057A0804006263646566676869
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] Old UID... E3 62 41 1F
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] New UID... E4 8D 16 05 ( verified )
+<span class="blinking-cursor"></span>
+  </code></pre>
+</div>
 
 - The hf mf csetuid command **changes the UID (Unique Identifier)** stored on the card to a new value.
 - -u E48D1605 specifies the new UID you want to set.
@@ -353,21 +361,28 @@ Here’s what happens:
 
 When you run:
 
-root💀NullOrigin:~# hf mf dump --ns
-
+<div class="terminal-block">
+  <pre><code>
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> hf mf dump --ns
+  </code></pre>
+</div>
 
 Here’s what’s happening step-by-step:
 
-- root💀NullOrigin:# [=] Using... hf-mf-E48D1605-key.bin
-- root💀NullOrigin:# [+] Loaded binary key file /home/miscreant/hf-mf-E48D1605-key.bin
-- root💀NullOrigin:# [=] Reading sector access bits...
-- root💀NullOrigin:# [=] .................
-- root💀NullOrigin:# [+] Finished reading sector access bits
-- root💀NullOrigin:# [=] Dumping all blocks from card...
-- root💀NullOrigin:# 🕒 Sector... 15 block... 3 ( ok )
-- root💀NullOrigin:# [+] Succeeded in dumping all blocks
-- root💀NullOrigin:~# [+] time: 9 seconds
-
+<div class="terminal-block">
+  <pre><code>
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [=] Using... hf-mf-E48D1605-key.bin
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] Loaded binary key file /home/miscreant/hf-mf-E48D1605-key.bin
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [=] Reading sector access bits...
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [=] .................
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] Finished reading sector access bits
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [=] Dumping all blocks from card...
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> 🕒 Sector... 15 block... 3 ( ok )
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] Succeeded in dumping all blocks
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] time: 9 seconds
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span>
+  </code></pre>
+</div>
 
 - The command loads the previously saved **key file** for authentication.
 - It reads the **sector access bits**, which define permissions and security for each sector.
@@ -414,7 +429,6 @@ Here’s what’s happening step-by-step:
 <span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] Magic capabilities... Gen 4 GDM / USCUID ( ZUID Gen1 Magic Wakeup )
 <span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [=] --- PRNG Information
 <span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] Prng....... weak
-<span class="blinking-cursor"></span>
   </code></pre>
 </div>
 
@@ -424,30 +438,36 @@ Here’s what’s happening step-by-step:
 
 When you run:
 
-root💀NullOrigin:~# hf mf info
-
+<div class="terminal-block">
+  <pre><code>
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> hf mf info
+  </code></pre>
+</div>
 
 Here’s what the output means:
 
-- root💀NullOrigin:# [=] --- ISO14443-a Information ---------------------
-- root💀NullOrigin:# [+] UID: E4 8D 16 05
-- root💀NullOrigin:# [+] ATQA: 00 04
-- root💀NullOrigin:# [+] SAK: 08 [2]
-- root💀NullOrigin:# [=] --- Keys Information
-- root💀NullOrigin:# [+] loaded 2 user keys
-- root💀NullOrigin:# [+] loaded 61 hardcoded keys
-- root💀NullOrigin:# [+] Sector 0 key A... FFFFFFFFFFFF
-- root💀NullOrigin:# [+] Sector 0 key B... FFFFFFFFFFFF
-- root💀NullOrigin:# [+] Sector 1 key A... FFFFFFFFFFFF
-- root💀NullOrigin:# [+] Block 0.... E48D16057A0804006263646566676869 | bcdefghi
-- root💀NullOrigin:# [=] --- Fingerprint
-- root💀NullOrigin:# [+] Fudan based card
-- root💀NullOrigin:# [=] --- Magic Tag Information
-- root💀NullOrigin:# [+] Magic capabilities... Gen 1a
-- root💀NullOrigin:# [+] Magic capabilities... Gen 4 GDM / USCUID ( ZUID Gen1 Magic Wakeup )
-- root💀NullOrigin:# [=] --- PRNG Information
-- root💀NullOrigin:# [+] Prng....... weak
-
+<div class="terminal-block">
+  <pre><code>
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [=] --- ISO14443-a Information ---------------------
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] UID: E4 8D 16 05
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] ATQA: 00 04
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] SAK: 08 [2]
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [=] --- Keys Information
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] loaded 2 user keys
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] loaded 61 hardcoded keys
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] Sector 0 key A... FFFFFFFFFFFF
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] Sector 0 key B... FFFFFFFFFFFF
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] Sector 1 key A... FFFFFFFFFFFF
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] Block 0.... E48D16057A0804006263646566676869 | bcdefghi
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [=] --- Fingerprint
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] Fudan based card
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [=] --- Magic Tag Information
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] Magic capabilities... Gen 1a
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] Magic capabilities... Gen 4 GDM / USCUID ( ZUID Gen1 Magic Wakeup )
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [=] --- PRNG Information
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> [+] Prng....... weak
+  </code></pre>
+</div>
 
 - **ISO14443-a Information:** Basic card identifiers
   - **UID:** The card’s unique ID.
@@ -480,9 +500,11 @@ This card supports writing block 0 (the UID block).
 
 Plug in your Proxmark navigate to the directory [/home/miscreant/iceman-proxmark3] and run:
 
-```bash
-root💀NullOrigin:~#./pm3 -p /dev/ttyACM0
-```
+<div class="terminal-block">
+  <pre><code>
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> ./pm3 -p /dev/ttyACM0
+  </code></pre>
+</div>
 
 ### Step 2 — Check Card Info
 
@@ -722,9 +744,11 @@ root💀NullOrigin:~#./pm3 -p /dev/ttyACM0
 
 ### Command
 
-```bash
-hf mf wrbl --blk 0 -d E362411FDF0804006263646566676869
-```
+<div class="terminal-block">
+  <pre><code>
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> hf mf wrbl --blk 0 -d E362411FDF0804006263646566676869
+  </code></pre>
+</div>
 
 ## Detailed Breakdown: What is going on here?
 
@@ -780,25 +804,23 @@ Proxmark3 protects the user from unintentional writes to this critical block by 
 
 ## Forcing the Write
 
-```bash
-hf mf wrbl --blk 0 -d E362411FDF0804006263646566676869 --force
-```
+<div class="terminal-block">
+  <pre><code>
+<span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> hf mf wrbl --blk 0 -d E362411FDF0804006263646566676869 --force
+  </code></pre>
+</div>
 
-    The --force parameter overrides safety checks, allowing writing to protected blocks (like the manufacturer block).
+- The --force parameter overrides safety checks, allowing writing to protected blocks (like the manufacturer block).
+  - Output messages explained:
 
-    Output messages explained:
+        [=] Writing block no 0, key type:A - FFFFFFFFFFFF
+        The card was accessed using the default key FFFFFFFFFFFF for authentication.
 
-[=] Writing block no 0, key type:A - FFFFFFFFFFFF
-
-    The card was accessed using the default key FFFFFFFFFFFF for authentication.
-
-[=] data: E3 62 41 1F DF 08 04 00 62 63 64 65 66 67 68 69
-
-    The exact 16 bytes of data being written to block 0.
-
-[+] Write ( ok )
-
-    The write operation completed successfully.
+        [=] data: E3 62 41 1F DF 08 04 00 62 63 64 65 66 67 68 69
+        The exact 16 bytes of data being written to block 0.
+        [+] Write ( ok )
+  
+        The write operation completed successfully.
 
 <div class="terminal-block">
   <pre><code>

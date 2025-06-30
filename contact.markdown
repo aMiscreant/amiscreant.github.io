@@ -37,6 +37,8 @@ You can securely reach me at: [amiscreant@protonmail.com](_aMiscreant@protonmail
 
 - **Collaboration & Custom Projects**: If you're working on custom encrypted software, building hacking tools, or exploring hardware hacking devices, I’d love to hear from you! I'm open to collaborating on PenTest tools, Tor-based projects, IoT security systems, and much more. Let's push the boundaries of digital security together!
 
+---
+
 ### PGP KEY
 ```g
 -----BEGIN PGP PUBLIC KEY BLOCK-----
