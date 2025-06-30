@@ -18,6 +18,8 @@ category: openwrt
 <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
 <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin">
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 
 ## Overview
 Learn how to harden OpenWrt for maximum privacy and security. This step-by-step guide walks you through securing access, encrypting DNS, firewall tweaks, and advanced privacy configurations for a safer network.

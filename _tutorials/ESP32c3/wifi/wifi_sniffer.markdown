@@ -20,7 +20,8 @@ copy_to_clipboard: true
 <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
 <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin">
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
-<link rel="stylesheet" href="{{ 'css/tutorial.css' | relative_url }}">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 <script src="{{ 'assets/js/copy-to-clipboard.js' | relative_url }}"></script>
 
 

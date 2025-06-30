@@ -18,6 +18,8 @@ category: proxmark
 <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
 <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin">
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 
 ## Overview
 This detailed tutorial walks you through using the Proxmark with IceMan firmware to read data from MIFARE Classic cards and clone it onto Magic Gen2 CUID cards. You’ll learn how to identify card types using IceMan-specific commands and outputs, dump card data, write new UIDs on compatible magic cards, troubleshoot common IceMan errors, and restore original dumps. Ideal for RFID researchers and enthusiasts working with IceMan’s advanced features.

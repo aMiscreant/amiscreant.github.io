@@ -19,6 +19,8 @@ subcategory: wifi
 <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
 <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin">
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 
 ## Overview
 At its core, this project leverages the ESP32-C3’s Wi-Fi hardware to craft covert communication channels by embedding encrypted messages inside 802.11 management frames. Unlike typical Wi-Fi data packets, these frames are less likely to raise suspicion on a monitored network since they don’t follow the usual network traffic patterns.
