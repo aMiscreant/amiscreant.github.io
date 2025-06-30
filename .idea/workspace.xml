@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="proxmark clean up">
-      <change afterPath="$PROJECT_DIR$/_tutorials/Linux/Chroot/linux_chroot.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_tutorials/Linux/CleanLogs/linux_clean_logs.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_tutorials/Linux/HardeningScripts/linux_hardening.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_tutorials/Linux/SecureSysNotes/linux_secure_sys_notes.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_tutorials/Linux/SecureWebManagement/linux_secure_web_management.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_tutorials/Linux/SystemConfiguration/linux_system_configuration.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_tutorials/Linux/USBSecurity/linux_usb_security.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_tutorials/Linux/WebSecurity/linux_web_security.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_tutorials/ESP32c3/bluetooth.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_tutorials/ESP32c3/bluetooth.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_tutorials/ESP32c3/wifi.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_tutorials/ESP32c3/wifi.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_tutorials/ESP32c3/wifi/stealth_dropper.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_tutorials/ESP32c3/wifi/stealth_dropper.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_tutorials/ESP32c3/wifi/wifi_sniffer.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_tutorials/ESP32c3/wifi/wifi_sniffer.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_tutorials/OPI3Zero/TFT/opi3_tft.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorials.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +257,23 @@
       <option name="project" value="LOCAL" />
       <updated>1751311473317</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="proxmark clean up">
+      <option name="closed" value="true" />
+      <created>1751314289237</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1751314289237</updated>
+    </task>
+    <task id="LOCAL-00022" summary="proxmark clean up">
+      <option name="closed" value="true" />
+      <created>1751319289498</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1751319289498</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
