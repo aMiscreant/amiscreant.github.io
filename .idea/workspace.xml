@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="PM3">
+    <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="esp32c3">
+      <change afterPath="$PROJECT_DIR$/_tutorials/ESP32c3/bluetooth.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_tutorials/ESP32c3/wifi.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_tutorials/ESP32c3/wifi/wifi_sniffer.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/copy-to-clipboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_tutorials/esp32c3.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_tutorials/ESP32c3/wifi/stealth_dropper.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/tutorial.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/tutorial.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +38,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/aMiscreant/amiscreant.github.io.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:aMiscreant/amiscreant.github.io.git&quot;,
     &quot;accountId&quot;: &quot;c232fcf1-f336-461c-857a-18b7e22e73bb&quot;
   }
 }</component>
@@ -48,25 +54,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;(root)&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/miscreant/PycharmProjects/amiscreant.github.io&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "(root)",
+    "last_opened_file_path": "/home/miscreant/PycharmProjects/amiscreant.github.io",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/_layouts" />
       <recent name="C:\Users\Brandon\PycharmProjects\amiscreant.github.io" />
       <recent name="C:\Users\Brandon\PycharmProjects\amiscreant.github.io\.github\workflows" />
     </key>
@@ -141,7 +149,23 @@
       <option name="project" value="LOCAL" />
       <updated>1751166881732</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="PM3">
+      <option name="closed" value="true" />
+      <created>1751167194219</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1751167194219</updated>
+    </task>
+    <task id="LOCAL-00008" summary="esp32c3">
+      <option name="closed" value="true" />
+      <created>1751169193507</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1751169193507</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +174,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updates" />
     <MESSAGE value="PM3" />
-    <option name="LAST_COMMIT_MESSAGE" value="PM3" />
+    <MESSAGE value="esp32c3" />
+    <option name="LAST_COMMIT_MESSAGE" value="esp32c3" />
   </component>
 </project>

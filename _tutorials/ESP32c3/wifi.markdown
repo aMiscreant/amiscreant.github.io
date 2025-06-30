@@ -1,10 +1,11 @@
 ---
 layout: page
-title: ESP32c3 Super Mini
+title: ESP32c3 Super Mini WiFi Tutorials
 date: 2025-5-29
-description: ESP32c3 Tutorials
-permalink: /tutorials/ESP32c3/
+description: ESP32c3 WiFi Tutorials
+permalink: /tutorials/ESP32c3/wifi
 category: esp32c3
+subcategory: wifi
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -28,8 +29,6 @@ Paired with a Python listener script (SubrosaServer.py), you get a complete syst
 In the world of wireless security and covert communication, stealth is king. Today, I’m excited to share a new open-source project: ESP32c3StealthDropper — a stealthy, encrypted message dropper built on the ESP32-C3 microcontroller that uses custom Wi-Fi management frames to send and receive hidden messages.
 
 # _______________________________________________________________________________________________________________________________________________________________
-
-<link rel="stylesheet" href="{{ 'css/tutorial.css' | relative_url }}">
 
 ## Why Does This Matter?
 
@@ -85,3 +84,9 @@ Explore the Code
 ---
 
 - Check out the full source and instructions on GitHub: ESP32c3StealthDropper Repository: https://github.com/aMiscreant/ESP32c3StealthDropper
+
+<style>
+  footer {
+    display: none;
+  }
+</style>
