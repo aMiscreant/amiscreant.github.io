@@ -3,7 +3,7 @@ layout: page
 title: 🔐 Hardening OpenWrt
 date: 2025-5-28
 description: OpenWrt Hardening Tips
-permalink: /tutorials/OpenWrt/
+permalink: /tutorials/OpenWrt/hardening
 category: openwrt
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
@@ -27,7 +27,8 @@ Learn how to harden OpenWrt for maximum privacy and security. This step-by-step 
 ## OpenWrt
 OpenWrt System Configuration and Firewall Hardening Commands Explained
 
-# _______________________________________________________________________________________________________________________________________________________________
+___
+
 ## Configure uHTTPd to Listen on a Specific IP
 
 <div class="terminal-block">
@@ -38,6 +39,8 @@ OpenWrt System Configuration and Firewall Hardening Commands Explained
 <span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> /etc/init.d/uhttpd restart<span class="blinking-cursor"></span>
 </code></pre>
 </div>
+
+___
 
 # Description
 Limits the uHTTPd web server to listen only on a specific local IP address (192.168.66.6) for HTTP and HTTPS traffic.
@@ -54,6 +57,8 @@ Restricts LuCI/web interface access to the specific IP/interface, increasing sec
 <span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> /etc/init.d/uhttpd restart<span class="blinking-cursor"></span>
 </code></pre>
 </div>
+
+___
 
 # Description
 Deletes the HTTP listen configuration to possibly disable unencrypted HTTP access.
@@ -77,6 +82,8 @@ HTTP access might be disabled, forcing HTTPS only.
 </code></pre>
 </div>
 
+___
+
 # Description
 Blocks WAN (external) access to ports 80 and 443, which are typically used by LuCI (web UI).
 
@@ -95,6 +102,8 @@ Prevents remote access to the router’s web interface for security.
 <span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> /etc/init.d/network restart<span class="blinking-cursor"></span>
 </code></pre>
 </div>
+
+___
 
 # Description
 Disables IPv6 support on LAN and WAN interfaces.
@@ -115,6 +124,8 @@ Prevents IPv6 traffic to avoid possible IPv6 attack vectors or misconfigurations
 </code></pre>
 </div>
 
+___
+
 # Description
 Stops devices from receiving IPv6 addresses via DHCPv6, router advertisements, and disables Neighbor Discovery Protocol.
 
@@ -130,6 +141,8 @@ Further ensures IPv6 is fully disabled on the local network.
 <span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> /etc/init.d/firewall restart<span class="blinking-cursor"></span>
 </code></pre>
 </div>
+
+___
 
 # Description
 Disables IPv6 support in the firewall’s default configuration
@@ -152,6 +165,8 @@ Prevents firewall from handling IPv6 packets.
 </code></pre>
 </div>
 
+___
+
 # Description
 Drops all IPv6 packets regardless of source.
 
@@ -173,6 +188,8 @@ Fully blocks IPv6 traffic on the device for security or simplicity
 </code></pre>
 </div>
 
+___
+
 # Description
 This disables IPv6 support at the kernel level for all interfaces, including lo (loopback), ensuring that no IPv6 functionality is exposed — even if some services or configs attempt to re-enable it.
 
@@ -189,6 +206,8 @@ To prevent IPv6 modules from loading (if your system supports it)
 <span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> service system restart<span class="blinking-cursor"></span>
 </code></pre>
 </div>
+
+___
 
 # Description
 Ensures that a login prompt appears on the device’s serial or physical console (TTY). This setting is enabled by default on OpenWrt, and the system’s inittab already points to /usr/libexec/login.sh, which enforces password-based login if a password is set for the root account.
@@ -219,6 +238,8 @@ With a root password set, console access requires authentication. If the root ac
 </code></pre>
 </div>
 
+___
+
 # Description
 Allows SSH connections only on LAN interface at port 666, while rejecting any SSH attempts on WAN
 
@@ -234,6 +255,8 @@ Restricts SSH access to internal network and non-standard port for better securi
 <span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> /etc/init.d/firewall restart<span class="blinking-cursor"></span>
 </code></pre>
 </div>
+
+___
 
 # Description
 Enables protection against SYN flood Denial-of-Service attacks.
@@ -272,6 +295,8 @@ Helps mitigate some types of DoS attacks.
 </code></pre>
 </div>
 
+___
+
 # Description
 Only allows HTTPS LuCI access from specified LAN IP addresses, rejects all others.
 
@@ -287,6 +312,8 @@ Strict control of who can access the router’s web UI locally
 <span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> opkg remove miniupnpd luci-app-upnp<span class="blinking-cursor"></span>
 </code></pre>
 </div>
+
+___
 
 # Description
 Stops, disables, and removes Universal Plug and Play service and its LuCI interface.
@@ -304,6 +331,8 @@ Eliminates UPnP vulnerabilities that could open ports automatically.
 <span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> /etc/init.d/uhttpd restart<span class="blinking-cursor"></span>
 </code></pre>
 </div>
+
+___
 
 # Description
 Limits the maximum HTTP requests per connection and maximum simultaneous connections.
@@ -325,6 +354,8 @@ Helps mitigate DoS by limiting server resource usage.
 <span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> /etc/init.d/firewall restart<span class="blinking-cursor"></span>
 </code></pre>
 </div>
+
+___
 
 # Description
 Drops all invalid network packets detected by connection tracking.
@@ -348,6 +379,8 @@ Prevents malformed or suspicious packets from passing through.
 <span class="prompt"><span class="prompt-user">root</span>💀<span class="prompt-host">NullOrigin</span>:~#</span> /etc/init.d/firewall restart<span class="blinking-cursor"></span>
 </code></pre>
 </div>
+
+___
 
 # Description
 This rule targets only invalid connection states on the WAN interface, dropping suspicious packets without affecting internal (LAN) services like LuCI.
@@ -373,6 +406,8 @@ Prevents malformed or spoofed packets from entering via WAN without impacting lo
 </code></pre>
 </div>
 
+___
+
 # Description
 Installs and configures DNSCrypt-Proxy v2, allowing DNS queries to be sent over encrypted channels. Offers provider customization, IP filtering, and anonymization.
 
@@ -388,13 +423,13 @@ Prevents DNS leaks and improves privacy by replacing system DNS resolution with 
 </code></pre>
 </div>
 
+___
+
 # Description
 Installs https-dns-proxy and its LuCI frontend, enabling DNS-over-HTTPS (DoH) with Cloudflare or Quad9 as resolvers.
 
 # Effect 
 Automatically encrypts DNS queries using HTTPS, protecting against DNS spoofing and surveillance without requiring manual config of upstream resolvers.
-
-# _______________________________________________________________________________________________________________________________________________________________
 
 <style>
   footer {
