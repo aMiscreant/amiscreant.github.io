@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="linux secure usb">
-      <change beforePath="$PROJECT_DIR$/_tutorials/Linux/USBSecurity/linux_usb_security.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_tutorials/Linux/USBSecurity/linux_usb_security.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_tutorials/OPI3Zero/Tor/opi3_transparent_proxy.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +296,23 @@
       <option name="project" value="LOCAL" />
       <updated>1751328991623</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="linux secure usb">
+      <option name="closed" value="true" />
+      <created>1751329308958</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1751329308958</updated>
+    </task>
+    <task id="LOCAL-00027" summary="linux secure usb">
+      <option name="closed" value="true" />
+      <created>1751329313401</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1751329313401</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
