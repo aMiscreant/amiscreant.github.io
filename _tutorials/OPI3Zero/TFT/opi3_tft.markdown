@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 💻 OrangePi Zero 3 - TFT Tutorial
+title: 💻 TFT Tutorial
 date: 2025-5-29
 description: Prevent unauthorized USB devices from compromising your system with defense mechanisms and whitelisting scripts.
 permalink: /tutorials/OPI3Zero/TFT/TFT_tutorial

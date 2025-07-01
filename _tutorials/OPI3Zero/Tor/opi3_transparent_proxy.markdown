@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 💻 OrangePi Zero 3 - Transparent Proxy
+title: 💻 Transparent Proxy
 date: 2025-5-29
 description: This script configures Linux iptables rules to route all outbound TCP traffic transparently through Tor
-permalink: /tutorials/OPI3Zero/Tor/transparent_proxy/
+permalink: /tutorials/OPI3Zero/Tor/transparent_proxy
 category: opi3zero
 subcategory: tor
 copy_to_clipboard: true
