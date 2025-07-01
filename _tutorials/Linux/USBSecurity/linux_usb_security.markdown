@@ -23,3 +23,150 @@ copy_to_clipboard: true
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 <script src="{{ 'assets/js/copy-to-clipboard.js' | relative_url }}"></script>
+
+# 🛡️ USBDefense
+
+---
+
+#### A hardened USB defense system for Linux designed to monitor, control, and respond to USB device events in real time using udev rules and shell scripts.
+
+#### This tool protects against unauthorized USB devices, logs all insertions, and can trigger emergency actions like network lockdown or secure wiping if a trusted security key is removed.
+
+---
+
+#### 📂 Directory Structure:
+
+```bash
+usbdefense/
+├── allowlist.txt               # List of allowed USB device serials
+├── rules/
+│   └── 10-usb-guard.rules     # udev rules for USB defense
+└── scripts/
+    ├── usb-allow.sh
+    ├── usb-deny.sh
+    ├── usb-log.sh
+    ├── usb-network-lock.sh
+    └── usb-paranoid-wipe.sh
+
+```
+
+---
+
+#### 🧩 Components
+
+- ✅ allowlist.txt
+
+- A simple text file containing allowed USB device serials, one per line:
+
+```bash
+123456789ABCDEF0
+87654321FEDCBA09
+```
+
+---
+
+### 📜 rules/10-usb-guard.rules
+
+>This udev rules file controls USB behavior:
+> 
+> ✅ Allow listed USB devices
+> 
+> ❌ Deny all unlisted USB storage 
+> 
+> 📝 Log all inserted devices
+> 
+> ☠ - Wipe the system if a specific security key is removed
+
+```bash
+# Allow specific USB devices by serial
+ACTION=="add", SUBSYSTEM=="usb", \
+RUN+="/opt/usbdefense/scripts/usb-allow.sh"
+
+# Deny all unlisted USB storage devices
+ACTION=="add", SUBSYSTEMS=="usb", \
+ENV{ID_USB_DRIVER}=="usb-storage", RUN+="/opt/usbdefense/scripts/usb-deny.sh"
+
+# Log all USB device insertions
+ACTION=="add", SUBSYSTEM=="usb", RUN+="/opt/usbdefense/scripts/usb-log.sh"
+
+# Panic if a security key is removed
+ACTION=="remove", SUBSYSTEMS=="usb", \
+ENV{ID_SERIAL_SHORT}=="YOURYUBIKEYSERIAL", \
+RUN+="/opt/usbdefense/scripts/usb-paranoid-wipe.sh"
+
+```
+
+---
+
+### 🧠 Script Functions
+#### 🔓 usb-allow.sh
+
+>Allows and logs USB devices listed in allowlist.txt.
+
+```bash
+SERIAL=$(udevadm info -q property -n "$DEVNAME" | grep ID_SERIAL_SHORT= | cut -d= -f2)
+if grep -q "$SERIAL" /opt/usbdefense/allowlist.txt; then
+  logger "[usbdefense] Allowed USB: $SERIAL"
+else
+  logger "[usbdefense] UNKNOWN USB: $SERIAL"
+fi
+
+```
+
+---
+
+#### 🚫 usb-deny.sh
+
+>Blocks unauthorized USB storage by unmounting and ejecting the device.
+
+```bash
+DEV=$(basename "$DEVNAME")
+logger "[usbdefense] Unauthorized USB device: $DEV - unmounting"
+umount -l "/dev/$DEV" 2>/dev/null
+eject "/dev/$DEV" 2>/dev/null
+
+---
+
+📄 usb-log.sh
+
+Logs detailed USB event information to /var/log/usb_events.log.
+
+```bash
+logfile="/var/log/usb_events.log"
+{
+    echo "[usbdefense] New USB Inserted:"
+    udevadm info -q all -n "$DEVNAME"
+    echo "-------------------------------------"
+} >> "$logfile"
+
+```
+
+---
+
+#### 📡 usb-network-lock.sh
+
+>Cuts off all network interfaces in response to a USB-based trigger.
+
+```bash
+logger "[usbdefense] Network lockdown triggered due to USB event"
+ip link set eth0 down
+ip link set wlan0 down
+
+```
+
+---
+
+#### 💣 usb-paranoid-wipe.sh
+
+>Emergency wipe if a trusted USB security key is removed.
+
+```bash
+logger "[usbdefense] Security key removed - wiping system"
+sync
+sleep 2
+shred -n 3 -v /dev/mmcblk0
+
+```
+# ⚠️ Use with extreme caution — this script irreversibly wipes the primary storage!
+
+---
