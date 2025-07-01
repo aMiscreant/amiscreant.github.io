@@ -24,6 +24,8 @@ copy_to_clipboard: true
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 <script src="{{ 'assets/js/copy-to-clipboard.js' | relative_url }}"></script>
 
+---
+
 # 🛡️ USBDefense
 
 ---
@@ -167,6 +169,31 @@ sleep 2
 shred -n 3 -v /dev/mmcblk0
 
 ```
-# ⚠️ Use with extreme caution — this script irreversibly wipes the primary storage!
+#### ⚠️ Use with extreme caution — this script irreversibly wipes the primary storage!
+
+---
+
+### 📦 Installation
+
+>Clone or copy the usbdefense folder to /opt/usbdefense
+>
+>Update udev rules:
+
+```bash
+sudo cp /opt/usbdefense/rules/10-usb-guard.rules /etc/udev/rules.d/
+sudo udevadm control --reload-rules && sudo udevadm trigger
+
+```
+
+>Add trusted USB serials to allowlist.txt
+
+---
+
+### 🔐 Suggested Use Cases
+
+>USB intrusion prevention on air-gapped systems
+>Triggering panic responses during physical tampering
+>Logging USB access for forensics and auditing
+>Blocking all external USB storage except approved devices
 
 ---
