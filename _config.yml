@@ -49,6 +49,8 @@ navigation:
     url: /
   - title: About
     url: /about/
+  - title: Arduino
+    url: /arduino/
   - title: Projects
     url: /projects/
   - title: Contact
@@ -57,6 +59,8 @@ navigation:
     url: /tutorials/
 
 collections:
+  arduino:
+    output: true
   projects:
     output: true
   snippets:
