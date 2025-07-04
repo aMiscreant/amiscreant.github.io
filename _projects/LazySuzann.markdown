@@ -20,33 +20,76 @@ permalink: /projects/LazySuzann/
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 
+---
 
-## Overview
-Here’s an overview of Project One. Explain what it does, its features, etc.
+<p>Published: {{ page.published | date: "%a, %b %d, %y" }}</p>
 
-## Technologies Used
-- 
-- 
-- 
+---
 
-## Installation
-Instructions for setting up the project locally.
+#### _A modular and highly customizable pentesting suite designed for both seasoned professionals and hobbyists. With an emphasis on ease of use and flexibility, it provides a set of powerful tools that can be executed with minimal setup. This framework empowers users to quickly assess, exploit, and maintain access to their targets._
 
-## Usage
-How to use the project after installation.
+---
 
-<link rel="stylesheet" href="{{ 'css/amiscreant.css' | relative_url }}">
-<div class="highlight-zenburn">
-{% highlight ruby linenos %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-</div>
-<style>
-  footer {
-    display: none;
-  }
-</style>
+## WiFi:
+
+>#### Description:
+>
+>`Tutorials: _>`
+
+---
+
+## Exploit Hunter:
+
+>#### Description:
+>
+>`Tutorials: _>`
+
+---
+
+## PostX:
+
+>#### Description:
+>
+>`Tutorials: _>`
+
+---
+
+## Payload Forge:
+
+>#### Description:
+>
+>`Tutorials: _>`
+
+---
+
+## Bluetooth Exploiter:
+
+>#### Description:
+>
+>`Tutorials: _>`
+
+---
+
+## SQLPwn Wrapper:
+
+>#### Description:
+>
+>`Tutorials: _>`
+
+---
+
+## System Settings:
+
+>#### Description:
+>
+>`Tutorials: _>`
+
+---
+
+## Logs:
+
+>#### Description:
+>
+>`Tutorials: _>`
+
+---

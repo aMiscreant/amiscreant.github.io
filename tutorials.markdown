@@ -21,19 +21,6 @@ permalink: /tutorials/
 
 ---
 
-<h2>OpenWrt:</h2>
-<ul>
-  {% for tutorial in site.tutorials %}
-    {% if tutorial.category == "openwrt" %}
-      <li>
-        <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
-
----
-
 <h2>ESP32c3 Super Mini:</h2>
 <ul>
   {% for tutorial in site.tutorials %}
@@ -60,10 +47,10 @@ permalink: /tutorials/
 
 ---
 
-<h2>Proxmark3 Iceman:</h2>
+<h2>OpenWrt:</h2>
 <ul>
   {% for tutorial in site.tutorials %}
-    {% if tutorial.category == "proxmark" %}
+    {% if tutorial.category == "openwrt" %}
       <li>
         <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
       </li>
@@ -83,3 +70,29 @@ permalink: /tutorials/
     {% endif %}
   {% endfor %}
 </ul>
+
+---
+<h2>Proxmark3 Iceman:</h2>
+<ul>
+  {% for tutorial in site.tutorials %}
+    {% if tutorial.category == "proxmark" %}
+      <li>
+        <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+---
+<h2>Termux:</h2>
+<ul>
+  {% for tutorial in site.tutorials %}
+    {% if tutorial.category == "termux" %}
+      <li>
+        <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+---

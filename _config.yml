@@ -49,12 +49,15 @@ navigation:
     url: /
   - title: About
     url: /about/
+  - title: Contact
+    url: /contact/
+
   - title: Arduino
     url: /arduino/
   - title: Projects
     url: /projects/
-  - title: Contact
-    url: /contact/
+  - title: Tor
+    url: /tor/
   - title: Tutorials
     url: /tutorials/
 
@@ -66,4 +69,6 @@ collections:
   snippets:
     output: true
   tutorials:
+    output: true
+  tor:
     output: true

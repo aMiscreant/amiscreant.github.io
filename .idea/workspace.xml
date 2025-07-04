@@ -4,9 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="styling updates tz_data">
+    <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="updated about moi">
+      <change afterPath="$PROJECT_DIR$/_layouts/tor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_projects/BLEyeOnU.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_tutorials/Termux/SSH/termux_tor_ssh.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tor.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/about.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_arduino/esp32c3/esp32c3.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/LazySuzann.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/LazySuzann.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/TorMail.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/TorMail.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_tutorials/ESP32c3/wifi/stealth_dropper.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_tutorials/ESP32c3/wifi/wifi_sniffer.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arduino.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/arduino.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/index.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/projects.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorials.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +81,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_tor/hidden_service" />
       <recent name="$PROJECT_DIR$/_arduino/esp32c3" />
+      <recent name="$PROJECT_DIR$/_arduino/wifi" />
       <recent name="$PROJECT_DIR$/_tutorials/Linux/HardeningScripts" />
       <recent name="$PROJECT_DIR$/_tutorials/OpenWRT" />
-      <recent name="$PROJECT_DIR$/scripts" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -369,7 +382,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751441094219</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="updated about moi">
+      <option name="closed" value="true" />
+      <created>1751465914634</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1751465914634</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,6 +409,7 @@
     <MESSAGE value="Secure Web User Management" />
     <MESSAGE value="openwrt ext file sys" />
     <MESSAGE value="styling updates tz_data" />
-    <option name="LAST_COMMIT_MESSAGE" value="styling updates tz_data" />
+    <MESSAGE value="updated about moi" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated about moi" />
   </component>
 </project>

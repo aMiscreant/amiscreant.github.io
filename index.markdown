@@ -48,14 +48,9 @@ document.addEventListener("DOMContentLoaded", function() {
         '',
         'CONNECTING...',
         '',
-        'Connected to: amiscreantxgdfjesweo.onion',
+        'Connected to: amiscreantxgdfer23wrw2adq.onion',
         '',
         'miscreant@tormail.onion> help',
-        '   Commands:',
-        '   gather - System wide credentials',
-        '   upload - Upload logs to server',
-        '   pivot - Pivot Connections',
-        '   spread - Auto PWN',
         '',
     ];
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: TorMail
+title: TorMail  🧅 
 date: 2024-10-19
 description: TorMail 🧅 is an experimental, ephemeral Tor hidden-service mail system built with Flask, GNUPG, and Stem. It’s designed for private, temporary communication. 
 permalink: /projects/TorMail/
@@ -20,32 +20,10 @@ permalink: /projects/TorMail/
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 
-## Overview
-Here’s an overview of Project One. Explain what it does, its features, etc.
+---
 
-## Technologies Used
-- 
-- 
-- 
+<p>Published: {{ page.published | date: "%a, %b %d, %y" }}</p>
+<p>{{ page.description }}</p>
 
-## Installation
-Instructions for setting up the project locally.
+---
 
-## Usage
-How to use the project after installation.
-
-<link rel="stylesheet" href="{{ 'css/amiscreant.css' | relative_url }}">
-<div class="highlight-zenburn">
-{% highlight ruby linenos %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-</div>
-<style>
-  footer {
-    display: none;
-  }
-</style>

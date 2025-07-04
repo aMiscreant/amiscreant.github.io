@@ -1,7 +1,13 @@
 ---
 layout: page
-title: Arduino
-permalink: /arduino/
+title: 📂 Tor - SSH
+published: 2025-07-02
+date: 2025-5-29
+timezone: America/Toronto
+description: Termux Secure SSH
+permalink: /tor/termux/ssh
+category: termux
+subcategory: ssh
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -18,44 +24,6 @@ permalink: /arduino/
 
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
-
----
-
-<h2>ESP32c3:</h2>
-<ul>
-  {% for arduino in site.arduino %}
-    {% if arduino.category == "esp32c3" %}
-      <li>
-        <a href="{{ arduino.url }}">{{ arduino.title }}</a>: <b>{{ arduino.description }}</b>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
-
----
-
-<h2>ESP32-Wroom-32D:</h2>
-<ul>
-  {% for arduino in site.arduino %}
-    {% if arduino.category == "esp32wroom" %}
-      <li>
-        <a href="{{ arduino.url }}">{{ arduino.title }}</a>: <b>{{ arduino.description }}</b>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
-
----
-
-<h2>ESP8266:</h2>
-<ul>
-  {% for arduino in site.arduino %}
-    {% if arduino.category == "esp8266" %}
-      <li>
-        <a href="{{ arduino.url }}">{{ arduino.title }}</a>: <b>{{ arduino.description }}</b>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+<script src="{{ 'assets/js/copy-to-clipboard.js' | relative_url }}"></script>
 
 ---

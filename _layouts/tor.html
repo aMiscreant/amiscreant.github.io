@@ -1,7 +1,6 @@
+<!-- _layouts/tor.html -->
 ---
-layout: page
-title: Projects
-permalink: /projects/
+layout: default
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -16,19 +15,12 @@ permalink: /projects/
 <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin">
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 
-<link rel="icon" href="/favicon.png" type="image/png">
-<link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
+<article>
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.description }}</p>
+  <p><strong>Date:</strong> {{ page.date | date: "%B %d, %Y" }}</p>
 
----
-
-<h2></h2>
-
-<ul>
-  {% for project in site.projects %}
-    <li>
-      <a href="{{ project.url }}">{{ project.title }}</a>: <b>{{ project.description }}</b>
-    </li>
-  {% endfor %}
-</ul>
-
----
+  <div class="tor-content">
+    {{ content }}
+  </div>
+</article>

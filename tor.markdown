@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Arduino
-permalink: /arduino/
+title: Tor
+permalink: /tor/
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -21,12 +21,12 @@ permalink: /arduino/
 
 ---
 
-<h2>ESP32c3:</h2>
+<h2>Tor & Python:</h2>
 <ul>
-  {% for arduino in site.arduino %}
-    {% if arduino.category == "esp32c3" %}
+  {% for tor in site.tor %}
+    {% if tor.category == "python" %}
       <li>
-        <a href="{{ arduino.url }}">{{ arduino.title }}</a>: <b>{{ arduino.description }}</b>
+        <a href="{{ tor.url }}">{{ tor.title }}</a>: <b>{{ tor.description }}</b>
       </li>
     {% endif %}
   {% endfor %}
@@ -34,12 +34,12 @@ permalink: /arduino/
 
 ---
 
-<h2>ESP32-Wroom-32D:</h2>
+<h2>Tor Configurations:</h2>
 <ul>
-  {% for arduino in site.arduino %}
-    {% if arduino.category == "esp32wroom" %}
+  {% for tor in site.tor %}
+    {% if tor.category == "scripts" %}
       <li>
-        <a href="{{ arduino.url }}">{{ arduino.title }}</a>: <b>{{ arduino.description }}</b>
+        <a href="{{ tor.url }}">{{ tor.title }}</a>: <b>{{ tor.description }}</b>
       </li>
     {% endif %}
   {% endfor %}
@@ -47,15 +47,14 @@ permalink: /arduino/
 
 ---
 
-<h2>ESP8266:</h2>
+<h2>Tor Hidden Services:</h2>
 <ul>
-  {% for arduino in site.arduino %}
-    {% if arduino.category == "esp8266" %}
+  {% for tor in site.tor %}
+    {% if tor.category == "hidden_service" %}
       <li>
-        <a href="{{ arduino.url }}">{{ arduino.title }}</a>: <b>{{ arduino.description }}</b>
+        <a href="{{ tor.url }}">{{ tor.title }}</a>: <b>{{ tor.description }}</b>
       </li>
     {% endif %}
   {% endfor %}
-</ul>
 
----
+</ul>
