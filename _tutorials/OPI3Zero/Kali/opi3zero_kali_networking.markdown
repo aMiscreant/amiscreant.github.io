@@ -24,6 +24,12 @@ copy_to_clipboard: true
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 <script src="{{ 'assets/js/copy-to-clipboard.js' | relative_url }}"></script>
 
+
+---
+
+<p>Published: {{ page.published | date: "%a, %b %d, %y" }}</p>
+<p>{{ page.description }}</p>
+
 ---
 
 #### This guide walks through replacing NetworkManager with a manual Wi-Fi configuration on Linux systems, such as Orange Pi or minimal Debian/Ubuntu installations. It covers removing NetworkManager, setting up WPA Supplicant for wireless credentials, configuring `/etc/network/interfaces` for dynamic IP assignment, and optionally enabling a systemd service to bring up Wi-Fi automatically at boot. Ideal for lightweight systems, headless setups, or advanced users who prefer precise control over networking.

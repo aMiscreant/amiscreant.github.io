@@ -22,6 +22,14 @@ subcategory: bluetooth
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 
+
+---
+
+<p>Published: {{ page.published | date: "%a, %b %d, %y" }}</p>
+<p>{{ page.description }}</p>
+
+---
+
 ## Overview
 
 ## 

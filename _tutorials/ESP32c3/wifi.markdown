@@ -22,6 +22,14 @@ subcategory: wifi
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 
+
+---
+
+<p>Published: {{ page.published | date: "%a, %b %d, %y" }}</p>
+<p>{{ page.description }}</p>
+
+---
+
 ## Overview
 At its core, this project leverages the ESP32-C3’s Wi-Fi hardware to craft covert communication channels by embedding encrypted messages inside 802.11 management frames. Unlike typical Wi-Fi data packets, these frames are less likely to raise suspicion on a monitored network since they don’t follow the usual network traffic patterns.
 

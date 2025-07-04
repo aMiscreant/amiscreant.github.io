@@ -24,6 +24,14 @@ copy_to_clipboard: true
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 <script src="{{ 'assets/js/copy-to-clipboard.js' | relative_url }}"></script>
 
+
+---
+
+<p>Published: {{ page.published | date: "%a, %b %d, %y" }}</p>
+<p>{{ page.description }}</p>
+
+---
+
 # 🛠️ Orange Pi Zero 3 + ST7735 SPI Display Guide (Kali Linux, 2025)
 
 > This guide takes you from **zero to a working Python-powered SPI display** on the **Orange Pi Zero 3** using a **ST7735 TFT screen**.

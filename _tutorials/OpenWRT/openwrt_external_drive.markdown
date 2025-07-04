@@ -22,6 +22,12 @@ category: openwrt
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 <script src="{{ 'assets/js/copy-to-clipboard.js' | relative_url }}"></script>
 
+
+---
+
+<p>Published: {{ page.published | date: "%a, %b %d, %y" }}</p>
+<p>{{ page.description }}</p>
+
 ---
 
 #### 🛠️ Steps to Configure USB Extroot

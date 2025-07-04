@@ -2,7 +2,7 @@
 layout: page
 title: LazySuzann
 date: 2024-10-19
-description: is a modular and highly customizable pentesting suite designed for both seasoned professionals and hobbyists
+description: "LazySuzann: is a modular and highly customizable pentesting suite designed for both seasoned professionals and hobbyists"
 permalink: /projects/LazySuzann/
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
@@ -23,10 +23,11 @@ permalink: /projects/LazySuzann/
 ---
 
 <p>Published: {{ page.published | date: "%a, %b %d, %y" }}</p>
+<p>{{ page.description }}</p>
 
 ---
 
-#### _A modular and highly customizable pentesting suite designed for both seasoned professionals and hobbyists. With an emphasis on ease of use and flexibility, it provides a set of powerful tools that can be executed with minimal setup. This framework empowers users to quickly assess, exploit, and maintain access to their targets._
+#### _LazySuzann: A modular and highly customizable pentesting suite designed for both seasoned professionals and hobbyists. With an emphasis on ease of use and flexibility, it provides a set of powerful tools that can be executed with minimal setup. This framework empowers users to quickly assess, exploit, and maintain access to their targets._
 
 ---
 

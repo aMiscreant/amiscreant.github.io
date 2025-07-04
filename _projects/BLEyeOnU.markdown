@@ -22,3 +22,8 @@ permalink: /projects/BLEyeOnU/BLEyeOnU
 
 ---
 
+<p>Published: {{ page.published | date: "%a, %b %d, %y" }}</p>
+<p>{{ page.description }}</p>
+
+---
+
