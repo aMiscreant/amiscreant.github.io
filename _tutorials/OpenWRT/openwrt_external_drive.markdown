@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 💻 Setting Up USB Extroot on OpenWrt
+published: 2025-07-08
 date: 2025-5-28
 description: OpenWrt’s root filesystem onto a USB stick using Extroot
 permalink: /tutorials/OpenWrt/external_usb

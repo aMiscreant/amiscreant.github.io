@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 🔒 Web Security & Deployment
+published: 2025-07-08
 date: 2025-5-29
 description: Secure your web servers, applications, and user access with automation scripts focused on hardening deployment and configuring secure environments.
 permalink: /tutorials/Linux/WebSecurity/scripts

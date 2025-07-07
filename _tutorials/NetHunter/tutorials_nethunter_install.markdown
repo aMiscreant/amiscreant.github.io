@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Install LineageOS / NetHunter
+published: 2025-07-08
 date: 2025-5-28
 description: Install LineageOS + Root + F-Droid + BusyBox + NetHunter
 permalink: /tutorials/NetHunter/install

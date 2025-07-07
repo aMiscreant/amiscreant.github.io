@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 🌐 ESP32c3 Super Mini Bluetooth Tutorials
+published: 2025-07-08
 date: 2025-5-29
 description: ESP32c3 Bluetooth Tutorials
 permalink: /tutorials/ESP32c3/wifi

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 👻 ESP32c3 Stealth Communications
+published: 2025-07-08
 date: 2025-5-29
 description: ESP32c3 WiFi Tutorials
 permalink: /tutorials/ESP32c3/wifi/stealth_dropper

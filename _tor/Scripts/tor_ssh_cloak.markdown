@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 🕵️‍♂️ Tor Cloak SSH
+published: 2025-07-08
 date: 2025-5-29
 description: Provides the same cloaking and Tor-routing as Tor Cloak but keeps SSH accessible, allowing remote management while anonymizing all other traffic through Tor.
 permalink: /tor/scripts/cloak_ssh

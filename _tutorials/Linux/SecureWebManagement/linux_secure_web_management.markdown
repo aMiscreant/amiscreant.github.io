@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 💻 Secure Web User Management
+published: 2025-07-08
 date: 2025-5-29
 description: Manage web users and deploy secure web operations with these web-specific security tools and services.
 permalink: /tutorials/Linux/SecureWebManagement/scripts

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: BiaCry
+published: 2025-07-08
 date: 2024-10-19
 description: Advanced Data Protection Framework.
 permalink: /projects/BiaCry/

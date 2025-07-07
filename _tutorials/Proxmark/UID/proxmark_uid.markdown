@@ -1,6 +1,7 @@
 ---
 layout: page
 title: ❄ Dump and Clone MIFARE Classic and Magic Gen2️
+published: 2025-07-08
 date: 2025-5-29
 description: Card (UID)
 permalink: /tutorials/Proxmark3/uid/change_uid

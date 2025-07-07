@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 🕵️‍♂️ Tor Cloak
+published: 2025-07-08
 date: 2025-5-29
 description: Cloaks your Linux system by anonymizing identifiers and forcing all network traffic through a Tor transparent proxy, blocking all non-Tor connections for maximum privacy.
 permalink: /tor/scripts/cloak

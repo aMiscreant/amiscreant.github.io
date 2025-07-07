@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 📂 ESP32-C3 - Bluetooth
-published: 2025-07-02
+published: 2025-07-08
 date: 2025-5-29
 timezone: America/Toronto
 description: 

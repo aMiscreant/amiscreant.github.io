@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Encryption && Security
+published: 2025-07-08
 date: 2024-10-19
 description: Explore an array of Python scripts focused on securing data, implementing encryption algorithms, and safeguarding digital communications. These tools offer robust solutions for anyone serious about data privacy and security.
 permalink: /snippets/python/encryption

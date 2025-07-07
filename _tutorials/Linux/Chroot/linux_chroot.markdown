@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 🔄 Chroot & Sandbox Hardening
+published: 2025-07-08
 date: 2025-5-29
 description: Implement system isolation techniques with chroot and sandbox environments to protect critical applications.
 permalink: /tutorials/Linux/Chroot/scripts

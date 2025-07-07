@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 🧳 Secure System Notes & Configurations
+published: 2025-07-08
 date: 2025-5-29
 description: Centralized security notes and configurations to keep your system security approach documented and organized.
 permalink: /tutorials/Linux/SecureSysNotes/scripts

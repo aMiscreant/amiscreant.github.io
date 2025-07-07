@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 🔐 Hardening OpenWrt
+published: 2025-07-08
 date: 2025-5-28
 description: OpenWrt Hardening Tips
 permalink: /tutorials/OpenWrt/hardening

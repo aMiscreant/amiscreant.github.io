@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 💻 Transparent Proxy
+published: 2025-07-08
 date: 2025-5-29
 description: This script configures Linux iptables rules to route all outbound TCP traffic transparently through Tor
 permalink: /tutorials/OPI3Zero/Tor/transparent_proxy

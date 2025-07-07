@@ -1,6 +1,7 @@
 ---
 layout: page
 title: ⚙️ System Configuration & Services Hardening
+published: 2025-07-08
 date: 2025-5-29
 description: Harden critical system configurations, services, and security policies to ensure your system is invulnerable to attack.
 permalink: /tutorials/Linux/SystemConfiguration/scripts

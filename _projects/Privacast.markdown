@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Privacast
+published: 2025-07-08
 date: 2024-10-19
 description: Privacast Encrypted Chat.
 permalink: /projects/Privacast/
