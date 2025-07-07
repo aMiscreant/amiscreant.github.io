@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ⚠️ Log Cleanup
-date: 2025-5-29
+date: 2025-7-29
 description: Ensure your system logs and activities are not tampered with by implementing logger dropper scripts that help you track and remove traces of suspicious actions.
 permalink: /tutorials/Linux/CleanLogs/scripts
 category: linux
