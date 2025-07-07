@@ -2,6 +2,7 @@
 layout: page
 title: LazySuzann
 date: 2024-10-19
+published: 2025-07-04
 description: "LazySuzann: is a modular and highly customizable pentesting suite designed for both seasoned professionals and hobbyists"
 permalink: /projects/LazySuzann/
 ---

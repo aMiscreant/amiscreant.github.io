@@ -24,7 +24,7 @@ permalink: /tor/
 <h2>Tor & Python:</h2>
 <ul>
   {% for tor in site.tor %}
-    {% if tor.category == "python" %}
+    {% if tor.category == "Python" %}
       <li>
         <a href="{{ tor.url }}">{{ tor.title }}</a>: <b>{{ tor.description }}</b>
       </li>
@@ -37,7 +37,7 @@ permalink: /tor/
 <h2>Tor Configurations:</h2>
 <ul>
   {% for tor in site.tor %}
-    {% if tor.category == "scripts" %}
+    {% if tor.category == "Scripts" %}
       <li>
         <a href="{{ tor.url }}">{{ tor.title }}</a>: <b>{{ tor.description }}</b>
       </li>
@@ -50,7 +50,7 @@ permalink: /tor/
 <h2>Tor Hidden Services:</h2>
 <ul>
   {% for tor in site.tor %}
-    {% if tor.category == "hidden_service" %}
+    {% if tor.category == "HiddenService" %}
       <li>
         <a href="{{ tor.url }}">{{ tor.title }}</a>: <b>{{ tor.description }}</b>
       </li>
