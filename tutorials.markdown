@@ -47,6 +47,19 @@ permalink: /tutorials/
 
 ---
 
+<h2>NetHunter:</h2>
+<ul>
+  {% for tutorial in site.tutorials %}
+    {% if tutorial.category == "NetHunter" %}
+      <li>
+        <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+---
+
 <h2>OpenWrt:</h2>
 <ul>
   {% for tutorial in site.tutorials %}

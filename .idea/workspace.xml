@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="updates">
-      <change afterPath="$PROJECT_DIR$/_tor/Scripts/tor_cloak.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_tor/Scripts/tor_ssh_cloak.markdown" afterDir="false" />
+    <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="Tor updates">
+      <change afterPath="$PROJECT_DIR$/_tutorials/NetHunter/tutorials_nethunter_install.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/LazySuzann.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/LazySuzann.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/TorMail.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/TorMail.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tor.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/tor.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_tutorials/Linux/CleanLogs/linux_clean_logs.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_tutorials/Linux/CleanLogs/linux_clean_logs.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorials.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -397,7 +395,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751597765828</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Tor updates">
+      <option name="closed" value="true" />
+      <created>1751905905990</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1751905905991</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,6 +424,7 @@
     <MESSAGE value="styling updates tz_data" />
     <MESSAGE value="updated about moi" />
     <MESSAGE value="updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates" />
+    <MESSAGE value="Tor updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tor updates" />
   </component>
 </project>

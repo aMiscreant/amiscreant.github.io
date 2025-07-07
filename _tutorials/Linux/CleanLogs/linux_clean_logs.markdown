@@ -31,3 +31,116 @@ copy_to_clipboard: true
 <p>{{ page.description }}</p>
 
 ---
+
+#### Subrosa Wipe is a security-focused Bash script and systemd integration designed to automatically erase sensitive traces from a Linux system. It securely clears system logs, temporary files, user histories, and caches to reduce forensic footprints. Configurable for execution at boot, shutdown, and user login, Subrosa Wipe helps maintain system privacy and operational security in sensitive environments.
+
+---
+
+```bash
+#!/bin/bash
+# subrosa_wipe - Securely delete logs & temp data
+
+set -e
+
+# Clear logs
+find /var/log -type f -exec truncate -s 0 {} \; 2>/dev/null
+find /var/log -type f -name '*.gz' -delete
+find /var/log -type f -name '*.old' -delete
+> /var/log/wtmp
+> /var/log/btmp
+> /var/log/lastlog
+[ -d /var/log/audit ] && rm -rf /var/log/audit/*
+
+# Clear journalctl logs (if systemd present)
+if command -v journalctl >/dev/null 2>&1; then
+    journalctl --rotate
+    journalctl --vacuum-time=1s
+fi
+
+# Optionally delete journal files completely (risky!)
+# rm -rf /var/log/journal/*
+
+# Clear temp
+rm -rf /tmp/*
+rm -rf /var/tmp/*
+
+# Clear user bash history and caches
+for user in $(ls /home); do
+    rm -rf "/home/$user/.bash_history"
+    rm -rf "/home/$user/.cache/"*
+    rm -rf "/home/$user/.local/share/"*
+done
+
+# Clear root history
+[ -f /root/.bash_history ] && truncate -s 0 /root/.bash_history
+
+# Drop caches (optional)
+sync; echo 3 > /proc/sys/vm/drop_caches
+
+```
+
+---
+
+#### _Enable On Boot / Profile Switch & Shutdown_
+
+#### On boot:
+##### Create a systemd service /etc/systemd/system/subrosa-wipeboot.service:
+
+```bash
+[Unit]
+Description=Subrosa Boot-Time Wipe
+Before=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/subrosa_wipe
+
+[Install]
+WantedBy=multi-user.target
+```
+
+---
+
+#### Enable it:
+
+```bash
+systemctl enable subrosa-wipeboot
+```
+
+---
+
+#### On shutdown:
+
+```bash
+cp /etc/systemd/system/subrosa-wipeboot.service \
+/etc/systemd/system/subrosa-wipeshutdown.service
+sed -i 's/Boot-Time Wipe/Shutdown-Time Wipe/' \
+/etc/systemd/system/subrosa-wipeshutdown.service
+sed -i 's/Before=multi-user.target/Before=shutdown.target/' \
+/etc/systemd/system/subrosa-wipeshutdown.service
+```
+
+#### Then:
+
+```bash
+systemctl enable subrosa-wipeshutdown
+```
+
+---
+
+#### On user switch or login:
+
+>`Edit /etc/profile or create /etc/profile.d/subrosa_login.sh:`
+
+```bash
+#!/bin/bash
+/usr/local/bin/subrosa_wipe
+```
+
+#### Make it executable:
+
+```bash
+chmod +x /etc/profile.d/subrosa_login.sh
+```
+
+---
