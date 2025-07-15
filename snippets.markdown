@@ -21,13 +21,67 @@ permalink: /snippets/
 
 ---
 
-### Categories:
-
+<h2>Python Audio:</h2>
 <ul>
-  {% for snippet in site.snippets %}
-    <li>
-      <a href="{{ snippet.url }}">{{ snippet.title }}</a>: <b>{{ snippet.description }}</b>
-    </li>
+  {% for snippets in site.snippets %}
+    {% if snippets.category == "Audio" %}
+      <li>
+        <a href="{{ snippets.url }}">{{ snippets.title }}</a>: <b>{{ snippets.description }}</b>
+      </li>
+    {% endif %}
   {% endfor %}
 </ul>
 
+---
+
+<h2>Python Bluetooth:</h2>
+<ul>
+  {% for snippets in site.snippets %}
+    {% if snippets.category == "Bluetooth" %}
+      <li>
+        <a href="{{ snippets.url }}">{{ snippets.title }}</a>: <b>{{ snippets.description }}</b>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+---
+
+<h2>Python Bots:</h2>
+<ul>
+  {% for snippets in site.snippets %}
+    {% if snippets.category == "Bots" %}
+      <li>
+        <a href="{{ snippets.url }}">{{ snippets.title }}</a>: <b>{{ snippets.description }}</b>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+---
+
+<h2>Python Encryption:</h2>
+<ul>
+  {% for snippets in site.snippets %}
+    {% if snippets.category == "Encryption" %}
+      <li>
+        <a href="{{ snippets.url }}">{{ snippets.title }}</a>: <b>{{ snippets.description }}</b>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+---
+
+<h2>Python Images:</h2>
+<ul>
+  {% for snippets in site.snippets %}
+    {% if snippets.category == "Images" %}
+      <li>
+        <a href="{{ snippets.url }}">{{ snippets.title }}</a>: <b>{{ snippets.description }}</b>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+---

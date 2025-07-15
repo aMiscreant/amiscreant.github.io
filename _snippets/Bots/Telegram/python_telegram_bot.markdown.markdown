@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Bluetooth
+title: Telegram Bot
 published: 2025-07-08
 date: 2024-10-19
-description: Bluetooth
-permalink: /snippets/python/bluetooth
+description:  An encrypted Python bot for secure communication on Telegram.
+permalink: /snippets/python/bots/signal
+category: Bots
+subcategory: Telegram
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -20,6 +22,7 @@ permalink: /snippets/python/bluetooth
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
+<script src="{{ 'assets/js/copy-to-clipboard.js' | relative_url }}"></script>
 
 ---
 
@@ -28,13 +31,4 @@ permalink: /snippets/python/bluetooth
 
 ---
 
-## Overview
-Here’s an overview of snippet One. Explain what it does, its features, etc.
-
-## Technologies Used
-
-## Installation
-Instructions for setting up the snippet locally.
-
-## Usage
-How to use the snippet after installation.
+#### This Telegram bot extends the same encryption capabilities as the Discord version, letting users generate key pairs, exchange encrypted messages, and securely share files. All communication stays private and protected thanks to end-to-end encryption, while still allowing the speed and convenience of Telegram’s platform. It’s an excellent choice for private groups, sensitive projects, or anyone who wants Telegram’s features combined with robust cryptographic security.

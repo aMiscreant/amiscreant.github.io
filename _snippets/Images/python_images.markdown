@@ -5,6 +5,7 @@ published: 2025-07-08
 date: 2024-10-19
 description: A comprehensive set of Python scripts to transform, enhance, and analyze images. Whether it's applying filters, performing geometric transformations, or advanced computer vision tasks, these scripts empower you to unlock the full potential of image data.
 permalink: /snippets/python/images
+category: Images
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">

@@ -1,10 +1,11 @@
 ---
 layout: page
-title: Audio Tools
+title: Bluetooth
 published: 2025-07-08
 date: 2024-10-19
-description: A diverse collection of Python scripts designed to manipulate, process, and analyze audio data. From sound effects to voice processing, these scripts are perfect for any audio-related project.
-permalink: /snippets/python/audio
+description: A versatile set of Python scripts for working with Bluetooth technology. From device scanning and pairing to data exchange and custom BLE services, these tools make it easy to integrate Bluetooth capabilities into your projects, whether for IoT, proximity detection, or wireless communication.
+permalink: /snippets/python/bluetooth
+category: Bluetooth
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -32,9 +33,6 @@ permalink: /snippets/python/audio
 Here’s an overview of snippet One. Explain what it does, its features, etc.
 
 ## Technologies Used
-- 
-- 
-- 
 
 ## Installation
 Instructions for setting up the snippet locally.
