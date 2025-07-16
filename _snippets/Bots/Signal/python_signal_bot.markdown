@@ -52,7 +52,7 @@ class SignalCLI:
 
     def scrub_output(self, text):
         # Simple scrubbing logic for US numbers
-        return re.sub(r"\+1\d{10}", "+1**********", text)
+        return re.sub(r"\+1\d{10}", "+1**********", text) # Contact Number blur
 
     def run_cmd(self, cmd):
         try:

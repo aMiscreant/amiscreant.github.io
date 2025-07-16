@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/_snippets/Bots/Bandcamp/python_bandcamp_bot.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_snippets/Bots/Discord/python_discord_bot.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_snippets/Bots/Signal/python_signal_bot.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_snippets/Bots/Telegram/python_telegram_bot.markdown.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_snippets/Bots/YouTube/python_youtube_bot.markdown" afterDir="false" />
+    <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="Bots">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_snippets/audio.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_snippets/Audio/python_audio.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_snippets/bluetooth.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_snippets/Bluetooth/python_bluetooth.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_snippets/encryption.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_snippets/Encryption/python_encryption.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_snippets/images.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_snippets/Images/python_images.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippets.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/snippets.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_snippets/Bots/Signal/python_signal_bot.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_snippets/Bots/Signal/python_signal_bot.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -450,7 +441,23 @@
       <option name="project" value="LOCAL" />
       <updated>1751929329683</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Bots">
+      <option name="closed" value="true" />
+      <created>1752594594486</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1752594594486</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Bots">
+      <option name="closed" value="true" />
+      <created>1752629532460</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1752629532460</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,6 +481,7 @@
     <MESSAGE value="Tor updates" />
     <MESSAGE value="Tutorials update" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="Bots" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bots" />
   </component>
 </project>
