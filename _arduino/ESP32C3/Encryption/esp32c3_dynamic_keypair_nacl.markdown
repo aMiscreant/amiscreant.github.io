@@ -1,10 +1,8 @@
 ---
 layout: page
-title: 📂 ESP32-C3 - Encryption - Dynamic Key Pair TweetNaCl
+title: ESP32-C3 - Encryption - Dynamic Key Pair TweetNaCl
 published: 2025-07-02
-date: 2025-5-29
-timezone: America/Toronto
-description: Dynamic Key Pair Generation Using TweetNaCl
+description: "Dynamic Key Pair Generation Using TweetNaCl."
 permalink: /arduino/encryption/esp32c3/dynamic_key_pair
 category: esp32c3
 subcategory: Encryption
@@ -229,3 +227,9 @@ F3 65 EA B3 DC 3C 5B E4 E0 7F A2 F5 7B 06 01 B8 24 55 D2 17 58 3E FC ED
 ```
 
 ---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

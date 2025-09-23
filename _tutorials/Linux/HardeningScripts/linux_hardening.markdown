@@ -1,8 +1,7 @@
 ---
 layout: page
-title: 🔐 User Hardening Scripts
+title: User Hardening Scripts
 published: 2025-07-08
-date: 2025-5-29
 description: Secure your system by implementing strict user management policies, including sudoer privileges and account lockdowns. These scripts make user hardening efficient and automated.
 permalink: /tutorials/Linux/HardeningScripts/scripts
 category: linux
@@ -459,3 +458,9 @@ echo "[✓] All hardening scripts completed."
 ```
 
 ---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

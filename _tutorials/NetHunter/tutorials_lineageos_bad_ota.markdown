@@ -29,3 +29,9 @@ category: NetHunter
 <p>{{ page.description }}</p>
 
 ---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

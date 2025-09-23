@@ -1,10 +1,9 @@
 ---
 layout: page
-title: TorMail  🧅 
-date: 2024-10-19
-published: 2025-07-04
-description: TorMail 🧅 is an experimental, ephemeral Tor hidden-service mail system built with Flask, GNUPG, and Stem. It’s designed for private, temporary communication. 
-permalink: /projects/TorMail/
+title: TorMail
+published: 2025-09-22
+description: "TorMail is an experimental, ephemeral Tor hidden-service mail system built with Flask, GNUPG, and Stem. It’s designed for private, temporary communication." 
+permalink: /projects/TorMail
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -26,4 +25,11 @@ permalink: /projects/TorMail/
 <p>Published: {{ page.published | date: "%a, %b %d, %y" }}</p>
 <p>{{ page.description }}</p>
 
+
 ---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

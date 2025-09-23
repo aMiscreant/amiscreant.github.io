@@ -33,3 +33,8 @@ permalink: /about/
 
 - **Open Source & Collaboration**: All my projects are open-source, encouraging collaboration and continuous improvement from the community. I believe that true innovation comes from sharing knowledge and learning from others. Explore my repositories on [Github](https://github.com/aMiscreant) to dive into the projects and contribute if you wish.
 
+<style>
+  footer {
+    display: none;
+  }
+</style>

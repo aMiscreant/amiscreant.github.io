@@ -1,9 +1,7 @@
 ---
 layout: page
-title: 📂 ESP8266 - Wi-Fi
+title: ESP8266 - Wi-Fi
 published: 2025-07-02
-date: 2025-5-29
-timezone: America/Toronto
 description: 
 permalink: /arduino/wifi/esp32wroom
 category: esp8266
@@ -32,3 +30,9 @@ subcategory: wifi
 <p>{{ page.description }}</p>
 
 ---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

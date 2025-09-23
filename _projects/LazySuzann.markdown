@@ -2,10 +2,8 @@
 layout: page
 title: LazySuzann
 published: 2025-07-08
-date: 2024-10-19
-published: 2025-07-04
 description: "LazySuzann: is a modular and highly customizable pentesting suite designed for both seasoned professionals and hobbyists"
-permalink: /projects/LazySuzann/
+permalink: /projects/LazySuzann
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -95,4 +93,11 @@ permalink: /projects/LazySuzann/
 >
 >`Tutorials: _>`
 
+
 ---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

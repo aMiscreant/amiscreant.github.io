@@ -2,7 +2,6 @@
 layout: page
 title: Install LineageOS / NetHunter
 published: 2025-07-08
-date: 2025-5-28
 description: Install LineageOS + Root + F-Droid + BusyBox + NetHunter
 permalink: /tutorials/NetHunter/install
 category: NetHunter
@@ -313,3 +312,9 @@ F-Droid Repo's ADD:
 [F-Droid](https://guardianproject.info/fdroid/repo)
 
 ---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

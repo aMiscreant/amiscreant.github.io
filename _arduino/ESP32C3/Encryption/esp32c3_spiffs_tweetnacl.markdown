@@ -1,10 +1,8 @@
 ---
 layout: page
-title: 📂 ESP32-C3 - Encryption - ESP32 SPIFFS File Encryption with TweetNaCl
+title: ESP32-C3 - Encryption - ESP32 SPIFFS File Encryption with TweetNaCl
 published: 2025-07-02
-date: 2025-5-29
-timezone: America/Toronto
-description: Encrypt and Decrypt files stored on the ESP32’s SPIFFS filesystem
+description: "Encrypt and Decrypt files stored on the ESP32’s SPIFFS filesystem."
 permalink: /arduino/encryption/esp32c3/TweetNaCl_spiffs
 category: esp32c3
 subcategory: Encryption
@@ -32,3 +30,9 @@ subcategory: Encryption
 <p>{{ page.description }}</p>
 
 ---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

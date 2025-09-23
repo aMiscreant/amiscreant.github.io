@@ -1,40 +1,36 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that.
-#
-# If you change this file, please restart the server process.
-#
-# Site settings
-# These are used to personalize your new site. You can create any custom
-# variable you would like, and they will be accessible in the templates.
+# NullOrigin Jekyll Configuration
+# Author: aMiscreant
+# Email: aMiscreant@protonmail.com
+# Site: https://amiscreant.github.io
 
+# -------------------
+# Site Settings
+# -------------------
 title: NullOrigin
 email: aMiscreant@protonmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  "Welcome to NullOrigin, the digital playground for curious miscreants and 
-  aspiring hackers! Whether you're building covert tools, exploring the depths 
-  of Python, or diving into cutting-edge technologies, you'll find a trove of 
-  scripts, tutorials, and open-source projects to fuel your journey. 
-  From secure communication systems to custom exploits, 
-  our resources cater to both beginners and seasoned coders looking to push boundaries. 
-  Join us in exploring the limitless possibilities of Python, hacking, and beyond."
-baseurl: "" # Leave blank unless you are using a subdirectory
-url: "https://amiscreant.github.io" # Your GitHub Pages URL
-
+description: >-
+  Welcome to NullOrigin, the digital playground for curious Miscreants!
+baseurl: "" # Leave blank unless using a subdirectory
+url: "https://amiscreant.github.io"
 github_username: aMiscreant
 
-# Build settings
+# -------------------
+# Build Settings
+# -------------------
 theme: minima
 plugins:
   - jekyll-feed
 
-# Markdown configuration
+# -------------------
+# Markdown Configuration
+# -------------------
 markdown: kramdown
 kramdown:
-  input: GFM # GitHub-flavored Markdown
+  input: GFM
 
-# Exclude from processing
+# -------------------
+# Exclude from Processing
+# -------------------
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -44,6 +40,9 @@ exclude:
   - vendor/
   - README.md
 
+# -------------------
+# Navigation
+# -------------------
 navigation:
   - title: Home
     url: /
@@ -51,24 +50,20 @@ navigation:
     url: /about/
   - title: Contact
     url: /contact/
-
   - title: Arduino
     url: /arduino/
   - title: Projects
     url: /projects/
-  - title: Tor
-    url: /tor/
   - title: Tutorials
     url: /tutorials/
 
+# -------------------
+# Collections
+# -------------------
 collections:
   arduino:
     output: true
   projects:
     output: true
-  snippets:
-    output: true
   tutorials:
-    output: true
-  tor:
     output: true

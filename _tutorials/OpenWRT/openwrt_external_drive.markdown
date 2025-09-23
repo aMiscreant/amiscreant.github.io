@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 💻 Setting Up USB Extroot on OpenWrt
+title: Setting Up USB Extroot on OpenWrt
 published: 2025-07-08
 date: 2025-5-28
 description: OpenWrt’s root filesystem onto a USB stick using Extroot
@@ -194,3 +194,11 @@ Optional: LuCI Web Interface**
 >`Install bigger packages (e.g. VPNs, network tools).`
 
 >`This makes your OpenWrt install far more powerful!`
+
+---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

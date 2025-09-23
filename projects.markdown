@@ -21,8 +21,6 @@ permalink: /projects/
 
 ---
 
-<h2></h2>
-
 <ul>
   {% for project in site.projects %}
     <li>
@@ -32,3 +30,9 @@ permalink: /projects/
 </ul>
 
 ---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

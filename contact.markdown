@@ -73,3 +73,9 @@ AFSPWDJLDEfj+SHZcWCONsYVS2TwYtROhCwSyBPTGCf15BK2Rwk+46m6
 -----END PGP PUBLIC KEY BLOCK-----
 
 ```
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

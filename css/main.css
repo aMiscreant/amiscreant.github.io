@@ -1,62 +1,138 @@
-/* Clean terminal block with no borders or white boxes */
-.terminal-block {
-    background-color: #111;
-    color: #ccc;
-    font-family: 'Fira Code', 'Courier New', monospace;
-    padding: 1rem;
-    margin: 2rem 0;
-    border: none;
-    border-radius: 0;
-    overflow-x: auto;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    white-space: pre-wrap;
-    box-shadow: none;
-}
-
-/* Eliminate default <pre> and <code> styling */
-.terminal-block pre,
-.terminal-block code {
-    all: unset;
-    display: block;
-    white-space: pre;
-}
-
-/* Prompt color */
-.terminal-block .prompt {
-    color: #00ff99;
-    font-weight: bold;
-}
-
-/* Blinking cursor */
-.blinking-cursor::after {
-    content: "_";
-    animation: blink 1s steps(1, start) infinite;
-    color: #33ff88;
-}
-
-@keyframes blink {
-    0%, 50% { opacity: 1; }
-    50.01%, 100% { opacity: 0; }
-}
-
-.prompt-user {
-    color: #ff5555; /* red-ish for root */
-    font-weight: bold;
-}
-
-.prompt-host {
-    color: #33ccff; /* cyan for NullOrigin */
-    font-weight: bold;
+/* -----------------------
+   BASIC RESET & GLOBALS
+------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background: linear-gradient(120deg, #0d0d0d, #1a1a1a);
-    background-attachment: fixed;
+    font-family: 'Fira Code', monospace;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
     color: #ccc;
+    overflow-x: hidden;
 }
 
-/* Top-left logo (very faint background texture) */
+/* -----------------------
+   TERMINAL BLOCK
+------------------------ */
+.terminal {
+    background-color: rgba(0,0,0,0.85);
+    color: #33ffcc;
+    font-family: 'Fira Code', monospace;
+    padding: 1.5rem;
+    max-width: 1000px;
+    width: 110%;
+    margin: 40px auto;
+    border-radius: 12px;
+    border: 2px solid #33ffcc33;
+    box-shadow: 0 0 20px #33ffcc33;
+    position: relative;
+    z-index: 2;
+
+    height: 500px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make the output scrollable internally */
+.output {
+    flex: 1; /* take up remaining space */
+    overflow-y: auto;
+    padding-right: 5px; /* for scrollbar */
+    margin-bottom: 0.5rem;
+}
+
+/* Keep the input line fixed at bottom */
+.input-line {
+    display: flex;
+    align-items: baseline;
+    flex-shrink: 0;
+}
+
+/* Optional: auto scroll down as new lines appear */
+.terminal .output p {
+    margin: 0;
+}
+
+/* Smooth scroll for new lines */
+.terminal .output {
+    scroll-behavior: smooth;
+}
+
+/* -----------------------
+   PROMPT & CURSOR
+------------------------ */
+.prompt {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.brackets { color: #cdcd23; }
+.user { color: #FF0629; } /* updated to intense red/pink */
+.at { color: #76a3a8; }   /* cyan-ish for @ */
+.host { color: #68a572; } /* green-ish for host */
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background: #33ffcc;
+    margin-left: 2px;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
+/* -----------------------
+   NEON BUTTONS
+------------------------ */
+.btn-neon {
+    display: inline-block;
+    margin: 1rem 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #33ffcc;
+    border-radius: 12px;
+    color: #33ffcc;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px #33ffcc, 0 0 20px #33ffcc;
+}
+
+.btn-neon:hover {
+    color: #0d0d0d;
+    background: #33ffcc;
+    box-shadow: 0 0 20px #33ffcc, 0 0 40px #33ffcc;
+    transform: scale(1.1);
+}
+
+.neon-buttons {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* -----------------------
+   INPUT LINE
+------------------------ */
+.input-line {
+    display: flex;
+    align-items: baseline;
+}
+
+#typed-input {
+    display: inline-block;
+    white-space: nowrap;
+    margin-left: 4px;
+}
+
+/* -----------------------
+   BACKGROUND LOGO / TEXTURE
+------------------------ */
 body::before {
     content: "";
     position: fixed;
@@ -66,239 +142,621 @@ body::before {
     height: 100px;
     background: url('/NullOrigin.png') no-repeat center center;
     background-size: contain;
-    opacity: 0.20;
-    z-index: -1;
+    opacity: 0.15;
     pointer-events: none;
+    z-index: 0;
 }
 
-/* Style for top-right navigation links */
+/* -----------------------
+   NAVIGATION LINKS (top-right)
+------------------------ */
+.trigger {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
 .trigger .page-link {
-  color: #ccc !important; /* Light gray for visibility */
-  text-decoration: none;
-  margin-left: 1rem;
-  font-weight: 500;
+    color: #ccc !important;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: 500;
 }
 
 .trigger .page-link:hover {
-  color: #00ff99; /* Bright green on hover */
-  text-decoration: underline;
+    color: #00ff99;
+    text-decoration: underline;
 }
 
-/* Positioning the navigation container */
-.trigger {
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
-  z-index: 1000; /* Ensure it's above other elements */
+/* -----------------------
+   OPTIONAL: SCROLLBAR FOR TERMINAL OUTPUT
+------------------------ */
+.terminal::-webkit-scrollbar {
+    width: 8px;
 }
 
-<style>
-/* Style the Copy button */
-.copy-btn {
-    background-color: #4CAF50; /* Green background */
-    color: #ff33ff; /* Text color */
-    border: none; /* No border */
-    outline: none; /* Remove outline */
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 5px;
-    position: absolute; /* Positioning the button */
-    right: 10px;  /* Place it on the top-right */
-    top: 10px;    /* Adjust the position to the top-right */
-    padding: 5px 10px;
-    font-weight: bold;
-}
-
-/* Hover state */
-.copy-btn:hover {
-    background-color: #45a049;
-}
-
-/* Active state */
-.copy-btn:active {
-    background-color: #3e8e41;
-}
-
-
-/* Add some space around the button */
-.copy-btn-container {
-    position: relative;
-    display: inline-block; /* Ensures the container doesn't take up the full width */
-}
-
-.copy-btn-container pre {
-    position: relative;
-}
-<style/>
-
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-a:hover {
-    color: #0056b3;
-}
-
-header h1 {
-    margin: 0;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Section Titles */
-h1, h2, h3, h4, h5, h6 {
-    color: #333;
-    font-weight: bold;
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-/* Lists */
-ul {
-    list-style: none;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-ol li {
-    margin-bottom: 10px;
-}
-
-ul, ol {
-    padding-left: 20px;
-}
-
-/* Code Blocks */
-code {
-    background-color: #f5f5f5;
-    padding: 2px 4px;
-    font-size: 0.9rem;
+.terminal::-webkit-scrollbar-thumb {
+    background-color: #33ffcc;
     border-radius: 4px;
 }
 
-/* Adjust pre and code elements */
-pre, code {
-    margin: 0; /* Remove any default margins */
-    padding: 0; /* Remove default padding */
-    border: none; /* Remove borders */
-    background: none; /* Ensure no background is applied */
+/* Glitch/flicker effect */
+.glitch-text {
+  position: relative;
+  color: #33ffcc; /* base text color */
+  animation: glitch 1.5s infinite linear alternate-reverse;
 }
 
-/* Buttons */
-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+@keyframes glitch {
+  0% { text-shadow: 2px 0 #FF0629, -2px 0 #00ffff; }
+  20% { text-shadow: -2px 0 #FF0629, 2px 0 #00ffff; }
+  40% { text-shadow: 2px 2px #FF0629, -2px -2px #00ffff; }
+  60% { text-shadow: -2px 2px #FF0629, 2px -2px #00ffff; }
+  80% { text-shadow: 2px -2px #FF0629, -2px 2px #00ffff; }
+  100% { text-shadow: 2px 0 #FF0629, -2px 0 #00ffff; }
 }
 
-button:hover {
-    background-color: #0056b3;
+/* Optional animated background particles (placeholder) */
+body::after {
+  content: "";
+  position: fixed;
+  top:0; left:0; width:100%; height:100%;
+  background: url('/assets/particle.jpeg') repeat;
+  opacity: 0.05;
+  z-index: 0;
+  pointer-events: none;
 }
 
-.terminal {
-    background-color: #1d1f21;
-    color: #c5c8c6;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 20px;
+/* -----------------------
+   SITE TITLE STYLING
+------------------------ */
+.site-title {
+    font-family: 'Fira Code', monospace;
+    font-size: 3rem;
+    color: #FF0629; /* Red/pink hue */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #FF0629, 0 0 20px #FF0629, 0 0 30px #FF0629, 0 0 40px #FF0629;
+    animation: neon-flicker 1.5s infinite alternate-reverse;
+    text-align: left; /* Align title to the left */
+    margin-left: 1rem; /* Add space to the left for better positioning */
+}
+
+/* Animation for flickering neon effect */
+@keyframes neon-flicker {
+    0% { text-shadow: 0 0 5px #FF0629, 0 0 10px #FF0629, 0 0 20px #FF0629, 0 0 40px #FF0629; }
+    25% { text-shadow: 0 0 10px #FF0629, 0 0 20px #FF0629, 0 0 30px #FF0629, 0 0 50px #FF0629; }
+    50% { text-shadow: 0 0 15px #FF0629, 0 0 25px #FF0629, 0 0 35px #FF0629, 0 0 60px #FF0629; }
+    75% { text-shadow: 0 0 20px #FF0629, 0 0 30px #FF0629, 0 0 40px #FF0629, 0 0 70px #FF0629; }
+    100% { text-shadow: 0 0 30px #FF0629, 0 0 40px #FF0629, 0 0 50px #FF0629, 0 0 80px #FF0629; }
+}
+
+/* For visited links as well */
+.site-title:visited {
+    color: #FF0629;
+    text-decoration: none; /* Remove default underline */
+}
+
+/* -----------------------
+   NAVIGATION LINKS STYLING (Updated for Compact Look)
+------------------------ */
+.trigger .page-link {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem; /* Smaller font size */
+    color: #FF0629; /* Red/pink hue */
+    text-transform: uppercase;
+    letter-spacing: 1.2px; /* Slightly tighter spacing */
+    font-weight: bold;
+    text-decoration: none; /* No underline by default */
+    padding: 4px 8px; /* Reduced padding for smaller buttons */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    width: 875px;
-    margin: 20px auto;
-    border: 1px solid #4b4b4b;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #FF0629, 0 0 15px #FF0629;
+    margin-right: 0.5rem; /* Slight margin to the right to prevent them from touching */
 }
 
-.output {
-    margin-bottom: 10px;
-    overflow: hidden;
+/* Hover effect for neon buttons */
+.trigger .page-link:hover {
+    color: #0d0d0d;
+    background: #FF0629; /* Solid red background on hover */
+    box-shadow: 0 0 20px #FF0629, 0 0 30px #FF0629;
+    transform: scale(1.05); /* Slight zoom effect */
+    text-decoration: underline; /* Underline on hover */
 }
 
-.input-line {
-    display: flex;
-    align-items: left;
+/* Active link style */
+.trigger .page-link:active {
+    color: #FF0629;
+    background: transparent;
+    box-shadow: 0 0 20px #FF0629, 0 0 40px #FF0629;
 }
 
-.prompt {
-    white-space: nowrap;
+/* Visited link color */
+.trigger .page-link:visited {
+    color: #FF0629;
 }
 
-.cursor {
-    animation: blink 0.7s steps(1) infinite;
-    color: #00FF00;
+/* -----------------------
+   POSITIONING (Move up the entire trigger)
+------------------------ */
+.trigger {
+    position: absolute;
+    top: 0.2rem; /* Move up slightly */
+    right: 2rem; /* Keep right alignment */
+    z-index: 1000;
 }
 
-@keyframes blink {
-    50% {
-        opacity: 0;
+/* -----------------------
+   POST CONTENT LIST STYLING
+------------------------ */
+.post-content ul {
+    list-style: none; /* remove default bullets */
+    padding-left: 1.2rem;
+}
+
+.post-content li {
+    position: relative;
+    margin: 0.5rem 0;
+    padding-left: 1.2rem;
+    color: #ccc;
+    font-family: 'Fira Code', monospace;
+}
+
+/* Neon red/pink marker */
+.post-content li::marker {
+    color: #FF0629;
+    font-weight: bold;
+}
+
+/* Custom neon "dot" before each list item */
+.post-content li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    color: #FF0629;
+    text-shadow:
+        0 0 5px #FF0629,
+        0 0 10px #FF0629,
+        0 0 20px #FF0629;
+    animation: glitch 1.5s infinite;
+}
+
+/* Glitch effect */
+@keyframes glitch {
+    0% {
+        text-shadow: 0 0 5px #FF0629, 0 0 10px #FF0629, 0 0 20px #FF0629;
+        transform: translate(0, 0);
+    }
+    20% {
+        text-shadow: 2px 0 #FF4081, -2px 0 #FF0629;
+        transform: translate(-1px, 0);
+    }
+    40% {
+        text-shadow: -2px 0 #FF4081, 2px 0 #FF0629;
+        transform: translate(1px, 0);
+    }
+    60% {
+        text-shadow: 0 0 8px #FF0629, 0 0 15px #FF4081;
+        transform: translate(0, 1px);
+    }
+    80% {
+        text-shadow: -1px -1px #FF0629, 1px 1px #FF4081;
+        transform: translate(0, -1px);
+    }
+    100% {
+        text-shadow: 0 0 5px #FF0629, 0 0 10px #FF0629, 0 0 20px #FF0629;
+        transform: translate(0, 0);
     }
 }
 
-#typed-input {
+/* -----------------------
+   HEADINGS (H1 / H2) STYLING
+------------------------ */
+.post-content h1,
+.post-content h2 {
+    font-family: 'Fira Code', monospace;
+    text-transform: uppercase;
+    color: #FF0629;
+    position: relative;
     display: inline-block;
-    white-space: nowrap; /* Keep text from wrapping */
-    margin: 0; /* Remove any default margin/padding */
-    padding: 0; /* Ensure there's no padding inside the typed input */
+    margin: 2rem 0 1rem;
+    text-shadow:
+        0 0 5px #FF0629,
+        0 0 10px #FF0629,
+        0 0 20px #FF0629;
+    animation: header-glow 2s infinite alternate;
 }
 
-
-#terminal-output p {
-    margin: 0; /* Prevent extra spacing between lines */
-    display: align; /* Use flex for aligning elements */
-    padding: 0; /* Ensure there's no padding inside the typed input */
+/* Add a glitchy duplicate layer */
+.post-content h1::before,
+.post-content h2::before {
+    content: attr(data-text); /* pull in the same heading text */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #FF4081; /* lighter pink/red */
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0); /* start hidden */
+    animation: glitch-clip 2s infinite linear alternate-reverse;
 }
 
-.brackets {
-    color: #cdcd23; /* Same color for brackets as terminal text */
+/* Glow animation */
+@keyframes header-glow {
+    from {
+        text-shadow:
+            0 0 5px #FF0629,
+            0 0 10px #FF0629,
+            0 0 20px #FF0629;
+    }
+    to {
+        text-shadow:
+            0 0 10px #FF4081,
+            0 0 20px #FF0629,
+            0 0 40px #FF4081;
+    }
 }
 
-.user {
-    color: #974242; /* Pink for 'amiscreant' */
+/* Glitch clip animation */
+@keyframes glitch-clip {
+    0%   { clip: rect(0, 900px, 0, 0); }
+    20%  { clip: rect(0, 900px, 30px, 0); transform: translate(-2px, -2px); }
+    40%  { clip: rect(0, 900px, 60px, 0); transform: translate(2px, 2px); }
+    60%  { clip: rect(0, 900px, 90px, 0); transform: translate(-1px, 1px); }
+    80%  { clip: rect(0, 900px, 120px, 0); transform: translate(1px, -1px); }
+    100% { clip: rect(0, 900px, 0, 0); transform: translate(0, 0); }
 }
 
-.at {
-    color: #76a3a8; /* Cyan for the '@' */
+/* -----------------------
+   PAGE TITLE STYLING
+------------------------ */
+.post-title {
+    font-family: 'Fira Code', monospace;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #FF0629;
+    position: relative;
+    display: inline-block;
+    margin: 2rem 0 1rem;
+    text-shadow:
+        0 0 5px #FF0629,
+        0 0 10px #FF0629,
+        0 0 20px #FF0629;
+    animation: header-glow 2s infinite alternate;
 }
 
-.host {
-    color: #68a572; /* Green for 'blackbox' */
+/* Add a glitchy duplicate layer */
+.post-title::before {
+    content: attr(data-text); /* will grab the same text if added */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #FF4081; /* lighter pink */
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: glitch-clip 2s infinite linear alternate-reverse;
 }
 
-/* Custom Scrollbar */
-.highlight pre::-webkit-scrollbar {
-    width: 8px; /* Width of the scrollbar */
+/* Glow pulse */
+@keyframes header-glow {
+    from {
+        text-shadow:
+            0 0 5px #FF0629,
+            0 0 10px #FF0629,
+            0 0 20px #FF0629;
+    }
+    to {
+        text-shadow:
+            0 0 10px #FF4081,
+            0 0 20px #FF0629,
+            0 0 40px #FF4081;
+    }
+}
+
+/* Glitch clipping */
+@keyframes glitch-clip {
+    0%   { clip: rect(0, 900px, 0, 0); }
+    20%  { clip: rect(0, 900px, 30px, 0); transform: translate(-2px, -2px); }
+    40%  { clip: rect(0, 900px, 60px, 0); transform: translate(2px, 2px); }
+    60%  { clip: rect(0, 900px, 90px, 0); transform: translate(-1px, 1px); }
+    80%  { clip: rect(0, 900px, 120px, 0); transform: translate(1px, -1px); }
+    100% { clip: rect(0, 900px, 0, 0); transform: translate(0, 0); }
+}
+
+/* -----------------------
+   HYPERLINK STYLING
+------------------------ */
+a {
+    color: #00f7ff; /* Cyberpunk green/blue hue */
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Glow + underline effect */
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #00f7ff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 8px #00f7ff, 0 0 16px #00f7ff;
+}
+
+/* Hover interactions */
+a:hover {
+    color: #a0ffff; /* lighter cyan for hover */
+    text-shadow: 0 0 6px #00f7ff, 0 0 12px #00f7ff, 0 0 18px #00f7ff;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* -----------------------
+   HORIZONTAL RULE STYLING
+------------------------ */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        #FF0629 25%,
+        #00f7ff 50%,
+        #FF0629 75%,
+        transparent 100%
+    );
+    position: relative;
+    margin: 2rem 0;
+    box-shadow: 0 0 10px #FF0629, 0 0 20px #00f7ff;
+    animation: hr-glitch 2s infinite linear;
+}
+
+/* Glitch animation */
+@keyframes hr-glitch {
+    0%   { filter: hue-rotate(0deg) brightness(1); }
+    25%  { filter: hue-rotate(20deg) brightness(1.2); }
+    50%  { filter: hue-rotate(-20deg) brightness(0.9); }
+    75%  { filter: hue-rotate(10deg) brightness(1.1); }
+    100% { filter: hue-rotate(0deg) brightness(1); }
+}
+
+/* Add glowing duplicate layers for depth */
+hr::before,
+hr::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    height: 2px;
+    background: inherit;
+    opacity: 0.5;
+}
+
+hr::before {
+    top: -4px;
+    filter: blur(4px);
+}
+
+hr::after {
+    top: 4px;
+    filter: blur(6px);
+    opacity: 0.3;
+}
+
+/* -----------------------
+   COPY BUTTON STYLING
+------------------------ */
+.copy-btn {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    color: #FF0629; /* your pink/red hue */
+    background: transparent;
+    border: 2px solid #FF0629;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #FF0629, 0 0 20px #FF0629 inset;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hover glow effect */
+.copy-btn:hover {
+    color: #0d0d0d;
+    background: #FF0629;
+    box-shadow: 0 0 20px #FF0629, 0 0 40px #FF0629;
+    transform: scale(1.05);
+}
+
+/* Glitch overlay layers */
+.copy-btn::before,
+.copy-btn::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 6px 14px;
+    border-radius: 6px;
+    color: #FF0629;
+    background: transparent;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+/* Red glitch */
+.copy-btn::before {
+    animation: glitch-red 2s infinite linear alternate-reverse;
+    color: #ff003c;
+}
+
+/* Cyan glitch */
+.copy-btn::after {
+    animation: glitch-cyan 2s infinite linear alternate-reverse;
+    color: #00f7ff;
+}
+
+@keyframes glitch-red {
+    0%   { clip: rect(0, 9999px, 0, 0); }
+    20%  { clip: rect(4px, 9999px, 40px, 0); transform: translate(-2px, -2px); }
+    40%  { clip: rect(12px, 9999px, 50px, 0); transform: translate(2px, 2px); }
+    60%  { clip: rect(24px, 9999px, 70px, 0); transform: translate(-1px, 1px); }
+    80%  { clip: rect(8px, 9999px, 60px, 0); transform: translate(1px, -1px); }
+    100% { clip: rect(0, 9999px, 0, 0); }
+}
+
+@keyframes glitch-cyan {
+    0%   { clip: rect(0, 9999px, 0, 0); }
+    20%  { clip: rect(14px, 9999px, 40px, 0); transform: translate(2px, 1px); }
+    40%  { clip: rect(2px, 9999px, 60px, 0); transform: translate(-2px, -1px); }
+    60%  { clip: rect(18px, 9999px, 80px, 0); transform: translate(1px, 2px); }
+    80%  { clip: rect(6px, 9999px, 30px, 0); transform: translate(-1px, -2px); }
+    100% { clip: rect(0, 9999px, 0, 0); }
+}
+
+/* -----------------------
+   FOOTER STYLING
+------------------------ */
+footer {
+    font-family: 'Fira Code', monospace;
+    background: rgba(0,0,0,0.85);
+    color: #FF0629; /* Neon pink/red hue */
+    padding: 2rem 1rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-top: 2px solid #FF0629;
+    box-shadow: 0 -0 20px rgba(255,6,41,0.2);
+}
+
+/* Neon glow for text */
+footer p, footer a {
+    color: #FF0629;
+    text-decoration: none;
+    text-shadow:
+        0 0 5px #FF0629,
+        0 0 10px #FF0629,
+        0 0 15px #FF0629,
+        0 0 20px #FF0629;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect on footer links */
+footer a:hover {
+    color: #0d0d0d;
+    background: #FF0629;
+    text-shadow:
+        0 0 10px #FF0629,
+        0 0 20px #FF0629,
+        0 0 30px #FF0629;
+    padding: 2px 4px;
+    border-radius: 4px;
+    transform: scale(1.05);
+}
+
+/* Optional animated pulse across the footer */
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0; left: -50%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,6,41,0.4),
+        transparent
+    );
+    filter: blur(8px);
+    animation: footerPulse 4s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes footerPulse {
+    0% { left: -50%; opacity: 0; }
+    25% { left: 25%; opacity: 0.6; }
+    50% { left: 50%; opacity: 0.8; }
+    75% { left: 75%; opacity: 0.6; }
+    100% { left: 100%; opacity: 0; }
+}
+
+/* Custom heading class - fully isolated, black/blue glow */
+h1.hH1 {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.8rem !important;
+    color: #00d8ff !important; /* force cyan text */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    text-shadow:
+        0 0 2px #000000 !important,
+        0 0 4px #000000 !important,
+        0 0 8px #000000 !important,
+        0 0 12px #000000 !important; /* force black glow */
+    transition: all 0.3s ease;
+}
+
+/* Glitch offset layers */
+.hH1::before, .hH1::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.hH1::before {
+    color: #000000 !important;           /* black */
+    transform: translate(-1px, 0) skewX(-3deg);
+}
+
+.hH1::after {
+    color: #002244 !important;           /* dark blue accent */
+    transform: translate(1px, 0) skewX(3deg);
+}
+
+/* Hover glow effect */
+.hH1:hover {
+    text-shadow:
+        0 0 4px #000000 !important,
+        0 0 8px #000000 !important,
+        0 0 12px #000000 !important,
+        0 0 16px #002244 !important;  /* dark blue accent on hover */
+    transform: scale(1.02);
+}
+
+/* Published date and description styling */
+.post-meta,
+.post-meta p,
+.post-meta span {
+    color: #ffffff; /* White text */
+    text-shadow:
+        0 0 2px #000000,
+        0 0 4px #000000,
+        0 0 6px #000000; /* Black glow */
+}
+
+/* Optional: slightly increase glow on hover for effect */
+.post-meta p:hover {
+    text-shadow:
+        0 0 4px #000000,
+        0 0 8px #000000,
+        0 0 12px #000000;
 }

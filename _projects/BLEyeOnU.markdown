@@ -2,7 +2,6 @@
 layout: page
 title: BLEyeOnU
 published: 2025-07-08
-date: 2024-10-19
 description: "Broadcast like a beacon, sniff like a spook."
 permalink: /projects/BLEyeOnU/BLEyeOnU
 ---
@@ -28,3 +27,8 @@ permalink: /projects/BLEyeOnU/BLEyeOnU
 
 ---
 
+<style>
+  footer {
+    display: none;
+  }
+</style>

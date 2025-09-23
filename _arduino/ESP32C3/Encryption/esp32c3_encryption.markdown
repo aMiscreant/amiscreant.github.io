@@ -1,10 +1,8 @@
 ---
 layout: page
-title: 📂 ESP32-C3 - Encryption
+title: ESP32-C3 - Encryption
 published: 2025-07-02
-date: 2025-5-29
-timezone: America/Toronto
-description: 
+description:  ""
 permalink: /arduino/encryption/esp32c3
 category: esp32c3
 subcategory: Encryption
@@ -32,3 +30,9 @@ subcategory: Encryption
 <p>{{ page.description }}</p>
 
 ---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

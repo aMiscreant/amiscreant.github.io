@@ -21,10 +21,10 @@ permalink: /tutorials/
 
 ---
 
-<h2>ESP32c3 Super Mini:</h2>
+<h2>Cross Compile for Android:</h2>
 <ul>
   {% for tutorial in site.tutorials %}
-    {% if tutorial.category == "esp32c3" %}
+    {% if tutorial.category == "crosscompile" %}
       <li>
         <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
       </li>
@@ -109,3 +109,22 @@ permalink: /tutorials/
 </ul>
 
 ---
+
+<h2>Tor:</h2>
+<ul>
+  {% for tutorial in site.tutorials %}
+    {% if tutorial.category == "tor" %}
+      <li>
+        <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

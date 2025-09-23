@@ -1,8 +1,7 @@
 ---
 layout: page
-title: ❄ Dump and Clone MIFARE Classic and Magic Gen2️
+title: Dump and Clone MIFARE Classic and Magic Gen2️
 published: 2025-07-08
-date: 2025-5-29
 description: Card (UID)
 permalink: /tutorials/Proxmark3/uid/change_uid
 category: proxmark
@@ -510,3 +509,11 @@ Here’s what the output means:
 # ⚠️ Legal Disclaimer
 
 Changing or cloning RFID cards may be illegal if used for unauthorized access. Only experiment on your own cards or with permission.
+
+---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

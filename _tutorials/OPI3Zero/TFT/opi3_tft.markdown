@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 💻 TFT Tutorial
+title: TFT Tutorial
 published: 2025-07-08
 date: 2025-5-29
 description: Prevent unauthorized USB devices from compromising your system with defense mechanisms and whitelisting scripts.
@@ -2485,3 +2485,9 @@ cap.release()
 [Video](https://github.com/user-attachments/assets/72666177-68ea-4110-987e-2597e918689e)
 
 ---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

@@ -1,8 +1,7 @@
 ---
 layout: page
-title: 💻 USB Security & Defense
+title: USB Security & Defense
 published: 2025-07-08
-date: 2025-5-29
 description: Prevent unauthorized USB devices from compromising your system with defense mechanisms and whitelisting scripts.
 permalink: /tutorials/Linux/USBSecurity/scripts
 category: linux
@@ -203,3 +202,9 @@ sudo udevadm control --reload-rules && sudo udevadm trigger
 >Blocking all external USB storage except approved devices
 
 ---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

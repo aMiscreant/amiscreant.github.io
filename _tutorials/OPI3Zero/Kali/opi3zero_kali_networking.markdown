@@ -1,8 +1,7 @@
 ---
 layout: page
-title: 💻 Kali Wi-Fi Configuration
+title: Kali Wi-Fi Configuration
 published: 2025-07-08
-date: 2025-5-29
 description: Replace NetworkManager with manual Wi-Fi config using wpa_supplicant and /etc/network/interfaces for minimal or headless Linux systems.
 permalink: /tutorials/OPI3Zero/Kali/manual_wifi
 category: opi3zero
@@ -269,3 +268,9 @@ echo "  ip link set $IFACE up && dhclient $IFACE"
 ```
 
 ---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

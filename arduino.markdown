@@ -59,3 +59,9 @@ permalink: /arduino/
 </ul>
 
 ---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

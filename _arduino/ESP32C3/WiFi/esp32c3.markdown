@@ -1,11 +1,9 @@
 ---
 layout: page
-title: 📂 ESP32-C3 - Wi-Fi
+title: ESP32-C3 - Wi-Fi
 published: 2025-07-02
-date: 2025-5-29
-timezone: America/Toronto
-description: Building a Simple CLI Menu with Wi-Fi Scanning
-permalink: /arduino/wifi/esp32c3
+description: "Building a Simple CLI Menu with Wi-Fi Scanning."
+permalink: /arduino/wifi/esp32c3_wifi_cli
 category: esp32c3
 subcategory: WiFi
 ---
@@ -223,24 +221,8 @@ Nr | SSID                             | RSSI | CH | Encryption
 
 ---
 
->`Benefits of CLI Over Endless Loops`
-> 
->`Instead of having the sketch run a single task in loop() forever, a CLI lets you:`
-> 
->`Interactively choose features to test or run`
-> 
->`Avoid cluttering serial output with constant scanning or logging`
-> 
->`Build modular code, where each feature is wrapped into its own function`
-> 
->`Ideas to Extend This Sketch`
-> 
->`Add Bluetooth scanning`
-> 
->`Control GPIO pins via commands`
-> 
->`Display system information (chip ID, heap size, etc.)`
-> 
->`Change the board’s name via serial command`
-> 
->`Save settings to NVS or EEPROM`
+<style>
+  footer {
+    display: none;
+  }
+</style>
