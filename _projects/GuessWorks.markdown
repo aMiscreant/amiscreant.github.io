@@ -1,10 +1,9 @@
 ---
 layout: page
-title: BiaCry
-published: 2025-07-08
-date: 2024-10-19
-description: Advanced Data Protection Framework.
-permalink: /projects/BiaCry/
+title: GuessWorks
+published: 2025-09-22
+description: "Realistic Wordlist/Password Generation Tool."
+permalink: /projects/GuessWorks
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -52,6 +51,9 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 </div>
+
+---
+
 <style>
   footer {
     display: none;

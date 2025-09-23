@@ -1,11 +1,9 @@
 ---
 layout: page
-title: Encryption && Security
-published: 2025-07-08
-date: 2024-10-19
-description: Explore an array of Python scripts focused on securing data, implementing encryption algorithms, and safeguarding digital communications. These tools offer robust solutions for anyone serious about data privacy and security.
-permalink: /snippets/python/encryption
-category: Encryption
+title: Bad Kitty
+published: 2025-09-22
+description: "BadKitty, an Automated Wi-Fi Pentesting Tool."
+permalink: /projects/BadKitty
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -30,7 +28,7 @@ category: Encryption
 ---
 
 ## Overview
-Here’s an overview of snippet One. Explain what it does, its features, etc.
+Here’s an overview of Project One. Explain what it does, its features, etc.
 
 ## Technologies Used
 - 
@@ -38,7 +36,26 @@ Here’s an overview of snippet One. Explain what it does, its features, etc.
 - 
 
 ## Installation
-Instructions for setting up the snippet locally.
+Instructions for setting up the project locally.
 
 ## Usage
-How to use the snippet after installation.
+How to use the project after installation.
+
+<link rel="stylesheet" href="{{ 'css/amiscreant.css' | relative_url }}">
+<div class="highlight-zenburn">
+{% highlight ruby linenos %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+</div>
+
+---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>

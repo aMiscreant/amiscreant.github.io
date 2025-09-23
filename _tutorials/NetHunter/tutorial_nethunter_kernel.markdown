@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Audio Tools
+title: Custom Kernel Lineage OS (17.1)
 published: 2025-07-08
-date: 2024-10-19
-description: A diverse collection of Python scripts designed to manipulate, process, and analyze audio data. From sound effects to voice processing, these scripts are perfect for any audio-related project.
-permalink: /snippets/python/audio
-category: Audio
+description: "Custom NetHunter Kernel (TP Link v2 Support 8188eus) & Bluetooth"
+permalink: /tutorials/NetHunter/kernel
+category: NetHunter
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -21,6 +20,7 @@ category: Audio
 <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
+<script src="{{ 'assets/js/copy-to-clipboard.js' | relative_url }}"></script>
 
 ---
 
@@ -29,16 +29,8 @@ category: Audio
 
 ---
 
-## Overview
-Here’s an overview of snippet One. Explain what it does, its features, etc.
-
-## Technologies Used
-- 
-- 
-- 
-
-## Installation
-Instructions for setting up the snippet locally.
-
-## Usage
-How to use the snippet after installation.
+<style>
+  footer {
+    display: none;
+  }
+</style>

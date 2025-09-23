@@ -1,12 +1,9 @@
 ---
 layout: page
-title: 🌐 ESP32c3 Super Mini Bluetooth Tutorials
+title: High n' Wired
 published: 2025-07-08
-date: 2025-5-29
-description: ESP32c3 Bluetooth Tutorials
-permalink: /tutorials/ESP32c3/wifi
-category: esp32c3
-subcategory: bluetooth
+description: "ESP32c3 Super Mini Penetration Testing Tool."
+permalink: /projects/HighNWired
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -23,7 +20,6 @@ subcategory: bluetooth
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 
-
 ---
 
 <p>Published: {{ page.published | date: "%a, %b %d, %y" }}</p>
@@ -32,11 +28,31 @@ subcategory: bluetooth
 ---
 
 ## Overview
+Here’s an overview of Project One. Explain what it does, its features, etc.
 
-## 
+## Technologies Used
+- 
+- 
+- 
 
-# _______________________________________________________________________________________________________________________________________________________________
+## Installation
+Instructions for setting up the project locally.
 
+## Usage
+How to use the project after installation.
+
+<link rel="stylesheet" href="{{ 'css/amiscreant.css' | relative_url }}">
+<div class="highlight-zenburn">
+{% highlight ruby linenos %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+</div>
+
+---
 
 <style>
   footer {
