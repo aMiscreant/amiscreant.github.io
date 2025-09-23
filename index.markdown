@@ -115,9 +115,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const buttons = document.createElement('div');
                 buttons.classList.add('neon-buttons');
                 buttons.innerHTML = `
-                    <a href="/projects/" class="btn-neon">Projects</a>
-                    <a href="/tutorials/" class="btn-neon">Tutorials</a>
-                    <a href="/arduino/" class="btn-neon">Arduino</a>`;
+                    <a href="/miscreants" class="btn-neon">Miscreants</a>`;
                 terminalOutput.appendChild(buttons);
             }
 

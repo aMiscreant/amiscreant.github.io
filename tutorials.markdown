@@ -21,6 +21,19 @@ permalink: /tutorials/
 
 ---
 
+<h2>Code Farm:</h2>
+<ul>
+  {% for tutorial in site.tutorials %}
+    {% if tutorial.category == "codefarm" %}
+      <li>
+        <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+---
+
 <h2>Cross Compile for Android:</h2>
 <ul>
   {% for tutorial in site.tutorials %}

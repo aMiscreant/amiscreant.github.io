@@ -56,6 +56,8 @@ navigation:
     url: /projects/
   - title: Tutorials
     url: /tutorials/
+  - title: Miscreants
+    url: /miscreants/
 
 # -------------------
 # Collections
@@ -67,3 +69,5 @@ collections:
     output: true
   tutorials:
     output: true
+  miscreants:
+    output: false

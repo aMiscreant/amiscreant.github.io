@@ -135,7 +135,7 @@ TORSOCKS_LOG_LEVEL=5 torsocks ssh -vvv -p 6666 root@your.onion
 
 ```bash
 Host tor-vps
-    HostName 3nt3c3z2hy45q6fourzzr5q2k7clwiththfswpd5qowlm2vcds5valid.onion # REPLACE WITH YOUR ONION ADDRESS
+    HostName YOUR_ONION_ADDRESS # REPLACE WITH YOUR ONION ADDRESS
     Port 6666
     User debian # CHANGE ME
     ProxyCommand torsocks -P 9050 nc %h %p
@@ -187,12 +187,12 @@ sudo systemctl restart caddy
 sudo mkdir -p /etc/caddy/certs
 cd /etc/caddy/certs
 sudo openssl req -x509 -newkey rsa:4096 -sha256 -days 365 \
-  -nodes -keyout fq3uv32e3rvkpy3dbplpfkgs4hlryptriz3id5bpld2usku3dwv6koad.onion.key -out fq3uv32e3rvkpy3dbplpfkgs4hlryptriz3id5bpld2usku3dwv6koad.onion.crt \
-  -subj "/CN=fq3uv32e3rvkpy3dbplpfkgs4hlryptriz3id5bpld2usku3dwv6koad.onion" \
-  -addext "subjectAltName=DNS:fq3uv32e3rvkpy3dbplpfkgs4hlryptriz3id5bpld2usku3dwv6koad.onion/"
+  -nodes -keyout YOUR_ONION_ADDRESS.key -out YOUR_ONION_ADDRESS.crt \
+  -subj "/CN=YOUR_ONION_ADDRESS" \
+  -addext "subjectAltName=DNS:YOUR_ONION_ADDRESS/"
   
-  fq3uv32e3rvkpy3dbplpfkgs4hlryptriz3id5bpld2usku3dwv6koad.onionn:443 {
-  tls /etc/caddy/certs/your_onion.crt /etc/caddy/certs/fq3uv32e3rvkpy3dbplpfkgs4hlryptriz3id5bpld2usku3dwv6koad.onion.key
+  YOUR_ONION_ADDRESS:443 {
+  tls /etc/caddy/certs/your_onion.crt /etc/caddy/certs/YOUR_ONION_ADDRESS.key
   reverse_proxy 127.0.0.1:80
 }
 

@@ -98,8 +98,10 @@ python3 guess_works.py -e VIRGIN123 --seasons --months --holidays --names --even
 ```bash
 # 1. Generate with leetspeak + suffixes, pipe to aircrack-ng:
 python3 gw_aircrack.py -i base_words.txt --leet --suffix | aircrack-ng -w- -b <BSSID> capture.cap
+
 # 2. Apply all enhancements and limit to 50,000 variants:
 python3 gw_aircrack.py -i base_words.txt --leet --suffix --prefix --toggle --max 50000 | aircrack-ng -w- -b <BSSID> capture.cap
+
 # 3. Use without enhancements (just pass the base wordlist to aircrack-ng):
 python3 gw_aircrack.py -i base_words.txt | aircrack-ng -w- -b <BSSID> capture.cap
 ```
