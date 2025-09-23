@@ -1,9 +1,7 @@
 ---
 layout: page
-title: 📂 ESP8266 - Encryption
+title: ESP8266 - Encryption
 published: 2025-07-02
-date: 2025-5-29
-timezone: America/Toronto
 description: 
 permalink: /arduino/wifi/esp32wroom
 category: esp8266
@@ -28,8 +26,10 @@ subcategory: wifi
 
 ---
 
-<p>Published: {{ page.published | date: "%a, %b %d, %y" }}</p>
-<p>{{ page.description }}</p>
+<div class="post-meta">
+  <p>Published: {{ page.published | date: "%a, %b %d, %y" }}</p>
+  <p>{{ page.description }}</p>
+</div>
 
 ---
 

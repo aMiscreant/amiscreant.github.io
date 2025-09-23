@@ -22,12 +22,16 @@ permalink: /projects/LazySuzann
 
 ---
 
-<p>Published: {{ page.published | date: "%a, %b %d, %y" }}</p>
-<p>{{ page.description }}</p>
+<div class="post-meta">
+  <p>Published: {{ page.published | date: "%a, %b %d, %y" }}</p>
+  <p>{{ page.description }}</p>
+</div>
 
 ---
 
-#### _LazySuzann: A modular and highly customizable pentesting suite designed for both seasoned professionals and hobbyists. With an emphasis on ease of use and flexibility, it provides a set of powerful tools that can be executed with minimal setup. This framework empowers users to quickly assess, exploit, and maintain access to their targets._
+<h1>LazySuzann:</h1>
+
+<p>LazySuzann: A modular and highly customizable pentesting suite designed for both seasoned professionals and hobbyists. With an emphasis on ease of use and flexibility, it provides a set of powerful tools that can be executed with minimal setup. This framework empowers users to quickly assess, exploit, and maintain access to their targets.</p>
 
 ---
 

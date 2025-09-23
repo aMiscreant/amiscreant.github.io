@@ -22,8 +22,10 @@ permalink: /projects/TorMail
 
 ---
 
-<p>Published: {{ page.published | date: "%a, %b %d, %y" }}</p>
-<p>{{ page.description }}</p>
+<div class="post-meta">
+  <p>Published: {{ page.published | date: "%a, %b %d, %y" }}</p>
+  <p>{{ page.description }}</p>
+</div>
 
 
 ---
