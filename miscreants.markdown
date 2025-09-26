@@ -20,10 +20,14 @@ permalink: /miscreants/
 
 <script src="{{ '/assets/js/nacl.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/openpgp.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/secrets.min.js' | relative_url }}"></script>
+
 
 <script src="{{ '/assets/js/stego.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/encrypt_decrypt.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/gpg.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/tor_onion.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/shamir.js' | relative_url }}"></script>
 
 ---
 
@@ -301,6 +305,91 @@ permalink: /miscreants/
   min-width: 180px;       /* prevents them from shrinking too much */
   text-align: center;
 }
+
+/* Onion Section Styling (Red Neon Theme) */
+#onion {
+  background: #0d0d0d;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  color: #f2f2f2;
+  font-family: monospace;
+  box-shadow: 0 0 12px rgba(255, 6, 41, 0.2);
+}
+
+#onion .btn-neon {
+  margin: 6px 4px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: monospace;
+  font-weight: bold;
+  color: #fff;
+  background: #0d0d0d;
+  border: 1px solid #FF0629;
+  box-shadow: 0 0 8px #FF0629;
+  transition: all 0.2s ease;
+}
+
+#onion .btn-neon:hover {
+  color: #0d0d0d;
+  background: #FF0629;
+  box-shadow: 0 0 20px #FF0629, 0 0 30px #FF0629;
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+#onion .button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#onion .btn-neon {
+  flex: 1;
+  min-width: 180px;
+  text-align: center;
+}
+
+#onion-output {
+  margin-top: 12px;
+  min-height: 40px;
+  font-weight: bold;
+  color: #FF0629; /* neon red for output */
+}
+
+<!-- ===== Shamir Secret Sharing UI ===== -->
+#shamir {
+  background: #0d0d0d;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  color: #f2f2f2;
+  font-family: monospace;
+  box-shadow: 0 0 12px rgba(255,6,41,0.18);
+}
+#shamir input[type="text"], #shamir textarea, #shamir select {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #e6e6e6;
+  font-family: monospace;
+  font-size: .95rem;
+  box-shadow: inset 0 0 6px rgba(255,6,41,0.08);
+}
+#shamir .button-row { display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
+#shamir .btn-neon { flex:1; min-width:150px; margin:6px 0; padding:10px 12px; border-radius:8px; font-family:monospace; font-weight:bold; color:#fff; background:#0d0d0d; border:1px solid #FF0629; box-shadow:0 0 8px #FF0629; cursor:pointer; }
+#shamir .btn-neon:hover { color:#0d0d0d; background:#FF0629; transform:scale(1.03); }
+#shamir #shamir-output, #shamir #shamir-shares { margin-top:12px; padding:10px; border-radius:6px; background:#111; border:1px dashed #FF0629; min-height:48px; white-space:pre-wrap; word-break:break-all; }
+.shamir-small { font-size:.9rem; color:#ddd; margin-top:6px; }
+
 </style>
 
 
@@ -382,6 +471,12 @@ permalink: /miscreants/
 
 ---
 
+<p>Here you can try:</p>
+
+- Generating Public/Private keys using gnupg.
+
+---
+
 <div class="gpg-container">
   <section id="gpg">
     <h1>GPG Key Generation</h1><br>
@@ -405,6 +500,78 @@ permalink: /miscreants/
 
     <!-- Output -->
     <div id="gpg-output" aria-live="polite" style="margin-top:12px; min-height:40px;"></div>
+  </section>
+</div>
+
+---
+
+<p>Here you can try:</p>
+
+- Generating a Tor .onion address keypair.
+
+---
+
+<div class="onion-container">
+  <section id="onion">
+    <h1>Tor .onion Address Generator</h1><br>
+
+    <!-- Buttons -->
+    <div class="button-row">
+      <button class="btn-neon" onclick="generateOnion()">Generate Onion Address</button>
+      <button class="btn-neon" onclick="downloadOnionKey('private')">Download Private Key</button>
+      <button class="btn-neon" onclick="downloadOnionKey('public')">Download Public Key</button>
+    </div>
+
+    <!-- Output -->
+    <div id="onion-output" aria-live="polite" style="margin-top:12px; min-height:40px;"></div>
+  </section>
+</div>
+
+---
+
+<p>Here you can try:</p>
+
+- Shamir Secret Sharing, Split a secret into N parts, require K to reconstruct.
+
+---
+
+<div id="shamir" class="secret-container">
+  <section id="shamir">
+    <h2>Shamir Secret Sharing</h2>
+
+    <label class="stego-label">Secret (text)</label>
+    <textarea id="shamir-secret" rows="3" placeholder="Type secret or paste data..."></textarea>
+
+    <div style="display:flex; gap:10px;">
+      <div style="flex:1">
+        <label class="stego-label">Total shares (n)</label>
+        <input id="shamir-n" type="number" value="5" min="2" max="255" />
+      </div>
+      <div style="flex:1">
+        <label class="stego-label">Threshold (k)</label>
+        <input id="shamir-k" type="number" value="3" min="2" max="255" />
+      </div>
+    </div>
+
+    <div class="button-row">
+      <button class="btn-neon" onclick="shamirSplit()">Split Secret</button>
+      <button class="btn-neon" onclick="shamirClear()">Clear</button>
+    </div>
+
+    <div id="shamir-shares" aria-live="polite">Shares will appear here after split.</div>
+    <div class="shamir-small">Each share is `index-hex` (index 1..255) — save at least <strong>k</strong> of them.</div>
+
+    <hr style="border-color:#222; margin:16px 0;" />
+
+    <label class="stego-label">Paste shares (one per line) to combine</label>
+    <textarea id="shamir-input-shares" rows="4" placeholder="1-abcdef..., 2-012345..., ..."></textarea>
+
+    <div class="button-row">
+      <button class="btn-neon" onclick="shamirCombine()">Combine Shares</button>
+      <button class="btn-neon" onclick="shamirDownloadAll()">Download All Shares</button>
+    </div>
+
+    <div id="shamir-output" aria-live="polite">Combined secret / status will appear here.</div>
   </section>
 </div>
 
