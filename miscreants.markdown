@@ -288,6 +288,19 @@ permalink: /miscreants/
     margin-top: 12px;
     margin-bottom: 4px;
 }
+
+#gpg .button-row {
+  display: flex;
+  flex-wrap: wrap;        /* allow wrapping on smaller screens */
+  gap: 10px;              /* consistent spacing */
+  margin-top: 10px;
+}
+
+#gpg .btn-neon {
+  flex: 1;                /* all buttons same width */
+  min-width: 180px;       /* prevents them from shrinking too much */
+  text-align: center;
+}
 </style>
 
 
@@ -384,7 +397,7 @@ permalink: /miscreants/
     <input type="password" id="gpg-passphrase" placeholder="Enter passphrase">
 
     <!-- Buttons -->
-    <div style="margin-top:10px;">
+    <div class="button-row">
       <button class="btn-neon" onclick="generateGPGKey()">Generate GPG Key</button>
       <button class="btn-neon" onclick="downloadGPGKey('public')">Download Public Key</button>
       <button class="btn-neon" onclick="downloadGPGKey('private')">Download Private Key</button>
