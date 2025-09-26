@@ -28,6 +28,8 @@ permalink: /miscreants/
 <script src="{{ '/assets/js/gpg.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/tor_onion.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/shamir.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/obfuscator.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/copy-to-clipboard.js' | relative_url }}"></script>
 
 ---
 
@@ -390,6 +392,122 @@ permalink: /miscreants/
 #shamir #shamir-output, #shamir #shamir-shares { margin-top:12px; padding:10px; border-radius:6px; background:#111; border:1px dashed #FF0629; min-height:48px; white-space:pre-wrap; word-break:break-all; }
 .shamir-small { font-size:.9rem; color:#ddd; margin-top:6px; }
 
+#obfuscator {
+  background: #0d0d0d;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  color: #f2f2f2;
+  font-family: monospace;
+  box-shadow: 0 0 12px rgba(255, 6, 41, 0.2);
+}
+
+#obfuscator h1 {
+  margin-bottom: 10px;
+  color: #FF0629;
+  font-size: 1.6rem;
+  text-align: center;
+  text-shadow: 0 0 8px #FF0629, 0 0 12px #FF0629;
+}
+
+#obfuscator textarea,
+#obfuscator input[type="text"],
+#obfuscator input[type="password"],
+#obfuscator select {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #e6e6e6;
+  font-family: monospace;
+  font-size: 0.95rem;
+  resize: vertical;
+  box-shadow: inset 0 0 6px rgba(255, 6, 41, 0.2);
+}
+
+#obfuscator textarea:focus,
+#obfuscator input:focus,
+#obfuscator select:focus {
+  outline: none;
+  border-color: #FF0629;
+  box-shadow: 0 0 8px #FF0629, inset 0 0 4px #FF0629;
+}
+
+#obfuscator .btn-neon {
+  margin: 6px 4px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: monospace;
+  font-weight: bold;
+  color: #fff;
+  background: #0d0d0d;
+  border: 1px solid #FF0629;
+  box-shadow: 0 0 8px #FF0629;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+
+#obfuscator .btn-neon:hover {
+  color: #0d0d0d;
+  background: #FF0629;
+  box-shadow: 0 0 20px #FF0629, 0 0 30px #FF0629;
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+#obfuscator .stego-label {
+  color: #ffffff;
+  font-weight: bold;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  text-shadow: 0 0 2px #000, 0 0 4px #000, 0 0 6px #000;
+}
+
+#obfuscator .stego-label:hover {
+  text-shadow: 0 0 4px #000, 0 0 8px #000, 0 0 12px #000;
+  cursor: default;
+}
+
+#obfuscator #obf-output {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #1a1a1a;
+  border: 1px dashed #FF0629;
+  color: #f2f2f2;
+  min-height: 120px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  box-shadow: inset 0 0 8px rgba(255, 6, 41, 0.3);
+  font-family: monospace;
+}
+
+#obfuscator #obf-note {
+  margin-top: 10px;
+  color: #ddd;
+  font-size: 0.9rem;
+}
+
+#obfuscator .button-row,
+#obfuscator > div > div:nth-child(2) > div {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+#obfuscator .button-row .btn-neon,
+#obfuscator > div > div:nth-child(2) .btn-neon {
+  flex: 1;
+  min-width: 120px;
+}
 </style>
 
 
@@ -576,3 +694,59 @@ permalink: /miscreants/
 </div>
 
 ---
+
+<p>Here you can try:</p>
+
+- .
+
+---
+
+<div id="obfsucator" class="secret-container">
+  <section id="obfuscator" class="secret-container" style="max-width:900px;">
+    <h1 style="color:#FF0629; text-align:center; margin-bottom:8px;">Live JS Obfuscator (Demo)</h1>
+
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <div style="flex:1; min-width:320px;">
+        <label class="stego-label">Input JavaScript</label>
+        <textarea id="obf-input" rows="12" placeholder="// paste JS here" style="font-family:monospace;"></textarea>
+        <div id="obf-preview-container" style="margin-top:10px;"></div>
+
+        <div style="display:flex; gap:8px; margin-top:8px; align-items:center;">
+          <label style="display:flex; gap:6px; align-items:center;">
+            <input type="checkbox" id="opt-strings" checked /> Encode string literals
+          </label>
+          <label style="display:flex; gap:6px; align-items:center;">
+            <input type="checkbox" id="opt-ident" /> Rename identifiers (experimental)
+          </label>
+          <label style="display:flex; gap:6px; align-items:center;">
+            <input type="checkbox" id="opt-wrap" checked /> Add runtime decoder
+          </label>
+        </div>
+
+        <div style="margin-top:10px;">
+          <button class="btn-neon" id="btn-obf">Obfuscate</button>
+          <button class="btn-neon" id="btn-clear">Clear</button>
+        </div>
+      </div>
+
+      <div style="flex:1; min-width:320px;">
+        <label class="stego-label">Obfuscated Output</label>
+        <textarea id="obf-output" rows="12" readonly style="font-family:monospace; background:#0f0f0f;"></textarea>
+
+        <div style="display:flex; gap:8px; margin-top:8px;">
+          <button class="btn-neon" id="btn-copy">Copy</button>
+          <button class="btn-neon" id="btn-download">Download</button>
+          <button class="btn-neon" id="btn-preview">Run in Sandbox</button>
+        </div>
+
+        <div id="obf-note" style="margin-top:10px; color:#ddd; font-size:0.9rem;">
+          <strong>Warning:</strong> This is a demo obfuscator. Identifier renaming is naive and may break code that uses globals, reflection, property names, or complex parsing. Use for experimentation only.
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+---
+
+
