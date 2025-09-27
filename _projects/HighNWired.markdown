@@ -29,6 +29,18 @@ permalink: /projects/HighNWired
 
 ---
 
+<h1>High & Wired</h1>
+
+<p>Features a custom partition, tons of pentesting features.</p>
+<p>SPIFFS system explorer; create/browse & upload files.</p>
+<p>MITM Attacks, FakeAP, Deauth & Capture.</p>
+
+---
+
+![LOGIN](https://image2url.com/images/1758931748203-829d0f6c-3bee-47bf-a1cb-0c78138f60c5.png)
+
+![MENU](https://image2url.com/images/1758931763214-3487c393-f410-45ab-ab71-25f26d60b547.png)
+
 
 ---
 

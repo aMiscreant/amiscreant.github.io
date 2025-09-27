@@ -30,6 +30,19 @@ permalink: /projects/TorMail
 
 ---
 
+<h1>TorMail</h1>
+
+<p>Experimental, ephemeral Tor hidden-service mail system built with Flask, GNUPG, and Stem. It’s designed for private, temporary communication.</p>
+
+---
+
+![TorMail](https://image2url.com/images/1758932158468-210512ec-be90-47c5-a030-1ef9aba18798.png)
+
+[https://github.com/aMiscreant/TorMail]
+
+
+---
+
 <style>
   footer {
     display: none;
