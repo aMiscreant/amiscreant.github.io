@@ -1,8 +1,8 @@
 ---
 layout: page
 title: ESP32-C3 - Custom Partition
-published: 2025-09-23
-description: "Setting up a custom partition scheme for esp32 (SPIFFS)"
+published: 2025-09-27
+description: "Setting up a custom partition scheme for esp32c3 (SPIFFS)"
 permalink: /arduino/wifi/esp32c3_partition
 category: esp32c3
 subcategory: Partition
@@ -32,3 +32,86 @@ subcategory: Partition
 </div>
 
 ---
+
+<h1>Custom Partition Scheme for ESP32c3</h1>
+
+---
+
+<h1>64KB SPIFFS</h1>
+
+<p>navigate to:</p>
+
+- ~/.arduino15/packages/esp32/hardware/esp32/2.0.9/tools/partitions
+
+- _create file_: 
+
+`spiffs64.csv`
+
+
+    # Name,   Type, SubType, Offset,  Size, Flags
+    nvs,      data, nvs,     0x9000,  0x5000,
+    otadata,  data, ota,     0xe000,  0x2000,
+    app0,     app,  factory, 0x10000, 0x180000,
+    spiffs,   data, spiffs,  0x190000,0x10000,
+    coredump, data, coredump,0x3F0000,0x10000,
+
+
+<p>navigate to:</p>
+
+- ~/.arduino15/packages/esp32/hardware/esp32/2.0.9
+
+- edit: boards.txt
+
+<p>Add the following contents (Roughly Line: 345)</p>
+
+    esp32c3.menu.PartitionScheme.spiffs64=Minimal 64KB SPIFFS (1.5MB App / 64KB SPIFFS)
+    esp32c3.menu.PartitionScheme.spiffs64.build.partitions=spiffs64
+    esp32c3.menu.PartitionScheme.spiffs64.upload.maximum_size=1572864
+
+
+----
+
+<h1>128KB SPIFFS</h1>
+
+<p>navigate to:</p>
+
+- ~/.arduino15/packages/esp32/hardware/esp32/2.0.9/tools/partitions
+
+
+- _create file_: 
+
+`spiffs128.csv`
+
+
+    # Name,   Type, SubType, Offset,  Size, Flags
+    nvs,      data, nvs,     0x9000,  0x5000,
+    otadata,  data, ota,     0xe000,  0x2000,
+    app0,     app,  factory, 0x10000, 0x180000,
+    spiffs,   data, spiffs,  0x190000,0x20000,
+    coredump, data, coredump,0x3F0000,0x10000,
+
+
+<p>navigate to:</p>
+
+- ~/.arduino15/packages/esp32/hardware/esp32/2.0.9
+
+- edit: boards.txt
+
+<p>Add the following contents (Roughly Line: 345)</p>
+
+    esp32c3.menu.PartitionScheme.spiffs128=Minimal 128KB SPIFFS (1.5MB App / 128KB SPIFFS)
+    esp32c3.menu.PartitionScheme.spiffs128.build.partitions=spiffs128
+    esp32c3.menu.PartitionScheme.spiffs128.upload.maximum_size=1572864
+
+
+---
+
+<p>Reload arduino and navigate to partition scheme's and your custom partitions will now be available.</p>
+
+---
+
+<style>
+  footer {
+    display: none;
+  }
+</style>
