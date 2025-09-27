@@ -1,9 +1,7 @@
 ---
 layout: page
 title: ESP8266 - oLED
-published: 2025-07-02
-date: 2025-5-29
-timezone: America/Toronto
+published: 2025-09-27
 description: 
 permalink: /arduino/wifi/esp32wroom
 category: esp8266
