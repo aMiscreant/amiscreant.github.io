@@ -29,7 +29,13 @@ permalink: /projects/Subrosa
 
 ---
 
-<h1></h1>
+![Subrosa](https://image2url.com/images/1758938551152-319211e9-55b8-41de-a31f-bf236fa675d6.png)
+
+---
+
+<h1>Subrosa-Ducky</h1>
+
+<p></p>
 
 ---
 

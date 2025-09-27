@@ -29,9 +29,12 @@ permalink: /projects/Sanitizr
 
 ---
 
-<h1>Sanitizr</h1>
+![Sanitizr](https://image2url.com/images/1758934406078-4dfa0bf7-36eb-45c5-8f17-d7459b787055.jpeg)
 
-<p>powerful Android utility app for cleaning metadata and timestamps from various file types including images, videos, documents, PDFs, archives, and ebooks.</p>
+---
+
+
+**Powerful Android utility app for cleaning metadata and timestamps from various file types including images, videos, documents, PDFs, archives, and ebooks.**
 
 ---
 
