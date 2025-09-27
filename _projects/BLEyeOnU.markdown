@@ -29,11 +29,11 @@ permalink: /projects/BLEyeOnU/BLEyeOnU
 
 ---
 
+![BLEYEONU](https://image2url.com/images/1758931565821-f8051556-59c5-4d72-add7-89c4f06063be.png)
+
 <h1>BLEyeOnU</h1>
 
     "Broadcast like a beacon, sniff like a spook."
-
-![BLEYEONU](https://gifyu.com/image/bwT9G)
 
 - Mission Objective
 
