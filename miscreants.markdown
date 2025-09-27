@@ -697,7 +697,7 @@ permalink: /miscreants/
 
 <p>Here you can try:</p>
 
-- .
+- Javascript Obfuscation (DEMO).
 
 ---
 
