@@ -3,7 +3,7 @@ layout: page
 title: ESP32-C3 - Bluetooth
 published: 2025-07-08
 description: 
-permalink: /arduino/bluetooth/esp32c3
+permalink: /arduino/esp32c3/bluetooth
 category: esp32c3
 subcategory: Bluetooth
 ---
@@ -33,13 +33,6 @@ subcategory: Bluetooth
 
 ---
 
-### Description
-
-#### This project demonstrates how to build a basic serial CLI (Command Line Interface) menu on the ESP32-C3 using the Arduino IDE. Instead of endlessly looping code, this approach waits for user input over serial to trigger specific actions—in this case, scanning for nearby Wi-Fi networks.
-
----
-
-Full Source Code:
 
 ---
 

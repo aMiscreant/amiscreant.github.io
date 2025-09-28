@@ -110,6 +110,20 @@ permalink: /tutorials/
 </ul>
 
 ---
+
+<h2>Python3:</h2>
+<ul>
+  {% for tutorial in site.tutorials %}
+    {% if tutorial.category == "python" %}
+      <li>
+        <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+---
+
 <h2>Termux:</h2>
 <ul>
   {% for tutorial in site.tutorials %}
