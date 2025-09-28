@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="Re-Designed">
-      <change afterPath="$PROJECT_DIR$/_tutorials/PicoW/RemoteFlash/picow_remote_flash.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projects/MirageAP.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/MirageAP.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_tutorials/OPI3Zero/Tor/opi3_transparent_proxy.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_tutorials/OPI3Zero/Tor/opi3_transparent_proxy.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_arduino/ESP32C3/Encryption/esp32c3_spiffs_tweetnacl.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_arduino/ESP32C3/Encryption/esp32c3_spiffs_tweetnacl.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,23 +49,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;(root)&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/miscreant/BadKitty&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "(root)",
+    "last_opened_file_path": "/home/miscreant/PycharmProjects/BadKitty",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_tutorials/Python/DVWA" />
@@ -99,14 +96,6 @@
       <workItem from="1748452692964" duration="19146000" />
       <workItem from="1748493761883" duration="13473000" />
       <workItem from="1748580737548" duration="6001000" />
-    </task>
-    <task id="LOCAL-00020" summary="proxmark clean up">
-      <option name="closed" value="true" />
-      <created>1751311473317</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1751311473317</updated>
     </task>
     <task id="LOCAL-00021" summary="proxmark clean up">
       <option name="closed" value="true" />
@@ -492,7 +481,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759046998131</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Re-Designed">
+      <option name="closed" value="true" />
+      <created>1759050438948</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1759050438948</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
