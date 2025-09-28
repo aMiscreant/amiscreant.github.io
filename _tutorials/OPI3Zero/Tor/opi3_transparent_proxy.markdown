@@ -168,6 +168,9 @@ echo "[✓] iptables rules applied. Tor transparent proxy is active."
 
 
 ```
+
+---
+
 <style>
   footer {
     display: none;
