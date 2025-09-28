@@ -3,7 +3,7 @@ layout: page
 title: Screen
 published: 2025-09-22
 description: "Cross Compile Screen for Android."
-permalink: /tutorials/CC/
+permalink: /tutorials/CC/screen
 category: crosscompile
 subcategory: Screen
 copy_to_clipboard: true

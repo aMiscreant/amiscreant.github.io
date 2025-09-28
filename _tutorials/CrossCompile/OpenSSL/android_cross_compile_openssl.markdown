@@ -3,7 +3,7 @@ layout: page
 title: OpenSSL
 published: 2025-09-22
 description: "Cross Compile OpenSSL for Android."
-permalink: /tutorials/CC/
+permalink: /tutorials/CC/openssl
 category: crosscompile
 subcategory: OpenSSL
 copy_to_clipboard: true

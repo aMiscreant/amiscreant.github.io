@@ -3,7 +3,7 @@ layout: page
 title: ESP32-Wroom-32D - Wi-Fi
 published: 2025-07-02
 description: 
-permalink: /arduino/wifi/esp32wroom
+permalink: /arduino/esp32wroom/wifi
 category: esp32wroom
 subcategory: wifi
 ---

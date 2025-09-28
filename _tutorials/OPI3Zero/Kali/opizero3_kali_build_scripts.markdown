@@ -3,7 +3,7 @@ layout: page
 title: Kali Build Scripts
 published: 2025-09-22
 description: "Build Scripts, Kali Linux"
-permalink: /tutorials/OPI3Zero/Kali/manual_wifi
+permalink: /tutorials/OPI3Zero/Kali/install_scripts
 category: opi3zero
 subcategory: Kali
 copy_to_clipboard: true

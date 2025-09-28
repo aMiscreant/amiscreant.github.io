@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="Re-Designed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_arduino/ESP32Wroom/Encryption/esp32wroom_encryption.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_arduino/ESP32Wroom/Encryption/esp32wroom_encryption.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_arduino/ESP32Wroom/WiFi/esp32wroom_wifi.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_arduino/ESP32Wroom/WiFi/esp32wroom_wifi.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,14 +99,6 @@
       <workItem from="1748452692964" duration="19146000" />
       <workItem from="1748493761883" duration="13473000" />
       <workItem from="1748580737548" duration="6001000" />
-    </task>
-    <task id="LOCAL-00017" summary="proxmark clean up">
-      <option name="closed" value="true" />
-      <created>1751308356363</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1751308356363</updated>
     </task>
     <task id="LOCAL-00018" summary="proxmark clean up">
       <option name="closed" value="true" />
@@ -488,7 +484,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759023215923</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Re-Designed">
+      <option name="closed" value="true" />
+      <created>1759024514674</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1759024514674</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
