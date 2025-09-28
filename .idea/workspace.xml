@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="Re-Designed">
-      <change afterPath="$PROJECT_DIR$/_tutorials/Python/DVWA/tutorials_python_webshell_dvwa.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_tutorials/Python/Obfuscation/tutorials_python_obfuscation.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_arduino/ESP32C3/Bluetooth/esp32c3_bluetooth.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_arduino/ESP32C3/Bluetooth/esp32c3_bluetooth.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,14 +95,6 @@
       <workItem from="1748452692964" duration="19146000" />
       <workItem from="1748493761883" duration="13473000" />
       <workItem from="1748580737548" duration="6001000" />
-    </task>
-    <task id="LOCAL-00016" summary="proxmark clean up">
-      <option name="closed" value="true" />
-      <created>1751308351031</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1751308351031</updated>
     </task>
     <task id="LOCAL-00017" summary="proxmark clean up">
       <option name="closed" value="true" />
@@ -492,7 +480,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758999969229</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Re-Designed">
+      <option name="closed" value="true" />
+      <created>1759023215923</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1759023215923</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
