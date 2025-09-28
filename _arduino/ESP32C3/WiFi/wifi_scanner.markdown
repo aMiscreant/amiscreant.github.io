@@ -107,7 +107,7 @@ wifi_promiscuous_pkt_type_t type) { const wifi_promiscuous_pkt_t *ppkt =
 
                 // Check if this MAC address has been seen before
                 if (!is_mac_seen(mac)) {
-                    printf("📡 SSID: %s | RSSI: %d | MAC: %02x:%02x:%02x:%02x:%02x:%02x\n",
+                    printf("SSID: %s | RSSI: %d | MAC: %02x:%02x:%02x:%02x:%02x:%02x\n",
                         ssid, ppkt->rx_ctrl.rssi,
                         payload[10], payload[11], payload[12],
                         payload[13], payload[14], payload[15]);
@@ -121,7 +121,7 @@ wifi_promiscuous_pkt_type_t type) { const wifi_promiscuous_pkt_t *ppkt =
         // Optional: Print MAC + RSSI for data frames
         uint8_t mac[6] = { payload[10], payload[11], payload[12], payload[13], payload[14], payload[15] };
         if (!is_mac_seen(mac)) {
-            printf("📦 DATA Frame | RSSI: %d | MAC: %02x:%02x:%02x:%02x:%02x:%02x\n",
+            printf("DATA Frame | RSSI: %d | MAC: %02x:%02x:%02x:%02x:%02x:%02x\n",
                 ppkt->rx_ctrl.rssi,
                 payload[10], payload[11], payload[12],
                 payload[13], payload[14], payload[15]);
@@ -174,7 +174,7 @@ ESP_ERROR_CHECK(esp_event_loop_create_default());
     // Start channel hopping task
     xTaskCreate(channel_hop_task, "channel_hop_task", 2048, NULL, 1, NULL);
 
-    ESP_LOGI(TAG, "🚀 Sniffer started. Scanning Wi-Fi activity...");
+    ESP_LOGI(TAG, "Sniffer started. Scanning Wi-Fi activity...");
 
 }
 ```

@@ -65,6 +65,19 @@ permalink: /projects/LazySuzann
 >
 >`Tutorials: _>`
 
+- Meterpreter APK
+        
+      Selecting: Meterpreter APK, will generate a custom apk with persistence & obfuscation methods.
+
+- JS Obfuscation
+
+      Selecting: JS Obfuscation, will obfuscate input file. --output `payloads dir`  
+
+- Python Obfuscation
+
+      Selecting: Python Obfuscation, will obfuscate input file. --output `payloads dir`
+
+
 ---
 
 ## Bluetooth Exploiter:

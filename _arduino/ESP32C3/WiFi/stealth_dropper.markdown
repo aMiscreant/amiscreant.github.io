@@ -4,7 +4,7 @@ title: ESP32c3 Stealth Communications
 published: 2025-07-08
 date: 2025-5-29
 description: "Air Gapped Communications."
-permalink: /arduino/wifi/esp32c3_stealth_dropper
+permalink: /arduino/wifi/esp32c3_stealth_comms
 category: esp32c3
 subcategory: wifi
 ---

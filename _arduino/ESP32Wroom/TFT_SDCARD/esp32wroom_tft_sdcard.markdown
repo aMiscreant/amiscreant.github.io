@@ -1,11 +1,11 @@
 ---
 layout: page
-title: ESP32-C3 - Encryption
-published: 2025-07-02
-description:  ""
-permalink: /arduino/encryption/esp32c3
-category: esp32c3
-subcategory: Encryption
+title: ESP32-Wroom-32D - TFT - SD Card
+published: 2025-09-27
+description: "Connect TFT Screen & Micro SD Card Module (HSPI)."
+permalink: /arduino/esp32wroom/tft_sdcard
+category: esp32wroom
+subcategory: tft_sdcard
 ---
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">

@@ -173,9 +173,9 @@ Nr | SSID                             | RSSI | CH | Encryption
 
 ### The code provides:
 
->`✅ A serial menu printed at startup`
+>`A serial menu printed at startup`
 > 
->`✅ User commands:`
+>`User commands:`
 >
 >`[s] → Start Wi-Fi scan`
 >
@@ -183,7 +183,7 @@ Nr | SSID                             | RSSI | CH | Encryption
 
 ---
 
->`✅ A nicely formatted Wi-Fi scan result with:`
+>`A nicely formatted Wi-Fi scan result with:`
 >
 >`SSID`
 >
