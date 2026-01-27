@@ -703,7 +703,7 @@ h1.hH1 {
     position: relative;
     display: inline-block;
     text-shadow:
-        0 0 2px #000000 !important,
+        0 0 2px #000000 !important;,
         0 0 4px #000000 !important,
         0 0 8px #000000 !important,
         0 0 12px #000000 !important; /* force black glow */
@@ -735,7 +735,7 @@ h1.hH1 {
 /* Hover glow effect */
 .hH1:hover {
     text-shadow:
-        0 0 4px #000000 !important,
+        0 0 4px #000000 !important;,
         0 0 8px #000000 !important,
         0 0 12px #000000 !important,
         0 0 16px #002244 !important;  /* dark blue accent on hover */
@@ -759,4 +759,120 @@ h1.hH1 {
         0 0 4px #000000,
         0 0 8px #000000,
         0 0 12px #000000;
+}
+
+/* -----------------------
+   STORE PAGE LAYOUT
+------------------------ */
+.store-container {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+.store-title {
+    font-family: 'Fira Code', monospace;
+    font-size: 2.5rem;
+    color: #FF0629;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 10px #FF0629, 0 0 20px #FF0629;
+}
+
+/* -----------------------
+   PRODUCT GRID
+------------------------ */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2.5rem;
+}
+
+/* -----------------------
+   PRODUCT CARD
+------------------------ */
+.product-card {
+    background: rgba(0,0,0,0.7);
+    border: 2px solid #33ffcc33;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 0 15px #33ffcc33;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #33ffcc, 0 0 30px #33ffcc;
+}
+
+.product-img {
+    width: 100%;
+    height: 420px;
+    object-fit: fill;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #33ffcc55;
+}
+
+/* -----------------------
+   PRODUCT TEXT
+------------------------ */
+.product-name {
+    font-size: 1.2rem;
+    font-family: 'Fira Code', monospace;
+    color: #00f7ff;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px #00f7ff;
+}
+
+.product-desc {
+    color: #ccc;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.product-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #FF0629;
+    text-shadow: 0 0 10px #FF0629;
+    margin-bottom: 1rem;
+}
+
+/* -----------------------
+   BUY BUTTON
+------------------------ */
+.buy-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem;
+    border: 2px solid #FF0629;
+    color: #FF0629;
+    border-radius: 10px;
+    font-family: 'Fira Code', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #FF0629;
+    transition: all 0.3s ease;
+}
+
+.buy-btn:hover {
+    background: #FF0629;
+    color: #000;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #FF0629, 0 0 40px #FF0629;
+}
+
+/* -----------------------
+   EMPTY SPACE / FOOTER FIX
+------------------------ */
+.store-spacer {
+    height: 4rem;
 }
