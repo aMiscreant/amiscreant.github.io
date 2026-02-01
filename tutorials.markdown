@@ -164,6 +164,19 @@ permalink: /tutorials/
 
 ---
 
+<h2>Windows:</h2>
+<ul>
+  {% for tutorial in site.tutorials %}
+    {% if tutorial.category == "windows" %}
+      <li>
+        <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>: <b>{{ tutorial.description }}</b>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+---
+
 <style>
   footer {
     display: none;
