@@ -1,9 +1,9 @@
 ---
 layout: page
-title: TFT Tutorial
+title: ST7735S TFT Display Tutorial
 published: 2025-07-08
 date: 2025-5-29
-description: Prevent unauthorized USB devices from compromising your system with defense mechanisms and whitelisting scripts.
+description: "A practical guide to wiring, configuring, and driving ST7735S SPI TFT displays on Linux SBCs and microcontrollers using framebuffer and SPI-based drivers."
 permalink: /tutorials/OPI3Zero/TFT/TFT_tutorial
 category: opi3zero
 subcategory: TFT
