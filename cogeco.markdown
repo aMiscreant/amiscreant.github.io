@@ -178,9 +178,9 @@ hashcat -a 3 --stdout -1 ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789   ?1?1?1?1?1?1COGE
 ```re
   70:7C:63:5B:96:38  COGECO-B9630              WPA (1 handshake)
 
-Second last digit of each mac address matches 2nd Last Default SSID Example:
+Second last digit of each mac address matches Default value in SSID Example:
 
-`70:7C:63:'5'B<-:96:38  COGECO-B<-9630`
+  `70:7C:63:'5'B<-:96:38  COGECO-B<-9630`
 
 
 COGECO-B9630 - KEY FOUND! [ F7B5DCOGECO ]
