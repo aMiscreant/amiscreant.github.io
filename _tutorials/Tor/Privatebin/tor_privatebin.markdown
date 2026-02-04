@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tor - Privatebin
-published: 2025-02-03
+published: 2026-02-03
 description: "Configuring Tor Hidden Service Hosting Privatebin."
 permalink: /tor/privatebin
 category: tor
