@@ -42,6 +42,7 @@ subcategory: Privatebin
 Note:
 
 "You will need to append the access token to submit uploads."
+- Replace "^YOUR_ONION\.onion$" `YOUR_ONION` only with the onions string.
 
 ---
 
