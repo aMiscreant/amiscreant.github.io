@@ -36,7 +36,7 @@ subcategory: Privatebin
 
 # PrivateBin over Tor
 
-### `This setup deploys a hardened, self-hosted PrivateBin instance as a Tor hidden service. It allows anonymous, end-to-end encrypted paste sharing without logs, trackers, or client identifiers. The configuration emphasizes strict access controls, minimal attack surface, and privacy-preserving defaults, making it suitable for sensitive text exchange entirely within the Tor network.`
+### This setup deploys a hardened, self-hosted PrivateBin instance as a Tor hidden service. It allows anonymous, end-to-end encrypted paste sharing without logs, trackers, or client identifiers. The configuration emphasizes strict access controls, minimal attack surface, and privacy-preserving defaults, making it suitable for sensitive text exchange entirely within the Tor network.
 
 
     Note:
