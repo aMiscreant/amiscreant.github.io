@@ -178,7 +178,7 @@ hashcat -a 3 --stdout -1 ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789   ?1?1?1?1?1?1COGE
 ```re
   70:7C:63:5B:96:38  COGECO-B9630              WPA (1 handshake)
 
-Second last digit of each mac address matches Default value in SSID Example:
+Mac Address holds Default values matching in the SSID, which corespond to the default password:
 
   `70:7C:63:'5'B<-:96:38  COGECO-B<-9630`
 
