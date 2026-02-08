@@ -44,6 +44,22 @@ subcategory: eJabberd
 
 ---
 
+# Create cert for jabber server.
+
+```bash
+sudo openssl req -x509 -nodes -days 3650 -newkey rsa:4096 \
+  -keyout /etc/ejabberd/ssl/YOUR_ONION.onion.key \
+  -out /etc/ejabberd/ssl/YOUR_ONION.onion.crt \
+  -subj "/CN=YOUR_ONION.onion"
+
+```
+
+---
+
+# Simple script to get started
+
+---
+
 ```bash
 #!/bin/bash
 # aMiscreant
