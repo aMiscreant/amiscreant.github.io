@@ -2,7 +2,7 @@
 layout: page
 title: ESP8266 - Networking
 published: 2026-09-27
-description: "WebSocket - WebSocket - Toolkit"
+description: "WebSocket - Toolkit"
 permalink: /arduino/esp8266/websocket_toolkit
 category: esp8266
 subcategory: wifi
