@@ -3,7 +3,7 @@ layout: page
 title: ESP8266 - Wi-Fi Scanner (Web Server)
 published: 2025-07-02
 description: "Wi-Fi Scanner (Web Server) using Flask."
-permalink: /arduino/wifi/esp32wroom_webserver
+permalink: /arduino/wifi/esp8266_websocket
 category: esp8266
 subcategory: wifi
 ---

@@ -3,7 +3,7 @@ layout: page
 title: ESP8266 - Subrosa
 published: 2026-09-27
 description: "Web Console - HTTP"
-permalink: /arduino/esp8266/encrypt_decrypt
+permalink: /arduino/esp8266/subrosa
 category: esp8266
 subcategory: wifi
 ---
