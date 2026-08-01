@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="Re-Designed">
+      <change afterPath="$PROJECT_DIR$/_arduino/ESP32Wroom/WebSockets/esp32wroom_websocket.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_arduino/ESP8266/WiFi/esp8266_subrosa.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_tutorials/Tor/Privatebin/tor_privatebin.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_tutorials/Tor/Privatebin/tor_privatebin.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,27 +50,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;(root)&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/miscreant/amiscreant.github.io/assets&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "(root)",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/miscreant/amiscreant.github.io",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets" />
@@ -105,46 +106,6 @@
       <workItem from="1748580737548" duration="6001000" />
       <workItem from="1764193977303" duration="2114000" />
       <workItem from="1764344170373" duration="8699000" />
-    </task>
-    <task id="LOCAL-00029" summary="opi3 transparents proxy">
-      <option name="closed" value="true" />
-      <created>1751331399538</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1751331399538</updated>
-    </task>
-    <task id="LOCAL-00030" summary="opi3 kali networking">
-      <option name="closed" value="true" />
-      <created>1751332688608</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1751332688608</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Secure Web User Management">
-      <option name="closed" value="true" />
-      <created>1751338591078</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1751338591078</updated>
-    </task>
-    <task id="LOCAL-00032" summary="openwrt ext file sys">
-      <option name="closed" value="true" />
-      <created>1751340035194</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1751340035194</updated>
-    </task>
-    <task id="LOCAL-00033" summary="openwrt ext file sys">
-      <option name="closed" value="true" />
-      <created>1751341787908</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1751341787908</updated>
     </task>
     <task id="LOCAL-00034" summary="styling updates tz_data">
       <option name="closed" value="true" />
@@ -498,7 +459,47 @@
       <option name="project" value="LOCAL" />
       <updated>1770169931730</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Re-Designed">
+      <option name="closed" value="true" />
+      <created>1770170198795</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1770170198795</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Re-Designed">
+      <option name="closed" value="true" />
+      <created>1770171560004</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1770171560005</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Re-Designed">
+      <option name="closed" value="true" />
+      <created>1770171952443</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1770171952443</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Re-Designed">
+      <option name="closed" value="true" />
+      <created>1770179270736</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1770179270737</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Re-Designed">
+      <option name="closed" value="true" />
+      <created>1770572809700</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1770572809701</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
