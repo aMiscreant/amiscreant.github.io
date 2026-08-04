@@ -19,6 +19,20 @@ permalink: /arduino/
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
 
+
+---
+
+<h2>ESP32:</h2>
+<ul>
+  {% for arduino in site.arduino %}
+    {% if arduino.category == "esp32" %}
+      <li>
+        <a href="{{ arduino.url }}">{{ arduino.title }}</a>: <b>{{ arduino.description }}</b>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
 ---
 
 <h2>ESP32c3:</h2>
