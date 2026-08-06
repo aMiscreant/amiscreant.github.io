@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d3e6509-e9a6-4844-889e-117dfabf359d" name="Changes" comment="Re-Designed">
+      <change afterPath="$PROJECT_DIR$/_arduino/ESP32/BLE/esp32_ble.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_arduino/ESP32/WebSockets/esp32_dual_websockets.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_arduino/ESP8266/WiFi/esp8266_websocket_toolkit.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_arduino/ESP8266/WiFi/esp8266_websocket_toolkit.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,11 +76,11 @@
       <recent name="$PROJECT_DIR$/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_arduino/ESP32/BLE" />
       <recent name="$PROJECT_DIR$/_tutorials/Python/DVWA" />
       <recent name="$PROJECT_DIR$/_snippets/Images" />
       <recent name="$PROJECT_DIR$/_snippets/Encryption" />
       <recent name="$PROJECT_DIR$/_snippets/Bluetooth" />
-      <recent name="$PROJECT_DIR$/_snippets/Audio" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -105,22 +106,6 @@
       <workItem from="1748580737548" duration="6001000" />
       <workItem from="1764193977303" duration="2114000" />
       <workItem from="1764344170373" duration="8699000" />
-    </task>
-    <task id="LOCAL-00036" summary="updates">
-      <option name="closed" value="true" />
-      <created>1751597035458</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1751597035458</updated>
-    </task>
-    <task id="LOCAL-00037" summary="updates">
-      <option name="closed" value="true" />
-      <created>1751597765828</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1751597765828</updated>
     </task>
     <task id="LOCAL-00038" summary="Tor updates">
       <option name="closed" value="true" />
@@ -498,7 +483,23 @@
       <option name="project" value="LOCAL" />
       <updated>1785627024308</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="Re-Designed">
+      <option name="closed" value="true" />
+      <created>1785627450908</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1785627450908</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Re-Designed">
+      <option name="closed" value="true" />
+      <created>1785811972697</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1785811972697</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
